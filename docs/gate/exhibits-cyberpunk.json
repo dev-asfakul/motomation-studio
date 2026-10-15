@@ -2,7 +2,7 @@
   "target": "http://localhost:4190/exhibits/cyberpunk/",
   "url": "http://localhost:4190/exhibits/cyberpunk/",
   "version": "gate/4",
-  "pass": false,
+  "pass": true,
   "verified": true,
   "coverage": {
     "ok": true,
@@ -20,19 +20,23 @@
     "names": 0,
     "numbers": 0,
     "quality": 0,
-    "access": 1,
+    "access": 0,
     "copy": 0,
     "seo": 0,
     "perf": 0,
     "sec": 0
   },
-  "id": "4631e65f63",
-  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k1 · rules: C0 S0 P0 K0 · gate/4 · 4631e65f63 · skipped 4/256@768",
-  "critique": "C5[restraint:kept] H4[375:1] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A4[focus:39/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0]",
+  "id": "0a4fb99fe3",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 0a4fb99fe3 · skipped 4/256@768",
+  "critique": "C5[restraint:kept] H4[375:1] S5[last5:archetype-new,signature-new,fp25] R5[cuts:3,anim:3] M5[t2:pins0/2,webgl0/1,js21/80KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0]",
   "sources": {
     "design": "/home/user/workspace/motomation-studio/DESIGN.md",
     "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
-    "meta": {}
+    "meta": {
+      "archetype": "console",
+      "signature": "decode",
+      "tier": "2"
+    }
   },
   "rules": {
     "copy": {
@@ -185,13 +189,7 @@
   "access": {
     "focus": {
       "checked": 40,
-      "fails": [
-        {
-          "el": "input",
-          "text": "",
-          "changedPct": 0
-        }
-      ],
+      "fails": [],
       "tabbables": 57
     },
     "target": {
@@ -207,7 +205,7 @@
         {
           "el": "a.bureau-mark-link",
           "text": "MOTOMATION",
-          "w": 135,
+          "w": 137,
           "h": 36
         },
         {
@@ -404,9 +402,9 @@
       "trapped": false,
       "region": null
     },
-    "fails": 1,
+    "fails": 0,
     "cat": {
-      "focus": 1,
+      "focus": 0,
       "target": 0,
       "zoom": 0,
       "reflow": 0,

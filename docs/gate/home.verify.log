@@ -1,0 +1,47 @@
+gate: constrained machine (2 CPUs); a failed scan is retried once in the light footprint
+DELIVERY GATE · http://localhost:4190/
+  contrast  ✓ 0 below AA across 375/390/768/1440px  (measured against rendered pixels at each width)
+      375px  ✓ 0 below AA  (186 measured; 1 skipped; 0 not visible at scan time)
+      390px  ✓ 0 below AA  (186 measured; 1 skipped; 0 not visible at scan time)
+      768px  ✓ 0 below AA  (186 measured; 5 skipped; 0 not visible at scan time)
+     1440px  ✓ 0 below AA  (210 measured; 2 skipped; 0 not visible at scan time)
+  overflow  ✓ 0 at 375/390/768/1440px
+  words     ✓ 0 display-text problems at 375px  (14 display elements checked)
+  motion    ✓ 0 text elements hidden only under reduced motion; pixels changing on a still page: 0%  (212 compared)
+  names     ✓ 0 missing alt / accessible names  (84 interactive elements checked)
+  numbers   ✓ 0 values shown wrong before they settle  (52 numbers checked at scroll 0, scroll end and reduced motion; 3 live values skipped)
+  progress  ✓ 0 of 1 pinned/scrubbed zone(s) static (median change between 8 scroll samples ≤ 0.5% of pixels)
+     ✓ sticky div.lineup-stage  8100px  Δ median 87.8% · 7/7 transitions change  [89.27 86.01 6.9 87.84 84.38 89.37 89.53]
+  smooth    – not verified — sandbox (sandbox: 2 CPUs); measured p95 16.8ms @1440, 16.7ms @375 CPU×4 (budgets 20/25ms) — see docs/adapters/sandbox.md
+  rm-flow   ✓ reduced motion is normal flow, all text present · 0 visible canvas(es)
+  focus     ✓ 0 of 40 focused elements show no visible focus indicator  (84 tabbable)
+  targets   ✓ 0 under 24px, 36 under 44px (warning) at 375 touch  (62 checked; inline links exempt)
+     166×42  a.skip  "Skip to the case"
+     137×36  a.bureau-mark-link  "MOTOMATION"
+     34×36  button.bar-btn  "◐UVUV torch: reveal hidden ann"
+     34×36  button.bar-btn  "–SoundSound"
+  zoom200   ✓ 0 lost at 200% (1440×900 → 720×450): text clipped or controls unreachable that were fine at 100%
+  reflow    ✓ 0px horizontal scroll at 320px
+  forced    ✓ 0 of 79 texts illegible in forced colors (rendered ink under 3:1 against its box, or no ink)
+  kbd-trap  ✓ 84 of 84 tabbable reached in 160 Tabs, no cycle
+  C copy     ✓ 0 rule(s) failing  (craft/copy.md; 0 warning(s))
+  S SEO      ✓ 0 rule(s) failing  (craft/seo.md; 0 warning(s))
+  P perf     ✓ 0 rule(s) failing  (craft/performance.md; 0 warning(s))
+  K security ✓ 0 rule(s) failing  (craft/security.md; 0 warning(s))
+  composition (advisory: heuristics, never fail the gate, not in the stamp)
+     pin fill  ✓ 1 of 1 pinned zone(s) at least 60% filled  (sticky div.lineup-stage 90%)
+     focal     ⚠ 7 of 14 screen(s) with text have one clear focal point (heaviest text mass ≥ 1.5× the next); no clear lead on screen 3 (1.24×), 4 (1.38×), 5 (1.41×), 7 (1.37×), 8 (1.13×), 11 (1.45×), 13 (1×)
+     scale     ✓ display:body 1:7.2  (129.6px / 17.92px; warn below 1:6)
+  richness (advisory: "too little" warnings, never fail the gate, not in the stamp)
+     page      home (from --page; set with --page home|category|about|page)
+     fold      ✓ 10 meaningful section(s) above the fold at 1440×900: nav header.bureau-bar, heading h1#cover-h, text p, text dd, text dd, text dd, text dd, text p.cover-hint.label, media svg.cover-mark, action button.bar-btn  (warn below 3)
+     opening   ✓ h1 "Taste can’t be proven in words. So we pu"
+  hierarchy  h1×1, 0 skipped heading levels, 1 element(s) tied for largest on the first 375px screen
+  structure  3 sections, entrances: static | static | static → 0 repeat(s); pins 1, WebGL canvases 0, JS 22KB gzipped (+11 script(s) not fetched)
+  records    DESIGN.md: /home/user/workspace/motomation-studio/DESIGN.md · memory log: /home/user/workspace/motomation-studio/.motomation/log.json · stamp fields: {"archetype":"gallery-wall","signature":"width-sprint","tier":"5"}
+  critique → C5[restraint:kept] H5[375:0] S5[last5:archetype-new,signature-new,fp19] R5[cuts:3,anim:3] M5[t5:pins1/2,webgl0/1,js22/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ87.8%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f36w,zoom:0,reflow:0,fc:0,trap:0]
+  coverage   ✓ worst width 768px: 5 of 191 text elements skipped (3%; limit 30% at every width)
+  PASS  stamp → critique: C5[restraint:kept] H5[375:0] S5[last5:archetype-new,signature-new,fp19] R5[cuts:3,anim:3] M5[t5:pins1/2,webgl0/1,js22/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ87.8%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f36w,zoom:0,reflow:0,fc:0,trap:0] · gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · ecadb920c6 · skipped 5/191@768
+
+  stamp skips: 5/191@768 · fresh scan: 5/191@768 (3%)
+STAMP VERIFIED · critique and gate numbers match a fresh scan · gate PASS

@@ -5,14 +5,15 @@
 import fs from "node:fs";
 const rows = {}; let bad = 0;
 for (const f of fs.readdirSync("docs/gate").filter((f) => f.endsWith(".json")).sort()) {
+  const vlog = `docs/gate/${f.replace(/\.json$/, "")}.verify.log`; const verified = fs.existsSync(vlog) ? ((fs.readFileSync(vlog, "utf8").match(/STAMP (VERIFIED|REJECTED)[^\n]*/) || [""])[0]) : "";
   const j = JSON.parse(fs.readFileSync(`docs/gate/${f}`, "utf8")); const name = f.replace(/\.json$/, "");
   const route = name === "home" ? "/" : "/" + name.replace(/^exhibits-/, "exhibits/") + "/";
   const date = (j.generated || fs.statSync(`docs/gate/${f}`).mtime.toISOString()).slice(0, 10);
   if (j.verified === false && !j.stamp) { rows[route] = { pass: false, verified: false, stamp: `not verified: ${String(j.reason).split("(")[0].trim()}`, counts: {}, date }; bad++; continue; }
-  rows[route] = { pass: !!j.pass, verified: j.verified !== false, stamp: j.stamp, counts: j.counts, date };
+  rows[route] = { pass: !!j.pass, verified: j.verified !== false, stamp: j.stamp, critique: j.critique, verify: verified || null, counts: j.counts, date };
   if (!j.pass) bad++;
 }
 fs.writeFileSync("content/gate-results.json", JSON.stringify(rows, null, 1) + "\n");
-const md = ["| Page | Result | Stamp |", "| --- | --- | --- |", ...Object.entries(rows).map(([r, v]) => `| \`${r}\` | ${!v.verified ? "not verified" : v.pass ? "pass" : "fail"} | \`${v.stamp}\` |`)].join("\n");
+const md = ["| Page | Gate | --verify | Stamp | Critique |", "| --- | --- | --- | --- | --- |", ...Object.entries(rows).map(([r, v]) => `| \`${r}\` | ${!v.verified ? "not verified" : v.pass ? "pass" : "fail"} | ${v.verify ? (v.verify.startsWith("STAMP VERIFIED") ? "verified" : "rejected") : "not run"} | \`${v.stamp}\` | ${v.critique ? `\`${v.critique.replace(/\|/g, "/")}\`` : ""} |`)].join("\n");
 fs.writeFileSync("docs/gate/SUMMARY.md", `# Delivery gate results\n\nFrom \`scripts/gate.mjs\` (gate/4, skill v2.6.0), light footprint, run against the static export served with production headers.\n\n${md}\n`);
 console.log(md); if (process.argv.includes("--strict") && bad) process.exit(1);

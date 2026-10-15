@@ -28,11 +28,15 @@
   },
   "id": "1f23319e97",
   "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P1 K0 · gate/4 · 1f23319e97 · skipped 7/169@768",
-  "critique": "C5[restraint:kept] H5[375:0] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]",
+  "critique": "C5[restraint:kept] H5[375:0] S1[last5:archetype-new,signature-new,fp100] R5[cuts:3,anim:3] M5[t2:pins0/2,webgl0/1,js21/80KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]",
   "sources": {
     "design": "/home/user/workspace/motomation-studio/DESIGN.md",
     "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
-    "meta": {}
+    "meta": {
+      "archetype": "poster",
+      "signature": "darkroom-develop",
+      "tier": "2"
+    }
   },
   "rules": {
     "copy": {
@@ -73,7 +77,7 @@
     "sections": 3,
     "patterns": [
       "static",
-      "filter",
+      "static",
       "static"
     ],
     "repeats": 0,
@@ -207,7 +211,7 @@
         {
           "el": "a.bureau-mark-link",
           "text": "MOTOMATION",
-          "w": 136,
+          "w": 135,
           "h": 36
         },
         {
@@ -389,7 +393,7 @@
       {
         "n": 6,
         "top": "p.x-after-word",
-        "lead": 2.57,
+        "lead": 2.06,
         "ok": true,
         "text": true
       },

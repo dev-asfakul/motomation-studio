@@ -1,0 +1,526 @@
+gate: constrained machine (2 CPUs); a failed scan is retried once in the light footprint
+{
+  "target": "http://localhost:4190/exhibits/aurora/",
+  "url": "http://localhost:4190/exhibits/aurora/",
+  "version": "gate/4",
+  "pass": true,
+  "verified": true,
+  "coverage": {
+    "ok": true,
+    "skipped": 5,
+    "total": 180,
+    "pct": 3,
+    "width": 768,
+    "low": []
+  },
+  "counts": {
+    "contrast": 0,
+    "overflow": 0,
+    "words": 0,
+    "motion": 0,
+    "names": 0,
+    "numbers": 0,
+    "quality": 0,
+    "access": 0,
+    "copy": 0,
+    "seo": 0,
+    "perf": 0,
+    "sec": 0
+  },
+  "id": "7c3effbd45",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 7c3effbd45 · skipped 5/180@768",
+  "critique": "C5[restraint:kept] H5[375:0] S1[last5:archetype-reused,signature-reused,fp100] R5[cuts:3,anim:3] M5[t4:pins1/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ18.1%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f21w,zoom:0,reflow:0,fc:0,trap:0]",
+  "sources": {
+    "design": "/home/user/workspace/motomation-studio/DESIGN.md",
+    "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
+    "meta": {
+      "archetype": "ledger",
+      "signature": "seismograph-line",
+      "tier": "4"
+    }
+  },
+  "rules": {
+    "copy": {
+      "fails": [],
+      "warns": [],
+      "checked": 197
+    },
+    "seo": {
+      "fails": [],
+      "warns": [],
+      "checked": 14
+    },
+    "perf": {
+      "fails": [],
+      "warns": [],
+      "checked": 16
+    },
+    "sec": {
+      "fails": [],
+      "warns": [],
+      "checked": 9
+    },
+    "counts": {
+      "copy": 0,
+      "seo": 0,
+      "perf": 0,
+      "sec": 0
+    },
+    "segment": "rules: C0 S0 P0 K0"
+  },
+  "structure": {
+    "sections": 3,
+    "patterns": [
+      "static",
+      "static",
+      "static"
+    ],
+    "repeats": 0,
+    "pins": 1,
+    "webgl": 0,
+    "jsKB": 21,
+    "jsUnknown": 10,
+    "sectionIds": [
+      "header",
+      "article",
+      "footer"
+    ]
+  },
+  "contrast": {
+    "byWidth": [
+      {
+        "width": 375,
+        "measured": 175,
+        "skipped": 1,
+        "total": 176,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 390,
+        "measured": 175,
+        "skipped": 1,
+        "total": 176,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 768,
+        "measured": 175,
+        "skipped": 5,
+        "total": 180,
+        "skippedPct": 3,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 1440,
+        "measured": 201,
+        "skipped": 1,
+        "total": 202,
+        "skippedPct": 0,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      }
+    ],
+    "measured": 726,
+    "skipped": 8,
+    "total": 734,
+    "notVisibleAtScan": 0,
+    "skippedPct": 1,
+    "lowCoverage": false,
+    "fails": [],
+    "sequenceSteps": 0,
+    "inactiveFails": 0
+  },
+  "overflow": {
+    "widths": [
+      375,
+      390,
+      768,
+      1440
+    ],
+    "fails": []
+  },
+  "words": {
+    "checked": 10,
+    "fails": [],
+    "hier": {
+      "h1": 1,
+      "skips": 0,
+      "focalTies": 1,
+      "largest": 48.75
+    }
+  },
+  "motion": {
+    "compared": 202,
+    "hiddenUnderReducedMotion": [],
+    "pixelsChangingWhenStillPct": 0
+  },
+  "names": {
+    "checked": 52,
+    "fails": []
+  },
+  "numbers": {
+    "checked": 39,
+    "live": 10,
+    "fails": []
+  },
+  "quality": {
+    "zones": [
+      {
+        "kind": "sticky",
+        "label": "div.s-stick",
+        "top": 0,
+        "len": 2880,
+        "diffs": [
+          1.35,
+          13.52,
+          23.79,
+          2.54,
+          18.09,
+          51.24,
+          42.23
+        ],
+        "medianPct": 18.1,
+        "moving": 7,
+        "ok": true
+      }
+    ],
+    "smooth": {
+      "judged": false,
+      "why": "sandbox: 2 CPUs",
+      "desktop": {
+        "frames": 264,
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 50,
+        "ok": true
+      },
+      "mobile": {
+        "frames": 279,
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 66.7,
+        "ok": true
+      }
+    },
+    "rm": {
+      "pinned": [],
+      "missing": [],
+      "missingCount": 0,
+      "canvases": 0,
+      "ok": true
+    },
+    "fails": 0
+  },
+  "access": {
+    "focus": {
+      "checked": 40,
+      "fails": [],
+      "tabbables": 52
+    },
+    "target": {
+      "checked": 29,
+      "fails": [],
+      "warns": [
+        {
+          "el": "a.skip",
+          "text": "Skip to the case",
+          "w": 166,
+          "h": 42
+        },
+        {
+          "el": "a.bureau-mark-link",
+          "text": "MOTOMATION",
+          "w": 136,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "◐UVUV torch: reveal hidden ann",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "–SoundSound",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Search⌘KSearch the case",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Index",
+          "w": 55,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Yes, sound",
+          "w": 95,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Stay silent",
+          "w": 104,
+          "h": 36
+        },
+        {
+          "el": "a",
+          "text": "Aurora",
+          "w": 51,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "Meteors",
+          "w": 60,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "Particle Field",
+          "w": 95,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "aurora shader",
+          "w": 103,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "hour ledger",
+          "w": 84,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "Evidence board",
+          "w": 107,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Autopsy",
+          "w": 58,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Method",
+          "w": 54,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Lab",
+          "w": 26,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Receipts",
+          "w": 60,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Locker",
+          "w": 47,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Dossier",
+          "w": 52,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Credits",
+          "w": 49,
+          "h": 28
+        }
+      ]
+    },
+    "zoom": {
+      "fails": []
+    },
+    "reflow": {
+      "px": 0
+    },
+    "forced": {
+      "checked": 79,
+      "fails": []
+    },
+    "trap": {
+      "tabbables": 52,
+      "presses": 110,
+      "visited": 52,
+      "unreached": 0,
+      "trapped": false,
+      "region": null
+    },
+    "fails": 0,
+    "cat": {
+      "focus": 0,
+      "target": 0,
+      "zoom": 0,
+      "reflow": 0,
+      "forced": 0,
+      "trap": 0
+    }
+  },
+  "composition": {
+    "pin": [
+      {
+        "kind": "sticky",
+        "label": "div.s-stick",
+        "fill": 100,
+        "ok": true
+      }
+    ],
+    "screens": [
+      {
+        "n": 1,
+        "top": "h1#x-title.s-title",
+        "lead": 5.9,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 2,
+        "top": "h1#x-title.s-title",
+        "lead": 5.9,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 3,
+        "top": "h1#x-title.s-title",
+        "lead": 5.9,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 4,
+        "top": "h1#x-title.s-title",
+        "lead": 5.9,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 5,
+        "top": "p.x-aa",
+        "lead": 3.78,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 6,
+        "top": "p.x-alpha",
+        "lead": 1.05,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 7,
+        "top": "h2#x-anat-h",
+        "lead": 1.95,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 8,
+        "top": "h2#x-lab-h",
+        "lead": 1.45,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 9,
+        "top": "h2#x-link-h",
+        "lead": 1.67,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 10,
+        "top": "h2#x-ba-h",
+        "lead": 1.3,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 11,
+        "top": "span.x-next-t",
+        "lead": 2.37,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 12,
+        "top": "span.x-next-t",
+        "lead": 2.37,
+        "ok": true,
+        "text": true
+      }
+    ],
+    "scale": {
+      "display": 374.4,
+      "body": 17.92,
+      "ratio": 20.9,
+      "ok": true
+    }
+  },
+  "richness": {
+    "kind": "page",
+    "from": "path",
+    "fold": [
+      "nav header.bureau-bar",
+      "heading h1#x-title.s-title",
+      "text p",
+      "text p.x-hero-meta",
+      "text p.s-sub",
+      "media svg",
+      "action button.bar-btn"
+    ],
+    "opening": "h1 \"The 3 AM Alibi\"",
+    "grid": null,
+    "title": null,
+    "count": null,
+    "blocks": [
+      "section.x-hero.s-hero",
+      "section.x-sec.x-specimen",
+      "section.x-sec.x-anatomy",
+      "figure.s-plate",
+      "figure.s-plate",
+      "figure.s-plate",
+      "section.x-sec.x-link",
+      "figure.x-before",
+      "figure.x-after",
+      "div.toasts"
+    ],
+    "warns": []
+  },
+  "footprint": "light"
+}

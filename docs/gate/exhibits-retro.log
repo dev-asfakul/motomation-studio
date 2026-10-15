@@ -1,14 +1,15 @@
+gate: constrained machine (2 CPUs); a failed scan is retried once in the light footprint
 {
-  "target": "http://localhost:4190/credits/",
-  "url": "http://localhost:4190/credits/",
+  "target": "http://localhost:4190/exhibits/retro/",
+  "url": "http://localhost:4190/exhibits/retro/",
   "version": "gate/4",
-  "pass": false,
+  "pass": true,
   "verified": true,
   "coverage": {
     "ok": true,
-    "skipped": 5,
-    "total": 225,
-    "pct": 2,
+    "skipped": 46,
+    "total": 211,
+    "pct": 22,
     "width": 768,
     "low": []
   },
@@ -20,25 +21,29 @@
     "names": 0,
     "numbers": 0,
     "quality": 0,
-    "access": 2,
+    "access": 0,
     "copy": 0,
     "seo": 0,
     "perf": 0,
     "sec": 0
   },
-  "id": "2a10919332",
-  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k2 · rules: C0 S0 P0 K0 · gate/4 · 2a10919332 · skipped 5/225@768",
-  "critique": "C5[restraint:kept] H5[375:0] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A4[focus:40/40,tgt:0f23w,zoom:2,reflow:0,fc:0,trap:0]",
+  "id": "6be6f10571",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 6be6f10571 · skipped 46/211@768",
+  "critique": "C5[restraint:kept] H5[375:0] S3[last5:archetype-new,signature-new,fp81] R5[cuts:3,anim:3] M5[t5:pins2/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ2.5%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f21w,zoom:0,reflow:0,fc:0,trap:0]",
   "sources": {
     "design": "/home/user/workspace/motomation-studio/DESIGN.md",
     "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
-    "meta": {}
+    "meta": {
+      "archetype": "film-reel",
+      "signature": "timecode-rail",
+      "tier": "5"
+    }
   },
   "rules": {
     "copy": {
       "fails": [],
       "warns": [],
-      "checked": 263
+      "checked": 193
     },
     "seo": {
       "fails": [],
@@ -48,7 +53,7 @@
     "perf": {
       "fails": [],
       "warns": [],
-      "checked": 15
+      "checked": 16
     },
     "sec": {
       "fails": [],
@@ -71,13 +76,13 @@
       "static"
     ],
     "repeats": 0,
-    "pins": 0,
+    "pins": 2,
     "webgl": 0,
-    "jsKB": 18,
-    "jsUnknown": 9,
+    "jsKB": 21,
+    "jsUnknown": 10,
     "sectionIds": [
       "header",
-      "div",
+      "article",
       "footer"
     ]
   },
@@ -85,10 +90,10 @@
     "byWidth": [
       {
         "width": 375,
-        "measured": 220,
-        "skipped": 1,
-        "total": 221,
-        "skippedPct": 0,
+        "measured": 166,
+        "skipped": 40,
+        "total": 206,
+        "skippedPct": 19,
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
@@ -96,10 +101,10 @@
       },
       {
         "width": 390,
-        "measured": 220,
-        "skipped": 1,
-        "total": 221,
-        "skippedPct": 0,
+        "measured": 166,
+        "skipped": 40,
+        "total": 206,
+        "skippedPct": 19,
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
@@ -107,10 +112,10 @@
       },
       {
         "width": 768,
-        "measured": 220,
-        "skipped": 5,
-        "total": 225,
-        "skippedPct": 2,
+        "measured": 165,
+        "skipped": 46,
+        "total": 211,
+        "skippedPct": 22,
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
@@ -118,21 +123,21 @@
       },
       {
         "width": 1440,
-        "measured": 246,
-        "skipped": 1,
-        "total": 247,
-        "skippedPct": 0,
+        "measured": 192,
+        "skipped": 41,
+        "total": 233,
+        "skippedPct": 18,
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
         "fails": []
       }
     ],
-    "measured": 906,
-    "skipped": 8,
-    "total": 914,
+    "measured": 689,
+    "skipped": 167,
+    "total": 856,
     "notVisibleAtScan": 0,
-    "skippedPct": 1,
+    "skippedPct": 20,
     "lowCoverage": false,
     "fails": [],
     "sequenceSteps": 0,
@@ -148,48 +153,103 @@
     "fails": []
   },
   "words": {
-    "checked": 9,
+    "checked": 22,
     "fails": [],
     "hier": {
       "h1": 1,
       "skips": 0,
       "focalTies": 1,
-      "largest": 46.35
+      "largest": 137.2
     }
   },
   "motion": {
-    "compared": 247,
+    "compared": 233,
     "hiddenUnderReducedMotion": [],
     "pixelsChangingWhenStillPct": 0
   },
   "names": {
-    "checked": 51,
+    "checked": 50,
     "fails": []
   },
   "numbers": {
-    "checked": 60,
+    "checked": 61,
     "live": 2,
     "fails": []
   },
   "quality": {
-    "zones": [],
+    "zones": [
+      {
+        "kind": "sticky",
+        "label": "div.l-stick",
+        "top": 0,
+        "len": 5580,
+        "diffs": [
+          54.16,
+          54.28,
+          54.36,
+          53.65,
+          52.65,
+          16.51,
+          14.9
+        ],
+        "medianPct": 53.6,
+        "moving": 7,
+        "ok": true
+      },
+      {
+        "kind": "sticky",
+        "label": "div",
+        "top": 8884,
+        "len": 2700,
+        "diffs": [
+          2.17,
+          2.48,
+          2.75,
+          2.7,
+          2.42,
+          2.52,
+          2.69
+        ],
+        "medianPct": 2.5,
+        "moving": 7,
+        "ok": true
+      }
+    ],
     "smooth": {
       "judged": false,
       "why": "sandbox: 2 CPUs",
-      "desktop": null,
-      "mobile": null
+      "desktop": {
+        "frames": 210,
+        "p50": 16.7,
+        "p95": 33.4,
+        "max": 66.7,
+        "ok": false
+      },
+      "mobile": {
+        "frames": 256,
+        "p50": 16.7,
+        "p95": 33.4,
+        "max": 50,
+        "ok": false
+      }
     },
-    "rm": null,
+    "rm": {
+      "pinned": [],
+      "missing": [],
+      "missingCount": 0,
+      "canvases": 1,
+      "ok": true
+    },
     "fails": 0
   },
   "access": {
     "focus": {
       "checked": 40,
       "fails": [],
-      "tabbables": 51
+      "tabbables": 50
     },
     "target": {
-      "checked": 26,
+      "checked": 27,
       "fails": [],
       "warns": [
         {
@@ -201,7 +261,7 @@
         {
           "el": "a.bureau-mark-link",
           "text": "MOTOMATION",
-          "w": 136,
+          "w": 135,
           "h": 36
         },
         {
@@ -242,111 +302,86 @@
         },
         {
           "el": "a",
-          "text": "Next.js",
-          "w": 44,
-          "h": 25
+          "text": "Grain",
+          "w": 48,
+          "h": 29
         },
         {
           "el": "a",
-          "text": "React",
-          "w": 37,
-          "h": 25
+          "text": "Horizontal Reel",
+          "w": 145,
+          "h": 29
         },
         {
           "el": "a",
-          "text": "Lenis",
-          "w": 34,
-          "h": 25
+          "text": "Light Sweep",
+          "w": 106,
+          "h": 29
         },
         {
           "el": "a",
-          "text": "three.js",
-          "w": 47,
-          "h": 25
+          "text": "tape deck",
+          "w": 87,
+          "h": 29
         },
         {
           "el": "a",
-          "text": "Tailwind CSS",
-          "w": 84,
-          "h": 25
-        },
-        {
-          "el": "a",
-          "text": "opentype.js",
-          "w": 75,
-          "h": 25
-        },
-        {
-          "el": "a",
-          "text": "Playwright",
-          "w": 67,
-          "h": 25
+          "text": "leader countdown",
+          "w": 155,
+          "h": 29
         },
         {
           "el": "a",
           "text": "Evidence board",
           "w": 107,
-          "h": 26
+          "h": 28
         },
         {
           "el": "a",
           "text": "Autopsy",
           "w": 58,
-          "h": 26
+          "h": 28
         },
         {
           "el": "a",
           "text": "Method",
           "w": 54,
-          "h": 26
+          "h": 28
         },
         {
           "el": "a",
           "text": "Lab",
           "w": 26,
-          "h": 26
+          "h": 28
         },
         {
           "el": "a",
           "text": "Receipts",
           "w": 60,
-          "h": 26
+          "h": 28
         },
         {
           "el": "a",
           "text": "Locker",
           "w": 47,
-          "h": 26
+          "h": 28
         },
         {
           "el": "a",
           "text": "Dossier",
           "w": 52,
-          "h": 26
+          "h": 28
         },
         {
           "el": "a",
           "text": "Credits",
           "w": 49,
-          "h": 26
+          "h": 28
         }
       ]
     },
     "zoom": {
-      "fails": [
-        {
-          "kind": "control covered",
-          "el": "a",
-          "text": "asfakulsiam-motomation-design",
-          "by": "p"
-        },
-        {
-          "kind": "control covered",
-          "el": "a",
-          "text": "GitHub",
-          "by": "div.toast"
-        }
-      ]
+      "fails": []
     },
     "reflow": {
       "px": 0
@@ -356,73 +391,142 @@
       "fails": []
     },
     "trap": {
-      "tabbables": 51,
-      "presses": 108,
-      "visited": 51,
+      "tabbables": 50,
+      "presses": 106,
+      "visited": 50,
       "unreached": 0,
       "trapped": false,
       "region": null
     },
-    "fails": 2,
+    "fails": 0,
     "cat": {
       "focus": 0,
       "target": 0,
-      "zoom": 2,
+      "zoom": 0,
       "reflow": 0,
       "forced": 0,
       "trap": 0
     }
   },
   "composition": {
-    "pin": [],
+    "pin": [
+      {
+        "kind": "sticky",
+        "label": "div.l-stick",
+        "fill": 100,
+        "ok": true
+      },
+      {
+        "kind": "sticky",
+        "label": "div",
+        "fill": 27,
+        "ok": false
+      }
+    ],
     "screens": [
       {
         "n": 1,
-        "top": "h1.room-title",
-        "lead": 3.05,
+        "top": "h1#x-title.l-title",
+        "lead": 1.86,
         "ok": true,
         "text": true
       },
       {
         "n": 2,
-        "top": "p.sec-lede",
-        "lead": 1.54,
+        "top": "h1#x-title.l-title",
+        "lead": 1.75,
         "ok": true,
         "text": true
       },
       {
         "n": 3,
-        "top": "p",
-        "lead": 3.86,
+        "top": "h1#x-title.l-title",
+        "lead": 1.75,
         "ok": true,
         "text": true
       },
       {
         "n": 4,
-        "top": "h2#cr-libs.sec-h",
-        "lead": 3.46,
+        "top": "h1#x-title.l-title",
+        "lead": 1.75,
         "ok": true,
         "text": true
       },
       {
         "n": 5,
-        "top": "h2#cr-made.sec-h",
-        "lead": 1.78,
-        "ok": true,
+        "top": "h1#x-title.l-title",
+        "lead": 1.12,
+        "ok": false,
         "text": true
       },
       {
         "n": 6,
-        "top": "h2#cr-made.sec-h",
-        "lead": 1.24,
+        "top": "h1#x-title.l-title",
+        "lead": 1.86,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 7,
+        "top": "h1#x-title.l-title",
+        "lead": 1.43,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 8,
+        "top": "p.x-aa",
+        "lead": 2.73,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 9,
+        "top": "dd",
+        "lead": 1.27,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 10,
+        "top": "p.l-sweep-t",
+        "lead": 1.86,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 11,
+        "top": "p",
+        "lead": 1.14,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 12,
+        "top": "p",
+        "lead": 1.14,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 13,
+        "top": "p",
+        "lead": 1.14,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 14,
+        "top": "p",
+        "lead": 1.14,
         "ok": false,
         "text": true
       }
     ],
     "scale": {
-      "display": 129.6,
-      "body": 15,
-      "ratio": 8.6,
+      "display": 374.4,
+      "body": 17.92,
+      "ratio": 20.9,
       "ok": true
     }
   },
@@ -431,20 +535,25 @@
     "from": "path",
     "fold": [
       "nav header.bureau-bar",
-      "heading h2#cr-skill.sec-h",
+      "heading h1#x-title.l-title",
       "text p",
-      "text p.sec-lede",
+      "text p.x-hero-meta",
+      "media canvas.l-grain",
+      "media svg",
       "action button.bar-btn"
     ],
-    "opening": "h1 \"Chain of custody\"",
+    "opening": "h1 \"The Case Tape Archive\"",
     "grid": null,
     "title": null,
     "count": null,
     "blocks": [
-      "section.sec",
-      "section.sec",
-      "section.sec",
-      "section.sec",
+      "section.x-hero.l-hero",
+      "section.x-sec.x-specimen",
+      "section.x-sec.x-anatomy",
+      "section.x-sec.x-lab",
+      "section.x-sec.x-link",
+      "figure.x-before",
+      "figure.x-after",
       "div.toasts"
     ],
     "warns": []

@@ -1,0 +1,632 @@
+gate: constrained machine (2 CPUs); a failed scan is retried once in the light footprint
+{
+  "target": "http://localhost:4190/",
+  "url": "http://localhost:4190/",
+  "version": "gate/4",
+  "pass": true,
+  "verified": true,
+  "coverage": {
+    "ok": true,
+    "skipped": 5,
+    "total": 191,
+    "pct": 3,
+    "width": 768,
+    "low": []
+  },
+  "counts": {
+    "contrast": 0,
+    "overflow": 0,
+    "words": 0,
+    "motion": 0,
+    "names": 0,
+    "numbers": 0,
+    "quality": 0,
+    "access": 0,
+    "copy": 0,
+    "seo": 0,
+    "perf": 0,
+    "sec": 0
+  },
+  "id": "ecadb920c6",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · ecadb920c6 · skipped 5/191@768",
+  "critique": "C5[restraint:kept] H5[375:0] S5[last5:archetype-new,signature-new,fp19] R5[cuts:3,anim:3] M5[t5:pins1/2,webgl0/1,js22/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ87.8%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f36w,zoom:0,reflow:0,fc:0,trap:0]",
+  "sources": {
+    "design": "/home/user/workspace/motomation-studio/DESIGN.md",
+    "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
+    "meta": {
+      "archetype": "gallery-wall",
+      "signature": "width-sprint",
+      "tier": "5"
+    }
+  },
+  "rules": {
+    "copy": {
+      "fails": [],
+      "warns": [],
+      "checked": 204
+    },
+    "seo": {
+      "fails": [],
+      "warns": [],
+      "checked": 14
+    },
+    "perf": {
+      "fails": [],
+      "warns": [],
+      "checked": 17
+    },
+    "sec": {
+      "fails": [],
+      "warns": [],
+      "checked": 9
+    },
+    "counts": {
+      "copy": 0,
+      "seo": 0,
+      "perf": 0,
+      "sec": 0
+    },
+    "segment": "rules: C0 S0 P0 K0"
+  },
+  "structure": {
+    "sections": 3,
+    "patterns": [
+      "static",
+      "static",
+      "static"
+    ],
+    "repeats": 0,
+    "pins": 1,
+    "webgl": 0,
+    "jsKB": 22,
+    "jsUnknown": 11,
+    "sectionIds": [
+      "header",
+      "div",
+      "footer"
+    ]
+  },
+  "contrast": {
+    "byWidth": [
+      {
+        "width": 375,
+        "measured": 186,
+        "skipped": 1,
+        "total": 187,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 390,
+        "measured": 186,
+        "skipped": 1,
+        "total": 187,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 768,
+        "measured": 186,
+        "skipped": 5,
+        "total": 191,
+        "skippedPct": 3,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 1440,
+        "measured": 210,
+        "skipped": 2,
+        "total": 212,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      }
+    ],
+    "measured": 768,
+    "skipped": 9,
+    "total": 777,
+    "notVisibleAtScan": 0,
+    "skippedPct": 1,
+    "lowCoverage": false,
+    "fails": [],
+    "sequenceSteps": 0,
+    "inactiveFails": 0
+  },
+  "overflow": {
+    "widths": [
+      375,
+      390,
+      768,
+      1440
+    ],
+    "fails": []
+  },
+  "words": {
+    "checked": 14,
+    "fails": [],
+    "hier": {
+      "h1": 1,
+      "skips": 0,
+      "focalTies": 1,
+      "largest": 33.75
+    }
+  },
+  "motion": {
+    "compared": 212,
+    "hiddenUnderReducedMotion": [],
+    "pixelsChangingWhenStillPct": 0
+  },
+  "names": {
+    "checked": 84,
+    "fails": []
+  },
+  "numbers": {
+    "checked": 52,
+    "live": 3,
+    "fails": []
+  },
+  "quality": {
+    "zones": [
+      {
+        "kind": "sticky",
+        "label": "div.lineup-stage",
+        "top": 900,
+        "len": 8100,
+        "diffs": [
+          89.27,
+          86.01,
+          6.9,
+          87.84,
+          84.38,
+          89.37,
+          89.53
+        ],
+        "medianPct": 87.8,
+        "moving": 7,
+        "ok": true
+      }
+    ],
+    "smooth": {
+      "judged": false,
+      "why": "sandbox: 2 CPUs",
+      "desktop": {
+        "frames": 266,
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 16.8,
+        "ok": true
+      },
+      "mobile": {
+        "frames": 286,
+        "p50": 16.7,
+        "p95": 16.7,
+        "max": 33.4,
+        "ok": true
+      }
+    },
+    "rm": {
+      "pinned": [],
+      "missing": [],
+      "missingCount": 0,
+      "canvases": 0,
+      "ok": true
+    },
+    "fails": 0
+  },
+  "access": {
+    "focus": {
+      "checked": 40,
+      "fails": [],
+      "tabbables": 84
+    },
+    "target": {
+      "checked": 62,
+      "fails": [],
+      "warns": [
+        {
+          "el": "a.skip",
+          "text": "Skip to the case",
+          "w": 166,
+          "h": 42
+        },
+        {
+          "el": "a.bureau-mark-link",
+          "text": "MOTOMATION",
+          "w": 137,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "◐UVUV torch: reveal hidden ann",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "–SoundSound",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Search⌘KSearch the case",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Index",
+          "w": 55,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Yes, sound",
+          "w": 95,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Stay silent",
+          "w": 104,
+          "h": 36
+        },
+        {
+          "el": "a",
+          "text": "J",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "A",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "B",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "T",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "G",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "S",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "D",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "R",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "I",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "M",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "L",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "F",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "E",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "P",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "O",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "K",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "C",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "H",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Q",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "N",
+          "w": 31,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Evidence board",
+          "w": 107,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Autopsy",
+          "w": 58,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Method",
+          "w": 54,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Lab",
+          "w": 26,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Receipts",
+          "w": 60,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Locker",
+          "w": 47,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Dossier",
+          "w": 52,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Credits",
+          "w": 49,
+          "h": 28
+        }
+      ]
+    },
+    "zoom": {
+      "fails": []
+    },
+    "reflow": {
+      "px": 0
+    },
+    "forced": {
+      "checked": 79,
+      "fails": []
+    },
+    "trap": {
+      "tabbables": 84,
+      "presses": 160,
+      "visited": 84,
+      "unreached": 0,
+      "trapped": false,
+      "region": null
+    },
+    "fails": 0,
+    "cat": {
+      "focus": 0,
+      "target": 0,
+      "zoom": 0,
+      "reflow": 0,
+      "forced": 0,
+      "trap": 0
+    }
+  },
+  "composition": {
+    "pin": [
+      {
+        "kind": "sticky",
+        "label": "div.lineup-stage",
+        "fill": 90,
+        "ok": true
+      }
+    ],
+    "screens": [
+      {
+        "n": 1,
+        "top": "h1#cover-h",
+        "lead": 7.1,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 2,
+        "top": "p.suspect-name",
+        "lead": 2.02,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 3,
+        "top": "p",
+        "lead": 1.24,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 4,
+        "top": "p",
+        "lead": 1.38,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 5,
+        "top": "p",
+        "lead": 1.41,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 6,
+        "top": "p",
+        "lead": 1.55,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 7,
+        "top": "p",
+        "lead": 1.37,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 8,
+        "top": "p",
+        "lead": 1.13,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 9,
+        "top": "p",
+        "lead": 1.77,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 10,
+        "top": "p",
+        "lead": 1.53,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 11,
+        "top": "p.suspect-name",
+        "lead": 1.45,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 12,
+        "top": "h2#landing-h",
+        "lead": 2.66,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 13,
+        "top": "p",
+        "lead": 1,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 14,
+        "top": "h2#filed-h.display",
+        "lead": 3.41,
+        "ok": true,
+        "text": true
+      }
+    ],
+    "scale": {
+      "display": 129.6,
+      "body": 17.92,
+      "ratio": 7.2,
+      "ok": true
+    }
+  },
+  "richness": {
+    "kind": "home",
+    "from": "--page",
+    "fold": [
+      "nav header.bureau-bar",
+      "heading h1#cover-h",
+      "text p",
+      "text dd",
+      "text dd",
+      "text dd",
+      "text dd",
+      "text p.cover-hint.label",
+      "media svg.cover-mark",
+      "action button.bar-btn"
+    ],
+    "opening": "h1 \"Taste can’t be proven in words. So we pu\"",
+    "grid": {
+      "el": "ul.counts",
+      "items": 4
+    },
+    "title": "h1 \"Taste can’t be proven in words. So we pu\"",
+    "count": "20 styles",
+    "blocks": [
+      "section.cover",
+      "section.lineup",
+      "section.landing",
+      "section.charges",
+      "section.filed",
+      "div.toasts"
+    ],
+    "warns": []
+  },
+  "footprint": "light"
+}

@@ -2,7 +2,7 @@
   "target": "http://localhost:4190/exhibits/futuristic/",
   "url": "http://localhost:4190/exhibits/futuristic/",
   "version": "gate/4",
-  "pass": false,
+  "pass": true,
   "verified": true,
   "coverage": {
     "ok": true,
@@ -13,9 +13,9 @@
     "low": []
   },
   "counts": {
-    "contrast": 18,
-    "overflow": 16,
-    "words": 1,
+    "contrast": 0,
+    "overflow": 0,
+    "words": 0,
     "motion": 0,
     "names": 0,
     "numbers": 0,
@@ -26,13 +26,17 @@
     "perf": 0,
     "sec": 0
   },
-  "id": "4f1a41ac10",
-  "stamp": "gate: c18 o16 w1 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 4f1a41ac10 · skipped 6/174@375",
-  "critique": "C5[restraint:kept] H3[375:2] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0]",
+  "id": "afe5f16b08",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · afe5f16b08 · skipped 6/174@375",
+  "critique": "C5[restraint:kept] H5[375:0] S4[last5:archetype-new,signature-new,fp67] R5[cuts:3,anim:3] M5[t4:pins0/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0]",
   "sources": {
     "design": "/home/user/workspace/motomation-studio/DESIGN.md",
     "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
-    "meta": {}
+    "meta": {
+      "archetype": "field-guide",
+      "signature": "stacked-deck",
+      "tier": "4"
+    }
   },
   "rules": {
     "copy": {
@@ -92,68 +96,7 @@
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
-        "fails": [
-          {
-            "width": 375,
-            "el": "button",
-            "text": "04 principles",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 375,
-            "el": "button",
-            "text": "03 structures",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 375,
-            "el": "button",
-            "text": "02 invention",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 375,
-            "el": "button",
-            "text": "01 thinking",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 375,
-            "el": "span.o-core",
-            "text": "v2.6.0",
-            "ratio": 1.14,
-            "need": 4.5,
-            "fg": "#337fe3",
-            "bg": "#808b93",
-            "size": 14,
-            "state": "active",
-            "op": 1
-          }
-        ]
+        "fails": []
       },
       {
         "width": 390,
@@ -164,68 +107,7 @@
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
-        "fails": [
-          {
-            "width": 390,
-            "el": "button",
-            "text": "04 principles",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 390,
-            "el": "button",
-            "text": "03 structures",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 390,
-            "el": "button",
-            "text": "02 invention",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 390,
-            "el": "button",
-            "text": "01 thinking",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 390,
-            "el": "span.o-core",
-            "text": "v2.6.0",
-            "ratio": 1.14,
-            "need": 4.5,
-            "fg": "#337fe3",
-            "bg": "#808b93",
-            "size": 14,
-            "state": "active",
-            "op": 1
-          }
-        ]
+        "fails": []
       },
       {
         "width": 768,
@@ -236,56 +118,7 @@
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
-        "fails": [
-          {
-            "width": 768,
-            "el": "button",
-            "text": "04 principles",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 768,
-            "el": "button",
-            "text": "03 structures",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 768,
-            "el": "button",
-            "text": "02 invention",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 768,
-            "el": "button",
-            "text": "01 thinking",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          }
-        ]
+        "fails": []
       },
       {
         "width": 1440,
@@ -296,56 +129,7 @@
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
-        "fails": [
-          {
-            "width": 1440,
-            "el": "button",
-            "text": "04 principles",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 1440,
-            "el": "button",
-            "text": "03 structures",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 1440,
-            "el": "button",
-            "text": "02 invention",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          },
-          {
-            "width": 1440,
-            "el": "button",
-            "text": "01 thinking",
-            "ratio": 4.46,
-            "need": 4.5,
-            "fg": "#9eaab3",
-            "bg": "#0c1115",
-            "size": 13,
-            "state": "active",
-            "op": 0.7
-          }
-        ]
+        "fails": []
       }
     ],
     "measured": 702,
@@ -354,224 +138,7 @@
     "notVisibleAtScan": 0,
     "skippedPct": 3,
     "lowCoverage": false,
-    "fails": [
-      {
-        "width": 375,
-        "el": "button",
-        "text": "04 principles",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 375,
-        "el": "button",
-        "text": "03 structures",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 375,
-        "el": "button",
-        "text": "02 invention",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 375,
-        "el": "button",
-        "text": "01 thinking",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 375,
-        "el": "span.o-core",
-        "text": "v2.6.0",
-        "ratio": 1.14,
-        "need": 4.5,
-        "fg": "#337fe3",
-        "bg": "#808b93",
-        "size": 14,
-        "state": "active",
-        "op": 1
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "text": "04 principles",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "text": "03 structures",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "text": "02 invention",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "text": "01 thinking",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 390,
-        "el": "span.o-core",
-        "text": "v2.6.0",
-        "ratio": 1.14,
-        "need": 4.5,
-        "fg": "#337fe3",
-        "bg": "#808b93",
-        "size": 14,
-        "state": "active",
-        "op": 1
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "text": "04 principles",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "text": "03 structures",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "text": "02 invention",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "text": "01 thinking",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "text": "04 principles",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "text": "03 structures",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "text": "02 invention",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "text": "01 thinking",
-        "ratio": 4.46,
-        "need": 4.5,
-        "fg": "#9eaab3",
-        "bg": "#0c1115",
-        "size": 13,
-        "state": "active",
-        "op": 0.7
-      }
-    ],
+    "fails": [],
     "sequenceSteps": 0,
     "inactiveFails": 0
   },
@@ -582,130 +149,11 @@
       768,
       1440
     ],
-    "fails": [
-      {
-        "width": 375,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "04 principles"
-      },
-      {
-        "width": 375,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "03 structures"
-      },
-      {
-        "width": 375,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "02 invention"
-      },
-      {
-        "width": 375,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "01 thinking"
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "04 principles"
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "03 structures"
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "02 invention"
-      },
-      {
-        "width": 390,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "01 thinking"
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "04 principles"
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "03 structures"
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "02 invention"
-      },
-      {
-        "width": 768,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "01 thinking"
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "04 principles"
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 3,
-        "text": "03 structures"
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "02 invention"
-      },
-      {
-        "width": 1440,
-        "el": "button",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "01 thinking"
-      }
-    ]
+    "fails": []
   },
   "words": {
-    "checked": 9,
-    "fails": [
-      {
-        "el": "p.x-after-word",
-        "text": "The Holographic Reconstruction",
-        "problem": "text wider than its box by 58px"
-      }
-    ],
+    "checked": 8,
+    "fails": [],
     "hier": {
       "h1": 1,
       "skips": 0,
@@ -757,7 +205,7 @@
         {
           "el": "a.bureau-mark-link",
           "text": "MOTOMATION",
-          "w": 136,
+          "w": 134,
           "h": 36
         },
         {
@@ -835,26 +283,26 @@
         {
           "el": "button",
           "text": "04 principles",
-          "w": 123,
-          "h": 27
+          "w": 128,
+          "h": 28
         },
         {
           "el": "button",
           "text": "03 structures",
-          "w": 123,
-          "h": 27
+          "w": 128,
+          "h": 28
         },
         {
           "el": "button",
           "text": "02 invention",
-          "w": 115,
-          "h": 27
+          "w": 119,
+          "h": 28
         },
         {
           "el": "button",
           "text": "01 thinking",
-          "w": 107,
-          "h": 27
+          "w": 111,
+          "h": 28
         },
         {
           "el": "a",
@@ -1011,9 +459,9 @@
       },
       {
         "n": 7,
-        "top": "p.x-after-word",
-        "lead": 1.65,
-        "ok": true,
+        "top": "h2#x-ba-h",
+        "lead": 1.22,
+        "ok": false,
         "text": true
       },
       {

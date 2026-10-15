@@ -2,7 +2,7 @@
   "target": "http://localhost:4190/exhibits/aurora/",
   "url": "http://localhost:4190/exhibits/aurora/",
   "version": "gate/4",
-  "pass": false,
+  "pass": true,
   "verified": true,
   "coverage": {
     "ok": true,
@@ -14,25 +14,29 @@
   },
   "counts": {
     "contrast": 0,
-    "overflow": 2,
+    "overflow": 0,
     "words": 0,
     "motion": 0,
     "names": 0,
     "numbers": 0,
-    "quality": 1,
-    "access": 16,
+    "quality": 0,
+    "access": 0,
     "copy": 0,
     "seo": 0,
     "perf": 0,
     "sec": 0
   },
-  "id": "9bf4d9e675",
-  "stamp": "gate: c0 o2 w0 rm0 a0 n0 q1 k16 · rules: C0 S0 P0 K0 · gate/4 · 9bf4d9e675 · skipped 5/180@768",
-  "critique": "C5[restraint:kept] H5[375:0] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q3[prog:Δ18.1%,smooth:sandbox,rm:text-missing] A3[focus:36/40,tgt:0f21w,zoom:12,reflow:0,fc:0,trap:0]",
+  "id": "7c3effbd45",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 7c3effbd45 · skipped 5/180@768",
+  "critique": "C5[restraint:kept] H5[375:0] S1[last5:archetype-reused,signature-reused,fp100] R5[cuts:3,anim:3] M5[t4:pins1/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ18.1%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f21w,zoom:0,reflow:0,fc:0,trap:0]",
   "sources": {
     "design": "/home/user/workspace/motomation-studio/DESIGN.md",
     "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
-    "meta": {}
+    "meta": {
+      "archetype": "ledger",
+      "signature": "seismograph-line",
+      "tier": "4"
+    }
   },
   "rules": {
     "copy": {
@@ -145,22 +149,7 @@
       768,
       1440
     ],
-    "fails": [
-      {
-        "width": 1440,
-        "el": "figcaption",
-        "kind": "text overflows parent",
-        "px": 14,
-        "text": "Meteors (vendor)Six streaks at a fixed a"
-      },
-      {
-        "width": 1440,
-        "el": "figcaption",
-        "kind": "text overflows parent",
-        "px": 14,
-        "text": "Particle field (vendor)A low dust field,"
-      }
-    ]
+    "fails": []
   },
   "words": {
     "checked": 10,
@@ -194,13 +183,13 @@
         "top": 0,
         "len": 2880,
         "diffs": [
-          1.36,
-          13.54,
-          23.81,
-          2.56,
+          1.35,
+          13.52,
+          23.79,
+          2.54,
           18.09,
           51.24,
-          42.25
+          42.23
         ],
         "medianPct": 18.1,
         "moving": 7,
@@ -211,56 +200,33 @@
       "judged": false,
       "why": "sandbox: 2 CPUs",
       "desktop": {
-        "frames": 265,
-        "p50": 16.7,
-        "p95": 16.8,
-        "max": 66.6,
-        "ok": true
-      },
-      "mobile": {
-        "frames": 287,
+        "frames": 264,
         "p50": 16.7,
         "p95": 16.8,
         "max": 50,
+        "ok": true
+      },
+      "mobile": {
+        "frames": 279,
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 66.7,
         "ok": true
       }
     },
     "rm": {
       "pinned": [],
-      "missing": [
-        "Scroll moves the clock"
-      ],
-      "missingCount": 1,
+      "missing": [],
+      "missingCount": 0,
       "canvases": 0,
-      "ok": false
+      "ok": true
     },
-    "fails": 1
+    "fails": 0
   },
   "access": {
     "focus": {
       "checked": 40,
-      "fails": [
-        {
-          "el": "button",
-          "text": "02:00Archetype + Mutation, the",
-          "changedPct": 0
-        },
-        {
-          "el": "button",
-          "text": "03:00Signature Move chosen. On",
-          "changedPct": 0
-        },
-        {
-          "el": "button",
-          "text": "04:00Anti-Sameness Check again",
-          "changedPct": 0
-        },
-        {
-          "el": "button",
-          "text": "05:00Built, then measured: the",
-          "changedPct": 0
-        }
-      ],
+      "fails": [],
       "tabbables": 52
     },
     "target": {
@@ -396,80 +362,7 @@
       ]
     },
     "zoom": {
-      "fails": [
-        {
-          "kind": "text clipped",
-          "el": "time",
-          "text": "01:00",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "span",
-          "text": "Tension named; concept written",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "time",
-          "text": "02:00",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "span",
-          "text": "Archetype + Mutation, then a f",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "time",
-          "text": "03:00",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "span",
-          "text": "Signature Move chosen. One, be",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "time",
-          "text": "04:00",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "span",
-          "text": "Anti-Sameness Check against re",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "time",
-          "text": "05:00",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "text clipped",
-          "el": "span",
-          "text": "Built, then measured: the gate",
-          "by": "div.s-stick"
-        },
-        {
-          "kind": "control off screen",
-          "el": "button",
-          "text": "02:00Archetype + Mutation, the",
-          "by": "button"
-        },
-        {
-          "kind": "control off screen",
-          "el": "button",
-          "text": "03:00Signature Move chosen. On",
-          "by": "button"
-        }
-      ]
+      "fails": []
     },
     "reflow": {
       "px": 0
@@ -486,11 +379,11 @@
       "trapped": false,
       "region": null
     },
-    "fails": 16,
+    "fails": 0,
     "cat": {
-      "focus": 4,
+      "focus": 0,
       "target": 0,
-      "zoom": 12,
+      "zoom": 0,
       "reflow": 0,
       "forced": 0,
       "trap": 0

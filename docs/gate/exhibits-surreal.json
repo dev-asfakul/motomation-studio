@@ -28,11 +28,15 @@
   },
   "id": "cab378136e",
   "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · cab378136e · skipped 10/167@375",
-  "critique": "C5[restraint:kept] H5[375:0] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:Δ8.4%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]",
+  "critique": "C5[restraint:kept] H5[375:0] S5[last5:archetype-new,signature-new,fp46] R5[cuts:3,anim:3] M5[t4:pins1/2,webgl1/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ8.4%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]",
   "sources": {
     "design": "/home/user/workspace/motomation-studio/DESIGN.md",
     "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
-    "meta": {}
+    "meta": {
+      "archetype": "stage",
+      "signature": "aperture",
+      "tier": "4"
+    }
   },
   "rules": {
     "copy": {
@@ -179,8 +183,8 @@
         "top": 0,
         "len": 1440,
         "diffs": [
-          8.99,
-          9.21,
+          9,
+          9.2,
           9.14,
           8.39,
           8.01,
@@ -196,17 +200,17 @@
       "judged": false,
       "why": "sandbox: 2 CPUs",
       "desktop": {
-        "frames": 245,
+        "frames": 243,
         "p50": 16.7,
         "p95": 49.9,
-        "max": 66.8,
+        "max": 83.4,
         "ok": false
       },
       "mobile": {
-        "frames": 295,
+        "frames": 292,
         "p50": 16.7,
         "p95": 16.8,
-        "max": 50,
+        "max": 66.7,
         "ok": true
       }
     },

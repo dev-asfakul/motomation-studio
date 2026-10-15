@@ -9,3 +9,4 @@ let n = 0;
 const v = JSON.parse(fs.readFileSync("vercel.json", "utf8"));
 fs.writeFileSync("out/_headers", "/*\n" + v.headers[0].headers.map((h) => `  ${h.key}: ${h.value}`).join("\n") + "\n");
 console.log(`postbuild: defer added in ${n} pages · out/_headers written`);
+await import("./stamp.mjs");

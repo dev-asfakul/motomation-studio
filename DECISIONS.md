@@ -97,3 +97,10 @@ One line of why per call. Newest at the bottom.
 - Split-layout exhibit heads are no longer sticky: a sticky block that never changes reads as a frozen scene to the gate's progression check, and it gained nothing.
 - Palette swatches align to the top of their cell; a stretched row was widening the ground chip through aspect-ratio.
 - Layout QA (`scripts/qa.mjs`) covers every route at 320 to 1920 for scroll width, escaping elements and display words broken mid-word, because the gate's own overflow check only runs on the pages it scans.
+- The gate runs with each page's archetype, signature and tier (`content/gate-targets.json`), so the critique scores S and M instead of "?"; `--verify` rejects an untraced axis.
+- Stamps are copied from the gate's JSON into each page's `<head>` by `scripts/stamp.mjs` (postbuild), never typed. The gate hashes the page without stamp comments, so stamping does not change the id it checks.
+- The deployed preview is the exact verified build: no rebuild between `--verify` and deploy, because the exhibit gate card reads `content/gate-results.json` at build time and a rebuild changes the page.
+- Exhibit T keeps the skill's DarkroomDevelop unchanged even though it hardcodes `loading="lazy"` (gate perf-03). The plates are data-URI SVGs with no network fetch; forking the vendor to pass a rule would break "never fake the skill". Reported as an open issue with an upstream `loading` prop proposed.
+- S (memory) is reported as measured, including S1 on S and T. All 20 exhibits were logged in one planning session, so the axis compares exhibits with their neighbours (and S with itself). Editing the log to raise it would be gaming the score.
+- Vercel: the connector token authenticates (whoami: dev-asfakul) but the CLI's default scope is the team "dev-choice", which the token cannot access, and the personal scope is refused. Persistent access error, so no Vercel deploy; the preview is hosted on Perplexity instead.
+- Preview hosting: the Perplexity preview serves out/ as-is. Root-absolute font preloads 404 on the internal proxy path; the isolated preview origin serves from root.

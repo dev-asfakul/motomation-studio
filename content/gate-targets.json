@@ -1,0 +1,9 @@
+{
+  "/": { "archetype": "gallery-wall", "signature": "width-sprint", "tier": 5, "page": "home" },
+  "/exhibits/surreal/": { "archetype": "stage", "signature": "aperture", "tier": 4 },
+  "/exhibits/cyberpunk/": { "archetype": "console", "signature": "decode", "tier": 2 },
+  "/exhibits/retro/": { "archetype": "film-reel", "signature": "timecode-rail", "tier": 5 },
+  "/exhibits/futuristic/": { "archetype": "field-guide", "signature": "stacked-deck", "tier": 4 },
+  "/exhibits/aurora/": { "archetype": "ledger", "signature": "seismograph-line", "tier": 4 },
+  "/exhibits/victorian/": { "archetype": "poster", "signature": "darkroom-develop", "tier": 2 }
+}

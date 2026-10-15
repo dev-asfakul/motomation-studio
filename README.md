@@ -72,11 +72,34 @@ Typefaces are SIL Open Font License, self-hosted at build time. There is no stoc
 
 ## Gate results
 
-GATE_RESULTS
+Every number below comes from the skill's own gate (`scripts/gate.mjs`, gate/4, skill v2.6.0 at `8dea1dd`). The gate ran with `--light` on a 2-CPU sandbox against the exact build that is deployed. Each stamp is written into the page's `<head>` and was checked again with `--verify` against a fresh scan.
+
+| Page | Gate | --verify | Stamp | Critique |
+| --- | --- | --- | --- | --- |
+| `/` | pass | verified | `gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · ecadb920c6 · skipped 5/191@768` | `C5[restraint:kept] H5[375:0] S5[last5:archetype-new,signature-new,fp19] R5[cuts:3,anim:3] M5[t5:pins1/2,webgl0/1,js22/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ87.8%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f36w,zoom:0,reflow:0,fc:0,trap:0]` |
+| `/exhibits/surreal/` | pass | verified | `gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · cab378136e · skipped 10/167@375` | `C5[restraint:kept] H5[375:0] S5[last5:archetype-new,signature-new,fp46] R5[cuts:3,anim:3] M5[t4:pins1/2,webgl1/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ8.4%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]` |
+| `/exhibits/cyberpunk/` | pass | verified | `gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 0a4fb99fe3 · skipped 4/256@768` | `C5[restraint:kept] H4[375:1] S5[last5:archetype-new,signature-new,fp25] R5[cuts:3,anim:3] M5[t2:pins0/2,webgl0/1,js21/80KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0]` |
+| `/exhibits/retro/` | pass | verified | `gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 6be6f10571 · skipped 46/211@768` | `C5[restraint:kept] H5[375:0] S3[last5:archetype-new,signature-new,fp81] R5[cuts:3,anim:3] M5[t5:pins2/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ2.5%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f21w,zoom:0,reflow:0,fc:0,trap:0]` |
+| `/exhibits/futuristic/` | pass | verified | `gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · afe5f16b08 · skipped 6/174@375` | `C5[restraint:kept] H5[375:0] S4[last5:archetype-new,signature-new,fp67] R5[cuts:3,anim:3] M5[t4:pins0/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0]` |
+| `/exhibits/aurora/` | pass | verified | `gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · 7c3effbd45 · skipped 5/180@768` | `C5[restraint:kept] H5[375:0] S1[last5:archetype-reused,signature-reused,fp100] R5[cuts:3,anim:3] M5[t4:pins1/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:Δ18.1%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f21w,zoom:0,reflow:0,fc:0,trap:0]` |
+| `/exhibits/victorian/` | fail | verified | `gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P1 K0 · gate/4 · 1f23319e97 · skipped 7/169@768` | `C5[restraint:kept] H5[375:0] S1[last5:archetype-new,signature-new,fp100] R5[cuts:3,anim:3] M5[t2:pins0/2,webgl0/1,js21/80KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]` |
+
+What these results do not claim:
+
+- **Smoothness.** It is not judged on this machine (`smooth:sandbox`). Every other axis was measured.
+- **Coverage.** The gate skipped up to 22% of text nodes on Exhibit L at 768, inside the pinned reel. That is under the gate's coverage limit, but those nodes are unverified.
+- **Exhibit T fails perf-03.** The skill's DarkroomDevelop hardcodes `loading="lazy"` on a data-URI plate, so there is no network fetch. The vendor file is kept identical to the skill, and an upstream `loading` prop is proposed. See [DECISIONS.md](DECISIONS.md).
+- **The S axis** (memory) is low on L, S and T. It compares each exhibit with the other exhibits logged in this same build, not with earlier work. See [docs/reviews](docs/reviews/README.md).
+- **LCP, CLS and INP** come from the Lighthouse job in CI. They were not measured here.
+- **Gate coverage.** Only the seven pages above were gated. Layout QA (`scripts/qa.mjs`, [docs/qa.json](docs/qa.json)) covers all 31 routes at 320, 375, 390, 768, 1440 and 1920: 186 checks, 0 failing. Under reduced motion it covers all 31 routes at 390 and 1440 ([docs/qa-rm.json](docs/qa-rm.json)), 0 failing.
+
+Reviews (/critique, /audit, /overdrive) for each gated page: [docs/reviews/README.md](docs/reviews/README.md).
 
 ## Deploy
 
-DEPLOY_LINE
+Preview, the exact verified build: [MOTOMATION · the case file](https://www.perplexity.ai/computer/a/motomation-the-case-file-732kZIiESxiCt_kyxfZVcg).
+
+Vercel was connected, but the deploy did not run. The CLI token authenticates as `dev-asfakul`, but its default scope is the team `dev-choice`, and the CLI answers "Not authorized: Trying to access resource under scope \"dev-choice\"". The personal scope is refused ("You cannot set your Personal Account as the scope"). The site is a plain static export (`out/`) with `vercel.json` headers, so `vercel deploy --prod` from the repo root works once the token can reach that team.
 
 ## Licence
 

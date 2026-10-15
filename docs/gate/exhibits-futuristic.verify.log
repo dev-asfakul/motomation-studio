@@ -1,0 +1,45 @@
+gate: constrained machine (2 CPUs); a failed scan is retried once in the light footprint
+DELIVERY GATE · http://localhost:4190/exhibits/futuristic/
+  contrast  ✓ 0 below AA across 375/390/768/1440px  (measured against rendered pixels at each width)
+      375px  ✓ 0 below AA  (168 measured; 6 skipped; 0 not visible at scan time)
+      390px  ✓ 0 below AA  (168 measured; 6 skipped; 0 not visible at scan time)
+      768px  ✓ 0 below AA  (172 measured; 6 skipped; 0 not visible at scan time)
+     1440px  ✓ 0 below AA  (194 measured; 6 skipped; 0 not visible at scan time)
+  overflow  ✓ 0 at 375/390/768/1440px
+  words     ✓ 0 display-text problems at 375px  (8 display elements checked)
+  motion    ✓ 0 text elements hidden only under reduced motion; pixels changing on a still page: 0%  (200 compared)
+  names     ✓ 0 missing alt / accessible names  (56 interactive elements checked)
+  numbers   ✓ 0 values shown wrong before they settle  (51 numbers checked at scroll 0, scroll end and reduced motion; 3 live values skipped)
+  progress  ✓ 0 of 0 pinned/scrubbed zone(s) static (median change between 8 scroll samples ≤ 0.5% of pixels)
+  smooth    – no pinned zone, not measured
+  rm-flow   – no pinned zone
+  focus     ✓ 0 of 40 focused elements show no visible focus indicator  (56 tabbable)
+  targets   ✓ 0 under 24px, 31 under 44px (warning) at 375 touch  (33 checked; inline links exempt)
+     166×42  a.skip  "Skip to the case"
+     137×36  a.bureau-mark-link  "MOTOMATION"
+     34×36  button.bar-btn  "◐UVUV torch: reveal hidden ann"
+     34×36  button.bar-btn  "–SoundSound"
+  zoom200   ✓ 0 lost at 200% (1440×900 → 720×450): text clipped or controls unreachable that were fine at 100%
+  reflow    ✓ 0px horizontal scroll at 320px
+  forced    ✓ 0 of 79 texts illegible in forced colors (rendered ink under 3:1 against its box, or no ink)
+  kbd-trap  ✓ 56 of 56 tabbable reached in 118 Tabs, no cycle
+  C copy     ✓ 0 rule(s) failing  (craft/copy.md; 0 warning(s))
+  S SEO      ✓ 0 rule(s) failing  (craft/seo.md; 0 warning(s))
+  P perf     ✓ 0 rule(s) failing  (craft/performance.md; 0 warning(s))
+  K security ✓ 0 rule(s) failing  (craft/security.md; 0 warning(s))
+  composition (advisory: heuristics, never fail the gate, not in the stamp)
+     pin fill  – no pinned zone
+     focal     ⚠ 11 of 14 screen(s) with text have one clear focal point (heaviest text mass ≥ 1.5× the next); no clear lead on screen 5 (1×), 6 (1.46×), 7 (1.22×)
+     scale     ✓ display:body 1:20.9  (374.4px / 17.92px; warn below 1:6)
+  richness (advisory: "too little" warnings, never fail the gate, not in the stamp)
+     page      page (from path; set with --page home|category|about|page)
+     fold      ✓ 3 meaningful section(s) above the fold at 1440×900: nav header.bureau-bar, text p, action button.bar-btn  (warn below 3)
+  hierarchy  h1×1, 0 skipped heading levels, 1 element(s) tied for largest on the first 375px screen
+  structure  3 sections, entrances: static | static | static → 0 repeat(s); pins 0, WebGL canvases 0, JS 21KB gzipped (+10 script(s) not fetched)
+  records    DESIGN.md: /home/user/workspace/motomation-studio/DESIGN.md · memory log: /home/user/workspace/motomation-studio/.motomation/log.json · stamp fields: {"archetype":"field-guide","signature":"stacked-deck","tier":"4"}
+  critique → C5[restraint:kept] H5[375:0] S4[last5:archetype-new,signature-new,fp67] R5[cuts:3,anim:3] M5[t4:pins0/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0]
+  coverage   ✓ worst width 375px: 6 of 174 text elements skipped (3%; limit 30% at every width)
+  PASS  stamp → critique: C5[restraint:kept] H5[375:0] S4[last5:archetype-new,signature-new,fp67] R5[cuts:3,anim:3] M5[t4:pins0/2,webgl0/1,js21/250KB,rm0] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f31w,zoom:0,reflow:0,fc:0,trap:0] · gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · afe5f16b08 · skipped 6/174@375
+
+  stamp skips: 6/174@375 · fresh scan: 6/174@375 (3%)
+STAMP VERIFIED · critique and gate numbers match a fresh scan · gate PASS
