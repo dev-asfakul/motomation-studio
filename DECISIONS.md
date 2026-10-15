@@ -42,3 +42,16 @@ One line of why per call. Newest at the bottom.
 - H: squash and stretch keep area constant (`scale(1/s, s)`); one shared SVG lighting filter textures every clay surface, softened after the slab read as carpet.
 - I: three glass slides maximum, each about 340×210, to cap backdrop-filter area; the heat field simulates at 72×44 and the browser upscales and blurs it.
 - J: the terminal answers from the inventory (folders, signatures, tiers, install paths, commands), never canned text; rain is 2D canvas with DPR capped at 1.5.
+- Memory check for A–J (docs/memory-checks.txt, via scripts/memory-batch.mjs): tier repeats are flagged on most runs; accepted, because the brief fixes "lowest tier that delivers" and twenty exhibits share five tiers. Exhibit B's archetype flag is against the Home run, which was logged before Home's archetype was settled as the board. J and E share the "product" layout fingerprint; accepted because their heroes (working terminal vs draggable windows), type, palette and motion physics differ on every visible axis.
+
+## M5 · Exhibits K–O
+- K: Ben-Day dots are computed on canvas from drawn sources (magnifier, thumbprint, the M, a case folder), never filtered photographs; the vendor Halftone sits beside it in the lab so the two jobs are visible.
+- K: speech bubbles keep the whole line in the DOM (sr-only) and type a visual copy, so screen readers hear it once.
+- L: Tier 5 uses one paused GSAP master timeline whose progress is set from the sticky section; the tape deck drives the same scroll position through Lenis, so deck and scroll can never disagree. Storyboard, timing sheet, frame budget and the reduced-motion storyboard are in docs/storyboards/retro.md.
+- L: no video file. The reel is DOM, SVG and a 12 fps grain tile, a fraction of the weight of footage, and every frame stays real text.
+- M: the receipt lists the gate's nine checks as REQUIRED, not PASS: the site does not claim a pass it has not measured.
+- M: ransom letters are drawn from ten faces the site already loads for other exhibits, so the note costs no new font files.
+- N: the vendor Letter Relay renders its own h1 and fixed header, which would fight the Bureau bar; the signature is bent in place instead (the chosen feature's letters travel into the caption), and the vendor component is shown on /lab.
+- N: Archivo is loaded with its `wdth` axis so witness labels can run at 62% and the title at 125% from one family.
+- O: the hologram is the only WebGL scene on its page, starts only near the viewport, and falls back to a designed SVG poster of the same layers (the sandbox's 2-core machine always gets the poster, which is what the screenshots show).
+- Memory check K–O appended to docs/memory-checks.txt.

@@ -10,6 +10,27 @@ export const repo = {
   "scan": 29,
   "files": 2472,
   "version": "2.6.0",
+  "gateNames": [
+    "Contrast",
+    "Overflow",
+    "Long display words",
+    "Reduced motion",
+    "Alt and names",
+    "Numbers",
+    "Motion quality",
+    "Accessibility",
+    "The four rule sets"
+  ],
+  "stepNames": [
+    "Stack",
+    "Tension",
+    "Concept",
+    "Archetype + Mutation",
+    "Forced Collision",
+    "Signature Move",
+    "Anti-Sameness Check",
+    "Restraint Gate"
+  ],
   "sigNames": [
     "Proximity Weight",
     "Letter Relay",

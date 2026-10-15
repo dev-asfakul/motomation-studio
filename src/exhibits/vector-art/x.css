@@ -1,0 +1,35 @@
+/* Exhibit N · Vector art · The Composite Sketch. Clean morphs, eased in and out, like a vector handle being pulled. */
+.x-vector-art { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M2 22L6 12L16 2L22 8L12 18Z' fill='%23F5F3EE' stroke='%2314161F' stroke-width='1.5'/%3E%3Ccircle cx='9' cy='15' r='1.5' fill='%232337C6'/%3E%3C/svg%3E") 2 22, auto; }
+.x-vector-art .x-head h2 { font-stretch: 62%; font-weight: 800; text-transform: uppercase; letter-spacing: 0; }
+.x-vector-art .x-sec { border-top: 2px solid #14161F; }
+.x-vector-art .x-card { border: 2px solid #14161F; border-radius: 0; }
+.x-vector-art .x-dna li { border: 2px solid #14161F; border-radius: 0; }
+.n-hero { min-height: 100svh; }
+.n-title { font-family: var(--x-display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: clamp(2.2rem, 0.6rem + 5.6vw, 7rem); line-height: 0.88; letter-spacing: -0.02em; margin: 2vh 0 4vh; }
+.n-dip { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border: 2px solid #14161F; }
+.n-wit { padding: clamp(20px, 3vw, 44px); border-right: 2px solid #14161F; display: grid; align-content: start; gap: 10px; }
+.n-k { font-family: var(--x-display); font-stretch: 62%; font-weight: 800; text-transform: uppercase; font-size: 14px; letter-spacing: 0.08em; color: #2337C6; margin: 12px 0 0; }
+.n-wit blockquote { margin: 0; font-size: clamp(1.3rem, 1rem + 1.2vw, 2.1rem); line-height: 1.2; font-weight: 500; font-stretch: 90%; }
+.n-sketch { position: relative; padding: clamp(20px, 3vw, 44px); display: grid; gap: 16px; background: #EBE8E1; }
+.n-guides { position: absolute; left: clamp(20px, 3vw, 44px); top: clamp(20px, 3vw, 44px); width: min(52%, 280px); height: auto; pointer-events: none; opacity: 0.6; }
+.ik { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.ik-face { width: 100%; max-width: 280px; height: auto; position: relative; }
+.ik-ctrl { display: grid; gap: 12px; }
+.ik-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.ik-k { width: 100%; font-family: var(--x-display); font-stretch: 62%; font-weight: 800; text-transform: uppercase; font-size: 12px; letter-spacing: 0.08em; }
+.ik-row button { min-height: 40px; padding: 0 10px; background: #F5F3EE; border: 2px solid #14161F; color: #14161F; font: 500 14px var(--x-text); cursor: pointer; transition: background 0.15s, color 0.15s; }
+.ik-row button[aria-checked="true"] { background: #2337C6; border-color: #2337C6; color: #F5F3EE; }
+.ik-row button:focus-visible { outline: 2px solid #2337C6; outline-offset: 2px; }
+.n-cap { margin: 0; font-size: 18px; border-top: 2px solid #14161F; padding-top: 10px; }
+.n-cap-k { font-family: var(--x-display); font-stretch: 62%; font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: 0.08em; }
+.n-relay span { display: inline-block; animation: n-relay 0.42s cubic-bezier(0.65, 0, 0.35, 1) both; font-weight: 700; color: #2337C6; }
+@keyframes n-relay { from { transform: translate(-40px, -14px); opacity: 0; } }
+@media (max-width: 899px) { .n-dip { grid-template-columns: 1fr; } .n-wit { border-right: 0; border-bottom: 2px solid #14161F; } }
+@media (max-width: 520px) { .ik { grid-template-columns: 1fr; } .ik-face { max-width: 220px; justify-self: center; } .n-guides { display: none; } }
+@media (prefers-reduced-motion: reduce) { .n-relay span { animation: none; } }
+/* lab */
+.n-lab { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: var(--gutter); align-items: center; }
+.n-mark { display: grid; gap: 14px; justify-items: start; } .n-mark svg { width: min(100%, 320px); height: auto; }
+.n-btn { min-height: 44px; padding: 0 16px; background: #14161F; color: #F5F3EE; border: 0; font: 600 14px var(--x-text); cursor: pointer; }
+.n-float { font-family: var(--x-display); font-weight: 900; font-stretch: 125%; font-size: clamp(1.8rem, 1rem + 3vw, 4rem); line-height: 1; text-transform: uppercase; margin: 0; }
+@media (max-width: 767px) { .n-lab { grid-template-columns: 1fr; } }

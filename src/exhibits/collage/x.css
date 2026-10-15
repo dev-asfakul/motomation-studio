@@ -1,0 +1,40 @@
+/* Exhibit M · Collage · The Ransom Note. Paper: light, rotates when picked up, lands slightly off. */
+.x-collage { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ccircle cx='7' cy='21' r='4' fill='none' stroke='%23161616' stroke-width='2'/%3E%3Ccircle cx='21' cy='21' r='4' fill='none' stroke='%23161616' stroke-width='2'/%3E%3Cpath d='M9 18L22 2M19 18L6 2' stroke='%23161616' stroke-width='2'/%3E%3C/svg%3E") 14 6, crosshair; }
+.x-collage .x-head h2 { font-weight: 400; }
+.x-collage .x-sec { border-top: 2px dashed #161616; }
+.x-collage .x-card { background: #F4F1E8; border: 0; box-shadow: 2px 3px 0 rgba(0,0,0,0.12); transform: rotate(-0.6deg); }
+.x-collage .x-card:nth-child(even) { transform: rotate(0.8deg); }
+.x-collage .x-dna li { background: #F4F1E8; border: 0; transform: rotate(-1deg); }
+.m-hero { min-height: 100svh; }
+.m-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: var(--gutter); align-items: start; margin-top: 3vh; }
+.m-note { position: relative; background: #F4F1E8; padding: clamp(24px, 4vw, 56px); box-shadow: 0 2px 0 rgba(0,0,0,0.06), 0 20px 50px rgba(0,0,0,0.12); transform: rotate(-0.8deg);
+  clip-path: polygon(0 1%, 4% 0, 12% 1%, 30% 0, 52% 1.2%, 70% 0, 88% 1%, 100% 0, 99.4% 30%, 100% 62%, 99.2% 100%, 70% 99%, 40% 100%, 12% 99.2%, 0 100%, 0.6% 60%); }
+.m-tape { position: absolute; width: 120px; height: 30px; background: rgba(194,65,12,0.55); mix-blend-mode: multiply; }
+.m-tape-1 { left: -14px; top: 18px; rotate: -24deg; } .m-tape-2 { right: -10px; bottom: 26px; rotate: -12deg; }
+.m-to { font-family: var(--x-text); font-style: italic; font-size: 18px; margin: 0 0 16px; }
+.rl { display: flex; flex-wrap: wrap; gap: 0.18em 0.5em; margin: 0; font-size: clamp(2.6rem, 1rem + 7.4vw, 8.4rem); line-height: 1; }
+.rl-w { display: inline-flex; gap: 0.06em; }
+.rl-l { position: relative; display: inline-block; padding: 0.04em 0.12em 0.02em; cursor: grab; touch-action: none; user-select: none; transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1); box-shadow: 1px 2px 0 rgba(0,0,0,0.15); }
+.rl-l[data-held] { cursor: grabbing; transition: none; box-shadow: 4px 10px 16px rgba(0,0,0,0.25); }
+.rl-l:focus-visible { outline: 2px solid #C2410C; outline-offset: 3px; }
+.m-sign { font-family: var(--x-display); font-weight: 400; font-size: clamp(1.4rem, 1rem + 1.2vw, 2.2rem); margin: 28px 0 8px; }
+.m-body { font-size: 18px; line-height: 1.5; max-width: 52ch; margin: 0; }
+.m-receipt { background: #fff; padding: 20px 18px 26px; font-family: var(--x-text); font-size: 15px; transform: rotate(1.4deg); box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+  mask: linear-gradient(#000 0 0) top / 100% calc(100% - 10px) no-repeat, conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 16px 10px repeat-x; }
+.m-r-head { text-align: center; border-bottom: 1px dashed #161616; padding-bottom: 10px; margin: 0 0 10px; letter-spacing: 0.06em; }
+.m-r-list { list-style: none; margin: 0; padding: 0; }
+.m-r-list li { display: grid; grid-template-columns: 30px 1fr auto; gap: 8px; padding: 6px 0; border-bottom: 1px dotted rgba(22,22,22,0.35); }
+.m-r-list li b { font-weight: 600; color: #C2410C; font-family: var(--x-text); }
+.m-r-foot { text-align: center; margin: 14px 0 0; font-size: 13px; color: var(--x-muted); }
+@media (max-width: 899px) { .m-grid { grid-template-columns: 1fr; } .m-note { transform: none; } .rl { font-size: clamp(2.2rem, 13vw, 5rem); } }
+/* lab */
+.sc-svg { width: 100%; height: auto; display: block; }
+.sc-piece { cursor: grab; filter: drop-shadow(3px 6px 6px rgba(0,0,0,0.25)); }
+.m-sheet { width: 600px; height: 380px; box-sizing: border-box; padding: 36px; background: #E9DFC4 repeating-linear-gradient(0deg, transparent 0 27px, rgba(22,22,22,0.12) 27px 28px); color: #161616; font-family: var(--x-text); font-size: 18px; }
+.m-sheet-big { font-family: var(--x-display); font-size: 64px; line-height: 1; margin: 0 0 16px; }
+.m-sheet-small { font-size: 13px; color: #555553; }
+.sc { background: #DCDCD8; padding: 18px; }
+.sc-ctrl { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 12px; font-size: 14px; }
+.sc-ctrl button { min-height: 44px; padding: 0 14px; background: #161616; color: #F4F1E8; border: 0; font: 600 14px var(--x-text); cursor: pointer; }
+.sc-ctrl button:active { translate: 0 1px; }
+.m-lab { max-width: 760px; }

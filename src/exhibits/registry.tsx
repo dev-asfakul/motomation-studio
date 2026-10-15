@@ -15,4 +15,9 @@ export const REGISTRY: Record<string, Mod> = {
   clay: { Hero: dynamic(() => import("./clay/Hero")), Lab: dynamic(() => import("./clay/Lab")) },
   glassmorphism: { Hero: dynamic(() => import("./glassmorphism/Hero")), Lab: dynamic(() => import("./glassmorphism/Lab")) },
   cyberpunk: { Hero: dynamic(() => import("./cyberpunk/Hero")), Lab: dynamic(() => import("./cyberpunk/Lab")) },
+  "pop-art": { Hero: dynamic(() => import("./pop-art/Hero")), Lab: dynamic(() => import("./pop-art/Lab")) },
+  retro: { Hero: dynamic(() => import("./retro/Hero")), Lab: dynamic(() => import("./retro/Lab")) },
+  collage: { Hero: dynamic(() => import("./collage/Hero")), Lab: dynamic(() => import("./collage/Lab")) },
+  "vector-art": { Hero: dynamic(() => import("./vector-art/Hero")), Lab: dynamic(() => import("./vector-art/Lab")) },
+  futuristic: { Hero: dynamic(() => import("./futuristic/Hero")), Lab: dynamic(() => import("./futuristic/Lab")) },
 };

@@ -1,0 +1,31 @@
+/* Exhibit K · Pop art · The Halftone Dossier. Punchy: fast in, hard stop, a small shake on impact. */
+.x-pop-art { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='11' cy='11' r='8' fill='%231F4FD8' stroke='%23141414' stroke-width='2'/%3E%3C/svg%3E") 11 11, auto; }
+.x-pop-art .x-head h2 { font-weight: 400; text-transform: uppercase; letter-spacing: -0.01em; }
+.x-pop-art .x-sec { border-top: 4px solid #141414; }
+.x-pop-art .x-card { border: 3px solid #141414; box-shadow: 6px 6px 0 #141414; border-radius: 0; }
+.x-pop-art .x-dna li { border: 3px solid #141414; border-radius: 0; font-weight: 600; }
+.k-hero { padding-bottom: 6vh; }
+.k-top { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 8px 24px; border-bottom: 4px solid #141414; padding-bottom: 12px; }
+.k-top .x-hero-meta { grid-column: 1 / -1; }
+.k-title { font-family: var(--x-display); font-weight: 400; text-transform: uppercase; font-size: clamp(2rem, 0.6rem + 5.4vw, 6.6rem); line-height: 0.9; letter-spacing: -0.03em; margin: 0; text-wrap: balance; }
+.k-issue { font-weight: 600; font-size: 14px; margin: 0; text-align: right; max-width: 24ch; }
+.k-page { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.k-panel { position: relative; aspect-ratio: 16 / 10; border: 4px solid #141414; background: #F2EFE6; overflow: clip; }
+.k-panel canvas { position: absolute; inset: 0; }
+.k-stub { position: absolute; z-index: 2; left: 0; top: 0; bottom: 0; width: 34px; background: #141414; color: #F2EFE6; writing-mode: vertical-rl; display: grid; place-items: center; font-family: var(--x-display); font-size: 11px; letter-spacing: 0.12em;
+  mask: radial-gradient(circle at 100% 50%, transparent 4px, #000 4.5px) 0 0 / 100% 14px; -webkit-mask: radial-gradient(circle at 100% 50%, transparent 4px, #000 4.5px) 0 0 / 100% 14px; }
+.k-sfx { position: absolute; z-index: 2; right: 18px; top: 14px; font-family: var(--x-display); font-size: clamp(1.2rem, 0.6rem + 1.8vw, 2.6rem); color: #F7D21E; -webkit-text-stroke: 2px #141414; paint-order: stroke; transform: rotate(-6deg); text-shadow: 4px 4px 0 #141414; }
+.sb { position: relative; z-index: 3; background: #fff; color: #141414; border: 3px solid #141414; border-radius: 22px; padding: 12px 16px 14px; max-width: 34ch; box-shadow: 4px 4px 0 #141414; cursor: pointer; }
+.sb-who { display: block; font-family: var(--x-display); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; color: #1F4FD8; }
+.sb-t { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.3; }
+.sb-rest { visibility: hidden; }
+.sb-tail { position: absolute; bottom: -27px; width: 34px; height: 28px; fill: #fff; stroke: #141414; stroke-width: 3; stroke-linejoin: round; }
+.sb[data-tail="left"] .sb-tail { left: 26px; } .sb[data-tail="right"] .sb-tail { right: 26px; transform: scaleX(-1); }
+.k-bub { position: absolute; left: 52px; bottom: 44px; }
+.k-panel:nth-child(even) .k-bub { left: auto; right: 18px; }
+@media (max-width: 767px) { .k-page { grid-template-columns: 1fr; } .k-panel { aspect-ratio: 4 / 5; } .k-top { grid-template-columns: 1fr; } .k-issue { text-align: left; } .k-bub { left: 44px; right: 12px; bottom: 36px; } .k-panel:nth-child(even) .k-bub { right: 12px; left: 44px; } }
+/* lab */
+.k-tile { height: 100%; border: 3px solid #141414; padding: 18px; background: #F2EFE6; display: grid; align-content: end; gap: 8px; box-sizing: border-box; }
+.k-tile p { margin: 0; } .k-tile-big { font-family: var(--x-display); font-size: clamp(1.6rem, 1rem + 2vw, 3rem); line-height: 0.95; text-transform: uppercase; }
+.k-ht { padding: 0; overflow: clip; } .k-ht canvas, .k-ht img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.k-blue { background: #1F4FD8; color: #F2EFE6; } .k-red { background: #B91D17; color: #F2EFE6; }

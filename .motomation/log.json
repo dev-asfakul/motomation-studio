@@ -14,6 +14,216 @@
         "tier": 5,
         "signature_type": "type"
       }
+    },
+    {
+      "date": "2026-10-15T08:15:59.862Z",
+      "page": "exhibit-minimalism",
+      "archetype": "room",
+      "signature": "ink-fill",
+      "fonts": "Instrument Serif/Instrument Sans",
+      "palette": "Bone & Graphite",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "sequence",
+        "tier": 2,
+        "signature_type": "type"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:00.019Z",
+      "page": "exhibit-maximalism",
+      "archetype": "gallery-wall",
+      "signature": "sticker-scatter",
+      "fonts": "Syne/Space Mono",
+      "palette": "Citrus Brutal",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "canvas",
+        "tier": 2,
+        "signature_type": "micro"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:00.231Z",
+      "page": "exhibit-surreal",
+      "archetype": "stage",
+      "signature": "aperture",
+      "fonts": "Gloock/Newsreader",
+      "palette": "Lagoon",
+      "tier": "4",
+      "fingerprint": {
+        "layout": "stage",
+        "tier": 4,
+        "signature_type": "scroll"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:00.384Z",
+      "page": "exhibit-swiss",
+      "archetype": "catalogue",
+      "signature": "line-curtain",
+      "fonts": "Schibsted Grotesk/Schibsted Grotesk",
+      "palette": "Swiss Red",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "rows",
+        "tier": 2,
+        "signature_type": "type"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:00.538Z",
+      "page": "exhibit-y2k",
+      "archetype": "workbench",
+      "signature": "neighbour-moves",
+      "fonts": "Unbounded/Onest",
+      "palette": "Arctic Lab",
+      "tier": "4",
+      "fingerprint": {
+        "layout": "product",
+        "tier": 4,
+        "signature_type": "type"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:00.694Z",
+      "page": "exhibit-editorial",
+      "archetype": "broadsheet",
+      "signature": "remembered-list",
+      "fonts": "Libre Caslon Display/Newsreader",
+      "palette": "Paper & Vermilion",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "columns",
+        "tier": 2,
+        "signature_type": "micro"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:00.848Z",
+      "page": "exhibit-pixel-art",
+      "archetype": "atlas",
+      "signature": "pixel-wake",
+      "fonts": "Silkscreen/Martian Mono",
+      "palette": "Bauhaus Blackboard",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "canvas",
+        "tier": 2,
+        "signature_type": "cursor"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:01.009Z",
+      "page": "exhibit-clay",
+      "archetype": "shelf",
+      "signature": "hold-to-commit",
+      "fonts": "Tilt Warp/Figtree",
+      "palette": "Clay & Moss",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "product",
+        "tier": 2,
+        "signature_type": "micro"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:01.158Z",
+      "page": "exhibit-glassmorphism",
+      "archetype": "specimen",
+      "signature": "lens",
+      "fonts": "Sora/DM Sans",
+      "palette": "Night Lagoon",
+      "tier": "3",
+      "fingerprint": {
+        "layout": "statement",
+        "tier": 3,
+        "signature_type": "cursor"
+      }
+    },
+    {
+      "date": "2026-10-15T08:16:01.315Z",
+      "page": "exhibit-cyberpunk",
+      "archetype": "console",
+      "signature": "decode",
+      "fonts": "Big Shoulders Display/JetBrains Mono",
+      "palette": "Wet Concrete",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "product",
+        "tier": 2,
+        "signature_type": "type"
+      }
+    },
+    {
+      "date": "2026-10-15T08:26:21.669Z",
+      "page": "exhibit-pop-art",
+      "archetype": "lookbook",
+      "signature": "proximity-weight",
+      "fonts": "Rubik Mono One/Work Sans",
+      "palette": "Bauhaus Primaries",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "sequence",
+        "tier": 2,
+        "signature_type": "type"
+      }
+    },
+    {
+      "date": "2026-10-15T08:26:21.825Z",
+      "page": "exhibit-retro",
+      "archetype": "film-reel",
+      "signature": "timecode-rail",
+      "fonts": "Epilogue/IBM Plex Mono",
+      "palette": "Safelight",
+      "tier": "5",
+      "fingerprint": {
+        "layout": "sequence",
+        "tier": 5,
+        "signature_type": "scroll"
+      }
+    },
+    {
+      "date": "2026-10-15T08:26:21.978Z",
+      "page": "exhibit-collage",
+      "archetype": "letter",
+      "signature": "brand-selection",
+      "fonts": "Young Serif/Crimson Pro",
+      "palette": "Concrete & Signal",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "statement",
+        "tier": 2,
+        "signature_type": "micro"
+      }
+    },
+    {
+      "date": "2026-10-15T08:26:22.131Z",
+      "page": "exhibit-vector-art",
+      "archetype": "diptych",
+      "signature": "letter-relay",
+      "fonts": "Archivo/Archivo",
+      "palette": "Ultramarine Press",
+      "tier": "3",
+      "fingerprint": {
+        "layout": "split",
+        "tier": 3,
+        "signature_type": "type"
+      }
+    },
+    {
+      "date": "2026-10-15T08:26:22.285Z",
+      "page": "exhibit-futuristic",
+      "archetype": "field-guide",
+      "signature": "stacked-deck",
+      "fonts": "Azeret Mono/Geist",
+      "palette": "Arctic Lab Dark",
+      "tier": "4",
+      "fingerprint": {
+        "layout": "rows",
+        "tier": 4,
+        "signature_type": "scroll"
+      }
     }
   ]
 }

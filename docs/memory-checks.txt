@@ -9,3 +9,199 @@ Structure  (fingerprint: tier=5 · signature_type=type)
   · no logged run to compare with
 Logged run #1 to /home/user/workspace/motomation-studio/.motomation/log.json
   fingerprint: layout=canvas · tier=5 · signature_type=type
+
+=== exhibit minimalism ===
+IDs
+✓ page "exhibit-minimalism" is fresh
+✓ archetype "room" is fresh
+✓ signature "ink-fill" is fresh
+✓ fonts "Instrument Serif/Instrument Sans" is fresh
+✓ palette "Bone & Graphite" is fresh
+✓ tier "2" is fresh
+Structure  (fingerprint: layout=sequence · tier=2 · signature_type=type)
+✓ closest logged run is #1 at 40% (< 70%); shared: signature_type
+Logged run #2 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=sequence · tier=2 · signature_type=type
+
+=== exhibit maximalism ===
+IDs
+✓ page "exhibit-maximalism" is fresh
+✗ archetype "gallery-wall" was used in 1 of the last 2 runs → choose another
+✓ signature "sticker-scatter" is fresh
+✓ fonts "Syne/Space Mono" is fresh
+✓ palette "Citrus Brutal" is fresh
+✗ tier "2" was used in 1 of the last 2 runs → choose another
+Structure  (fingerprint: layout=canvas · tier=2 · signature_type=micro)
+✓ closest logged run is #1 at 48% (< 70%); shared: layout
+Logged run #3 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=canvas · tier=2 · signature_type=micro
+
+=== exhibit surreal ===
+IDs
+✓ page "exhibit-surreal" is fresh
+✓ archetype "stage" is fresh
+✓ signature "aperture" is fresh
+✓ fonts "Gloock/Newsreader" is fresh
+✓ palette "Lagoon" is fresh
+✓ tier "4" is fresh
+Structure  (fingerprint: layout=stage · tier=4 · signature_type=scroll)
+✓ closest logged run is #1 at 19% (< 70%); shared: tier
+Logged run #4 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=stage · tier=4 · signature_type=scroll
+
+=== exhibit swiss ===
+IDs
+✓ page "exhibit-swiss" is fresh
+✓ archetype "catalogue" is fresh
+✓ signature "line-curtain" is fresh
+✓ fonts "Schibsted Grotesk/Schibsted Grotesk" is fresh
+✓ palette "Swiss Red" is fresh
+✗ tier "2" was used in 2 of the last 4 runs → choose another
+Structure  (fingerprint: layout=rows · tier=2 · signature_type=type)
+✓ closest logged run is #2 at 58% (< 70%); shared: signature_type, tier
+Logged run #5 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=rows · tier=2 · signature_type=type
+
+=== exhibit y2k ===
+IDs
+✓ page "exhibit-y2k" is fresh
+✓ archetype "workbench" is fresh
+✓ signature "neighbour-moves" is fresh
+✓ fonts "Unbounded/Onest" is fresh
+✓ palette "Arctic Lab" is fresh
+✗ tier "4" was used in 1 of the last 5 runs → choose another
+Structure  (fingerprint: layout=product · tier=4 · signature_type=type)
+✓ closest logged run is #1 at 52% (< 70%); shared: signature_type, tier
+Logged run #6 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=product · tier=4 · signature_type=type
+
+=== exhibit editorial ===
+IDs
+✓ page "exhibit-editorial" is fresh
+✓ archetype "broadsheet" is fresh
+✓ signature "remembered-list" is fresh
+✓ fonts "Libre Caslon Display/Newsreader" is fresh
+✓ palette "Paper & Vermilion" is fresh
+✗ tier "2" was used in 3 of the last 5 runs → choose another
+Structure  (fingerprint: layout=columns · tier=2 · signature_type=micro)
+✓ closest logged run is #3 at 58% (< 70%); shared: signature_type, tier
+Logged run #7 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=columns · tier=2 · signature_type=micro
+
+=== exhibit pixel-art ===
+IDs
+✓ page "exhibit-pixel-art" is fresh
+✓ archetype "atlas" is fresh
+✓ signature "pixel-wake" is fresh
+✓ fonts "Silkscreen/Martian Mono" is fresh
+✓ palette "Bauhaus Blackboard" is fresh
+✗ tier "2" was used in 3 of the last 5 runs → choose another
+Structure  (fingerprint: layout=canvas · tier=2 · signature_type=cursor)
+✓ closest logged run is #3 at 67% (< 70%); shared: layout, tier
+Logged run #8 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=canvas · tier=2 · signature_type=cursor
+
+=== exhibit clay ===
+IDs
+✓ page "exhibit-clay" is fresh
+✓ archetype "shelf" is fresh
+✓ signature "hold-to-commit" is fresh
+✓ fonts "Tilt Warp/Figtree" is fresh
+✓ palette "Clay & Moss" is fresh
+✗ tier "2" was used in 3 of the last 5 runs → choose another
+Structure  (fingerprint: layout=product · tier=2 · signature_type=micro)
+✓ closest logged run is #7 at 58% (< 70%); shared: signature_type, tier
+Logged run #9 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=product · tier=2 · signature_type=micro
+
+=== exhibit glassmorphism ===
+IDs
+✓ page "exhibit-glassmorphism" is fresh
+✓ archetype "specimen" is fresh
+✓ signature "lens" is fresh
+✓ fonts "Sora/DM Sans" is fresh
+✓ palette "Night Lagoon" is fresh
+✓ tier "3" is fresh
+Structure  (fingerprint: layout=statement · tier=3 · signature_type=cursor)
+✓ closest logged run is #8 at 52% (< 70%); shared: signature_type, tier
+Logged run #10 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=statement · tier=3 · signature_type=cursor
+
+=== exhibit cyberpunk ===
+IDs
+✓ page "exhibit-cyberpunk" is fresh
+✓ archetype "console" is fresh
+✓ signature "decode" is fresh
+✓ fonts "Big Shoulders Display/JetBrains Mono" is fresh
+✓ palette "Wet Concrete" is fresh
+✗ tier "2" was used in 3 of the last 5 runs → choose another
+Structure  (fingerprint: layout=product · tier=2 · signature_type=type)
+✗ 88% structural overlap with run #6 (workbench, exhibit-y2k) ≥ 70%. Same: layout, signature_type
+  → offer a mutation on layout: Invert the axis (invert-axis): vertical becomes horizontal or time runs backwards
+Logged run #11 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=product · tier=2 · signature_type=type
+
+=== exhibit pop-art ===
+IDs
+✓ page "exhibit-pop-art" is fresh
+✓ archetype "lookbook" is fresh
+✓ signature "proximity-weight" is fresh
+✓ fonts "Rubik Mono One/Work Sans" is fresh
+✓ palette "Bauhaus Primaries" is fresh
+✗ tier "2" was used in 4 of the last 5 runs → choose another
+Structure  (fingerprint: layout=sequence · tier=2 · signature_type=type)
+✓ closest logged run is #11 at 58% (< 70%); shared: signature_type, tier
+Logged run #12 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=sequence · tier=2 · signature_type=type
+
+=== exhibit retro ===
+IDs
+✓ page "exhibit-retro" is fresh
+✓ archetype "film-reel" is fresh
+✓ signature "timecode-rail" is fresh
+✓ fonts "Epilogue/IBM Plex Mono" is fresh
+✓ palette "Safelight" is fresh
+✓ tier "5" is fresh
+Structure  (fingerprint: layout=sequence · tier=5 · signature_type=scroll)
+✓ closest logged run is #12 at 48% (< 70%); shared: layout
+Logged run #13 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=sequence · tier=5 · signature_type=scroll
+
+=== exhibit collage ===
+IDs
+✓ page "exhibit-collage" is fresh
+✓ archetype "letter" is fresh
+✓ signature "brand-selection" is fresh
+✓ fonts "Young Serif/Crimson Pro" is fresh
+✓ palette "Concrete & Signal" is fresh
+✗ tier "2" was used in 3 of the last 5 runs → choose another
+Structure  (fingerprint: layout=statement · tier=2 · signature_type=micro)
+✓ closest logged run is #10 at 60% (< 70%); shared: layout, tier
+Logged run #14 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=statement · tier=2 · signature_type=micro
+
+=== exhibit vector-art ===
+IDs
+✓ page "exhibit-vector-art" is fresh
+✓ archetype "diptych" is fresh
+✓ signature "letter-relay" is fresh
+✓ fonts "Archivo/Archivo" is fresh
+✓ palette "Ultramarine Press" is fresh
+✗ tier "3" was used in 1 of the last 5 runs → choose another
+Structure  (fingerprint: layout=split · tier=3 · signature_type=type)
+✓ closest logged run is #11 at 52% (< 70%); shared: signature_type, tier
+Logged run #15 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=split · tier=3 · signature_type=type
+
+=== exhibit futuristic ===
+IDs
+✓ page "exhibit-futuristic" is fresh
+✓ archetype "field-guide" is fresh
+✓ signature "stacked-deck" is fresh
+✓ fonts "Azeret Mono/Geist" is fresh
+✓ palette "Arctic Lab Dark" is fresh
+✓ tier "4" is fresh
+Structure  (fingerprint: layout=rows · tier=4 · signature_type=scroll)
+✓ closest logged run is #13 at 52% (< 70%); shared: signature_type, tier
+Logged run #16 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=rows · tier=4 · signature_type=scroll
