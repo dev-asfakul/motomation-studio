@@ -5,7 +5,7 @@ import { RoomHead } from "@/components/rooms/RoomHead";
 import { Md, dash } from "@/components/rooms/Md";
 import { repo } from "@/content/repo";
 
-export const metadata: Metadata = { title: "Receipts", description: "Every Motomation Design benchmark exactly as the repo reports it, including where the skill lost: v1 to v5, the motion-only loss, the Codex runs and the v4 builds that were never scored.", alternates: { canonical: "/receipts/" } };
+export const metadata: Metadata = { title: "Receipts", description: "Every Motomation Design benchmark as the repo reports it, losses included: v1 to v5, the motion-only loss, the Codex runs and the unscored v4 builds.", alternates: { canonical: "/receipts/" } };
 
 const SRC = "https://github.com/asfakulsiam/asfakulsiam-motomation-design/blob/main/";
 // "a → b": the skill's number is b. Lower than the baseline's is a loss, and is marked as one.

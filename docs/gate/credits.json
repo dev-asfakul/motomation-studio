@@ -1,0 +1,543 @@
+{
+  "target": "http://localhost:4190/credits/",
+  "url": "http://localhost:4190/credits/",
+  "version": "gate/4",
+  "pass": false,
+  "verified": true,
+  "coverage": {
+    "ok": true,
+    "skipped": 6,
+    "total": 221,
+    "pct": 3,
+    "width": 375,
+    "low": []
+  },
+  "counts": {
+    "contrast": 0,
+    "overflow": 6,
+    "words": 1,
+    "motion": 0,
+    "names": 0,
+    "numbers": 0,
+    "quality": 0,
+    "access": 20,
+    "copy": 0,
+    "seo": 1,
+    "perf": 1,
+    "sec": 3
+  },
+  "id": "0e0974cd8c",
+  "stamp": "gate: c0 o6 w1 rm0 a0 n0 q0 k20 · rules: C0 S1 P1 K3 · gate/4 · 0e0974cd8c · skipped 6/221@375",
+  "critique": "C5[restraint:kept] H3[375:2] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A1[focus:39/40,tgt:16f8w,zoom:2,reflow:5,fc:0,trap:0]",
+  "sources": {
+    "design": "/home/user/workspace/motomation-studio/DESIGN.md",
+    "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
+    "meta": {}
+  },
+  "rules": {
+    "copy": {
+      "fails": [],
+      "warns": [],
+      "checked": 263
+    },
+    "seo": {
+      "fails": [
+        {
+          "id": "seo-06",
+          "why": "meta description is 161 characters (≤ 160)",
+          "at": ""
+        }
+      ],
+      "warns": [],
+      "checked": 14
+    },
+    "perf": {
+      "fails": [
+        {
+          "id": "perf-12",
+          "why": "render-blocking script in <head> (add defer or async)",
+          "at": "http://localhost:4190/_next/static/chunks/0cz1d0m…"
+        }
+      ],
+      "warns": [],
+      "checked": 15
+    },
+    "sec": {
+      "fails": [
+        {
+          "id": "sec-h1",
+          "why": "no Content-Security-Policy (header or meta)",
+          "at": ""
+        },
+        {
+          "id": "sec-h2",
+          "why": "no X-Content-Type-Options: nosniff header",
+          "at": ""
+        },
+        {
+          "id": "sec-h3",
+          "why": "no Referrer-Policy (header or meta referrer)",
+          "at": ""
+        }
+      ],
+      "warns": [],
+      "checked": 9
+    },
+    "counts": {
+      "copy": 0,
+      "seo": 1,
+      "perf": 1,
+      "sec": 3
+    },
+    "segment": "rules: C0 S1 P1 K3"
+  },
+  "structure": {
+    "sections": 3,
+    "patterns": [
+      "static",
+      "static",
+      "static"
+    ],
+    "repeats": 0,
+    "pins": 0,
+    "webgl": 0,
+    "jsKB": 18,
+    "jsUnknown": 9,
+    "sectionIds": [
+      "header",
+      "div",
+      "footer"
+    ]
+  },
+  "contrast": {
+    "byWidth": [
+      {
+        "width": 375,
+        "measured": 215,
+        "skipped": 6,
+        "total": 221,
+        "skippedPct": 3,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 390,
+        "measured": 215,
+        "skipped": 6,
+        "total": 221,
+        "skippedPct": 3,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 768,
+        "measured": 222,
+        "skipped": 5,
+        "total": 227,
+        "skippedPct": 2,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 1440,
+        "measured": 246,
+        "skipped": 1,
+        "total": 247,
+        "skippedPct": 0,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      }
+    ],
+    "measured": 898,
+    "skipped": 18,
+    "total": 916,
+    "notVisibleAtScan": 0,
+    "skippedPct": 2,
+    "lowCoverage": false,
+    "fails": [],
+    "sequenceSteps": 0,
+    "inactiveFails": 0
+  },
+  "overflow": {
+    "widths": [
+      375,
+      390,
+      768,
+      1440
+    ],
+    "fails": [
+      {
+        "width": 375,
+        "el": "em",
+        "kind": "text overflows parent",
+        "px": 14,
+        "text": "custody"
+      },
+      {
+        "width": 390,
+        "el": "em",
+        "kind": "text overflows parent",
+        "px": 13,
+        "text": "custody"
+      },
+      {
+        "width": 768,
+        "el": "span",
+        "kind": "text overflows parent",
+        "px": 4,
+        "text": "–"
+      },
+      {
+        "width": 768,
+        "el": "span.bar-hide-sm",
+        "kind": "text overflows parent",
+        "px": 4,
+        "text": "Sound"
+      },
+      {
+        "width": 768,
+        "el": "span.bar-hide-sm",
+        "kind": "text overflows parent",
+        "px": 8,
+        "text": "Search"
+      },
+      {
+        "width": 768,
+        "el": "kbd",
+        "kind": "text overflows parent",
+        "px": 8,
+        "text": "⌘K"
+      }
+    ]
+  },
+  "words": {
+    "checked": 9,
+    "fails": [
+      {
+        "el": "h1.room-title",
+        "text": "Chain of custody",
+        "problem": "text wider than its box by 14px"
+      }
+    ],
+    "hier": {
+      "h1": 1,
+      "skips": 0,
+      "focalTies": 1,
+      "largest": 52.425
+    }
+  },
+  "motion": {
+    "compared": 247,
+    "hiddenUnderReducedMotion": [],
+    "pixelsChangingWhenStillPct": 0
+  },
+  "names": {
+    "checked": 51,
+    "fails": []
+  },
+  "numbers": {
+    "checked": 60,
+    "live": 2,
+    "fails": []
+  },
+  "quality": {
+    "zones": [],
+    "smooth": {
+      "judged": false,
+      "why": "sandbox: 2 CPUs",
+      "desktop": null,
+      "mobile": null
+    },
+    "rm": null,
+    "fails": 0
+  },
+  "access": {
+    "focus": {
+      "checked": 40,
+      "fails": [
+        {
+          "el": "div.reg-wrap",
+          "text": "TypefaceUsed forLicenceAnybody",
+          "changedPct": 0.92
+        }
+      ],
+      "tabbables": 51
+    },
+    "target": {
+      "checked": 26,
+      "fails": [
+        {
+          "el": "a.bureau-mark-link",
+          "text": "MOTOMATION",
+          "w": 170,
+          "h": 21
+        },
+        {
+          "el": "a",
+          "text": "Next.js",
+          "w": 44,
+          "h": 19
+        },
+        {
+          "el": "a",
+          "text": "React",
+          "w": 37,
+          "h": 19
+        },
+        {
+          "el": "a",
+          "text": "Lenis",
+          "w": 34,
+          "h": 19
+        },
+        {
+          "el": "a",
+          "text": "three.js",
+          "w": 47,
+          "h": 19
+        },
+        {
+          "el": "a",
+          "text": "Tailwind CSS",
+          "w": 84,
+          "h": 19
+        },
+        {
+          "el": "a",
+          "text": "opentype.js",
+          "w": 75,
+          "h": 19
+        },
+        {
+          "el": "a",
+          "text": "Playwright",
+          "w": 67,
+          "h": 19
+        },
+        {
+          "el": "a",
+          "text": "Evidence board",
+          "w": 107,
+          "h": 20
+        },
+        {
+          "el": "a",
+          "text": "Autopsy",
+          "w": 58,
+          "h": 20
+        },
+        {
+          "el": "a",
+          "text": "Method",
+          "w": 54,
+          "h": 20
+        },
+        {
+          "el": "a",
+          "text": "Lab",
+          "w": 26,
+          "h": 20
+        },
+        {
+          "el": "a",
+          "text": "Receipts",
+          "w": 60,
+          "h": 20
+        },
+        {
+          "el": "a",
+          "text": "Locker",
+          "w": 47,
+          "h": 20
+        },
+        {
+          "el": "a",
+          "text": "Dossier",
+          "w": 52,
+          "h": 20
+        },
+        {
+          "el": "a",
+          "text": "Credits",
+          "w": 49,
+          "h": 20
+        }
+      ],
+      "warns": [
+        {
+          "el": "a.skip",
+          "text": "Skip to the case",
+          "w": 166,
+          "h": 42
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "◐UVUV torch: reveal hidden ann",
+          "w": 36,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "–SoundSound",
+          "w": 36,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Search⌘KSearch the case",
+          "w": 36,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Index",
+          "w": 36,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Yes, sound",
+          "w": 103,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Stay silent",
+          "w": 112,
+          "h": 36
+        },
+        {
+          "el": "a",
+          "text": "GSAP + @gsap/react",
+          "w": 83,
+          "h": 42
+        }
+      ]
+    },
+    "zoom": {
+      "fails": [
+        {
+          "kind": "control covered",
+          "el": "a",
+          "text": "asfakulsiam-motomation-design",
+          "by": "p"
+        },
+        {
+          "kind": "control covered",
+          "el": "a",
+          "text": "GitHub",
+          "by": "div.toast"
+        }
+      ]
+    },
+    "reflow": {
+      "px": 5
+    },
+    "forced": {
+      "checked": 79,
+      "fails": []
+    },
+    "trap": {
+      "tabbables": 51,
+      "presses": 108,
+      "visited": 51,
+      "unreached": 0,
+      "trapped": false,
+      "region": null
+    },
+    "fails": 20,
+    "cat": {
+      "focus": 1,
+      "target": 16,
+      "zoom": 2,
+      "reflow": 1,
+      "forced": 0,
+      "trap": 0
+    }
+  },
+  "composition": {
+    "pin": [],
+    "screens": [
+      {
+        "n": 1,
+        "top": "h1.room-title",
+        "lead": 3.05,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 2,
+        "top": "p.sec-lede",
+        "lead": 1.54,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 3,
+        "top": "p",
+        "lead": 3.86,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 4,
+        "top": "h2#cr-libs.sec-h",
+        "lead": 3.46,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 5,
+        "top": "h2#cr-made.sec-h",
+        "lead": 1.78,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 6,
+        "top": "h2#cr-made.sec-h",
+        "lead": 1.24,
+        "ok": false,
+        "text": true
+      }
+    ],
+    "scale": {
+      "display": 129.6,
+      "body": 15,
+      "ratio": 8.6,
+      "ok": true
+    }
+  },
+  "richness": {
+    "kind": "page",
+    "from": "path",
+    "fold": [
+      "nav header.bureau-bar",
+      "heading h2#cr-skill.sec-h",
+      "text p",
+      "text p.sec-lede",
+      "action button.bar-btn"
+    ],
+    "opening": "h1 \"Chain of custody\"",
+    "grid": null,
+    "title": null,
+    "count": null,
+    "blocks": [
+      "section.sec",
+      "section.sec",
+      "section.sec",
+      "section.sec",
+      "div.toasts"
+    ],
+    "warns": []
+  },
+  "footprint": "light"
+}

@@ -10,7 +10,7 @@ import { EXHIBITS } from "@/content/exhibits";
 import { ev } from "@/content/coverage";
 import { ratio, fmt } from "@/lib/contrast";
 
-export const metadata: Metadata = { title: "Autopsy", description: "The Motomation Design repo opened folder by folder: the Thinking Sequence, the collision engine, five motion tiers, 22 signatures, the dials, the delivery gate and every command, each with a lab report and a live demo.", alternates: { canonical: "/autopsy/" } };
+export const metadata: Metadata = { title: "Autopsy", description: "The Motomation Design repo opened folder by folder: Thinking Sequence, collision engine, five tiers, 22 signatures, dials, the gate and every command.", alternates: { canonical: "/autopsy/" } };
 
 const GH = "https://github.com/asfakulsiam/asfakulsiam-motomation-design/blob/main/";
 const short = (p: string) => p.replace("skills/asfakulsiam-motomation-design/", "");

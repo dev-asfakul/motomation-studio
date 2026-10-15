@@ -61,12 +61,15 @@ button { font: inherit; color: inherit; }
   font-family: var(--font-mono), monospace; font-size: 12px; letter-spacing: 0.06em;
 }
 .bureau-bar a { text-decoration: none; }
+.bureau-mark-link { display: inline-flex; align-items: center; min-height: 36px; }
 .bureau-mark { font-family: var(--font-display); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1; display: inline-block; font-variation-settings: "wdth" var(--wdth, 110); transition: font-variation-settings 0.12s linear; }
 .case-no { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .bar-spacer { flex: 1; }
 .bar-ex { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 @media (max-width: 1360px) { .bar-ex { display: none; } }
+@media (max-width: 1000px) { .case-no { display: none; } }
 .bar-btn {
+  flex-shrink: 0; white-space: nowrap;
   min-height: 36px; min-width: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   padding: 0 10px; background: transparent; border: 1px solid var(--line); color: var(--ink); cursor: pointer;
   font-family: var(--font-mono), monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
@@ -84,7 +87,7 @@ button { font: inherit; color: inherit; }
 .tray a[data-on="true"] { background: var(--accent); border-color: var(--accent); color: #0e0d0b; font-weight: 700; }
 .tray a[aria-current="page"] { outline: 1px solid var(--ink); outline-offset: 1px; }
 .tray-count { margin-left: 6px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-@media (max-width: 1100px) { .tray a { display: none; } .tray a[data-on="true"] { display: grid; } }
+@media (max-width: 1100px) { .tray a { display: none !important; } }
 @media (max-width: 720px) {
   .case-no, .tray, .bar-hide-sm { display: none !important; }
 }
@@ -198,6 +201,7 @@ html[data-uv="on"] .uv-inline { display: inline; }
 /* ---------- Footer ---------- */
 .bureau-foot { border-top: 1px solid var(--line); padding: 48px var(--gutter) 64px; background: var(--ground); color: var(--ink); display: grid; gap: 28px; grid-template-columns: repeat(12, minmax(0,1fr)); }
 .bureau-foot > * { grid-column: span 12; }
+@media (max-width: 899px) { .bureau-foot { grid-template-columns: minmax(0, 1fr); } .bureau-foot > * { grid-column: auto; } }
 @media (min-width: 900px) { .foot-a { grid-column: span 6; } .foot-b { grid-column: span 3; } .foot-c { grid-column: span 3; } }
 .bureau-foot a { text-decoration: none; }
 .bureau-foot a:hover { text-decoration: underline; }
@@ -209,3 +213,24 @@ html[data-uv="on"] .uv-inline { display: inline; }
 .exhibit-root { position: relative; isolation: isolate; background: var(--x-ground); color: var(--x-ink); min-height: 100vh; overflow-x: clip; }
 .exhibit-root ::selection { background: var(--x-ink); color: var(--x-ground); }
 .exhibit-root :focus-visible { outline-color: var(--x-focus, var(--x-ink)); }
+
+/* targets: inline links in running text get 3px of vertical padding so every target is at least 24px tall (WCAG 2.5.8) */
+main p a, main li a, main td a, main dd a, footer a { padding-block: 3px; }
+
+/* zoom/reflow: at 200% zoom (or a phone held narrow) a fixed slip would cover controls; it joins the page flow under the bar */
+@media (max-width: 520px) {
+  .toasts { position: static; margin: calc(var(--bar-h) + 10px) var(--gutter) calc(-1 * var(--bar-h)); align-items: stretch; }
+  .toast { max-width: none; }
+}
+
+@media (max-width: 400px) {
+  .bureau-bar { gap: 6px; }
+  .bureau-mark { font-size: 16px; }
+  .bar-btn { min-width: 34px; padding: 0 6px; }
+}
+@media (max-width: 359px) {
+  .bureau-bar { gap: 4px; padding: 0 12px; }
+  .bureau-mark { font-size: 15px; }
+}
+/* file paths in small mono text may break anywhere; display type never does */
+.mono a, p.mono, code { overflow-wrap: anywhere; }

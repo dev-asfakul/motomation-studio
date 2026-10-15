@@ -10,7 +10,7 @@ import { repo } from "@/content/repo";
 import { EXHIBITS } from "@/content/exhibits";
 import { ev } from "@/content/coverage";
 
-export const metadata: Metadata = { title: "Method", description: "The Thinking Sequence, run on this site: eight steps from stack to Restraint Gate, writing the real MOTOMATION PLAN for the Motomation case file as you scroll.", alternates: { canonical: "/method/" } };
+export const metadata: Metadata = { title: "Method", description: "The Thinking Sequence run on this site: eight steps from stack to Restraint Gate, writing the real MOTOMATION PLAN for this case file as you scroll.", alternates: { canonical: "/method/" } };
 
 // The plan is read from DESIGN.md, the file the build actually follows, so this page cannot drift from it.
 function readPlan(): PlanLine[] {

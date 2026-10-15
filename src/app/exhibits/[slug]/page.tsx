@@ -9,10 +9,12 @@ import { gateFor } from "@/content/gate";
 export const dynamicParams = false;
 export function generateStaticParams() { return EXHIBITS.map((e) => ({ slug: e.slug })); }
 
+// meta descriptions stay under 155 characters and end on a whole word
+const clip = (t: string) => (t.length <= 155 ? t : t.slice(0, 154).replace(/[\s,;:]+\S*$/, "") + ".");
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const e = BY_SLUG[slug];
   if (!e) return {};
-  return { title: `Exhibit ${e.letter}: ${e.style}`, description: `${e.title}. ${e.verdict} ${e.style} as a case file exhibit, set in ${e.fonts.display}.`.slice(0, 158), alternates: { canonical: `/exhibits/${slug}/` } };
+  return { title: `Exhibit ${e.letter}: ${e.style}`, description: clip(`${e.title}. ${e.verdict} ${e.style} as a case file exhibit, set in ${e.fonts.display}.`), alternates: { canonical: `/exhibits/${slug}/` } };
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {

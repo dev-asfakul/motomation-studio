@@ -7,7 +7,7 @@
   "scripts": {
     "inventory": "node scripts/inventory.mjs && node scripts/client-counts.mjs",
     "dev": "next dev",
-    "build": "node scripts/inventory.mjs && node scripts/originals.mjs && node scripts/credits.mjs && next build && node scripts/coverage.mjs",
+    "build": "node scripts/inventory.mjs && node scripts/originals.mjs && node scripts/credits.mjs && next build && node scripts/postbuild.mjs && node scripts/coverage.mjs",
     "start": "npx serve out -l 3000",
     "typecheck": "tsc --noEmit",
     "gate": "node scripts/run-gate.mjs",

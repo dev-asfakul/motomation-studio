@@ -4,7 +4,7 @@ import { RoomHead } from "@/components/rooms/RoomHead";
 import { repo } from "@/content/repo";
 import { BUREAU_FONTS, fontRows, LIBS } from "@/content/credits";
 
-export const metadata: Metadata = { title: "Credits", description: "Chain of custody for the Motomation case file: every typeface and its licence, every library, the skill code it vendors, and how the images and sounds were made.", alternates: { canonical: "/credits/" } };
+export const metadata: Metadata = { title: "Credits", description: "Chain of custody for the Motomation case file: every typeface and licence, every library, the vendored skill code, and how images and sounds were made.", alternates: { canonical: "/credits/" } };
 
 export default function Page() {
   const fonts = fontRows();

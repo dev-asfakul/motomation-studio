@@ -11,7 +11,7 @@ import { FAMILIES } from "@/content/families";
 import { ev } from "@/content/coverage";
 import originals from "@content/originals.json";
 
-export const metadata: Metadata = { title: "Lab", description: "All 68 Motomation components running live, three dials that retune the room, a bench that blends two exhibits and measures the result, and 41 new components filed as contribution candidates.", alternates: { canonical: "/lab/" } };
+export const metadata: Metadata = { title: "Lab", description: "All 68 Motomation components running live, three dials that retune the room, a bench that blends two exhibits, and 41 new components filed as candidates.", alternates: { canonical: "/lab/" } };
 
 type Orig = { id: string; name: string; family: string; tier: string; deps: string; what: string; "use-when": string; "avoid-when": string; "reduced-motion": string; touch: string; a11y: string; status: string; file: string; lines: number };
 

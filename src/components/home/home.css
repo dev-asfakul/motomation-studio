@@ -77,4 +77,4 @@
 .filed a:hover, .filed a:focus-visible { background: var(--surface); }
 .filed .f-style { font-family: var(--font-display); font-variation-settings: "wdth" 115; font-weight: 800; font-size: var(--step-2); line-height: 1; }
 .filed .f-title { color: var(--muted); }
-@media (max-width: 767px) { .filed a { grid-template-columns: 2.2rem 1fr; } .filed .f-title, .filed .f-ix { grid-column: 2; } }
+@media (max-width: 767px) { .filed a { grid-template-columns: 2.2rem minmax(0, 1fr); } .filed .f-style { font-size: min(var(--step-2), 6.8vw); } .filed .f-title, .filed .f-ix { grid-column: 2; } }

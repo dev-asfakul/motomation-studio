@@ -1,0 +1,1005 @@
+{
+ "generated": "2026-10-15T09:16:12.230Z",
+ "widths": [
+  320,
+  390,
+  1440,
+  1920
+ ],
+ "routes": 31,
+ "failures": 0,
+ "results": [
+  {
+   "route": "/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/nope-not-a-route/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/autopsy/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/board/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/credits/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/dossier/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/aurora/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/bohemian/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/clay/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/collage/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/cyberpunk/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/editorial/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/futuristic/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/glassmorphism/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/graffiti/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/handwritten/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/maximalism/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/minimalism/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pixel-art/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pop-art/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/retro/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/surreal/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/swiss/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/vector-art/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/victorian/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/y2k/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/lab/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/locker/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/method/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/receipts/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/verdict/",
+   "width": 320,
+   "ok": true,
+   "sw": 320,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/nope-not-a-route/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/autopsy/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/board/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/credits/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/dossier/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/aurora/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/bohemian/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/clay/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/collage/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/cyberpunk/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/editorial/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/futuristic/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/glassmorphism/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/graffiti/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/handwritten/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/maximalism/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/minimalism/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pixel-art/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pop-art/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/retro/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/surreal/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/swiss/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/vector-art/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/victorian/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/y2k/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/lab/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/locker/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/method/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/receipts/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/verdict/",
+   "width": 390,
+   "ok": true,
+   "sw": 390,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/nope-not-a-route/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/autopsy/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/board/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/credits/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/dossier/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/aurora/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/bohemian/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/clay/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/collage/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/cyberpunk/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/editorial/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/futuristic/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/glassmorphism/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/graffiti/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/handwritten/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/maximalism/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/minimalism/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pixel-art/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pop-art/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/retro/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/surreal/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/swiss/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/vector-art/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/victorian/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/y2k/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/lab/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/locker/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/method/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/receipts/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/verdict/",
+   "width": 1440,
+   "ok": true,
+   "sw": 1440,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/nope-not-a-route/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/autopsy/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/board/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/credits/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/dossier/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/aurora/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/bohemian/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/clay/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/collage/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/cyberpunk/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/editorial/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/futuristic/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/glassmorphism/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/graffiti/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/handwritten/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/maximalism/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/minimalism/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pixel-art/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/pop-art/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/retro/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/surreal/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/swiss/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/vector-art/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/victorian/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/exhibits/y2k/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/lab/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/locker/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/method/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/receipts/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  },
+  {
+   "route": "/verdict/",
+   "width": 1920,
+   "ok": true,
+   "sw": 1920,
+   "over": [],
+   "breaks": []
+  }
+ ]
+}

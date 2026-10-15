@@ -8,7 +8,7 @@ import { Witness } from "@/components/bureau/EvidenceLog";
 import { repo } from "@/content/repo";
 import { ev } from "@/content/coverage";
 
-export const metadata: Metadata = { title: "Locker", description: "Every way to install Motomation Design, as numbered procedures: the skills CLI, the Claude Code plugin, the Gemini CLI extension, the single-file editions, the shadcn registry, updates and the gate's browser.", alternates: { canonical: "/locker/" } };
+export const metadata: Metadata = { title: "Locker", description: "Every way to install Motomation Design as numbered procedures: skills CLI, Claude Code plugin, Gemini CLI extension, single files and the shadcn registry.", alternates: { canonical: "/locker/" } };
 
 const GH = "https://github.com/asfakulsiam/asfakulsiam-motomation-design/blob/main/";
 const RAW = "https://raw.githubusercontent.com/asfakulsiam/asfakulsiam-motomation-design/main/";
