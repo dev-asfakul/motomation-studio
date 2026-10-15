@@ -1,0 +1,55 @@
+/* Exhibit D · Swiss · The Grid Reconstruction. Linear snap, one red signal, measured to the pixel. */
+.x-swiss { cursor: crosshair; }
+.x-swiss .x-head h2 { font-weight: 700; letter-spacing: -0.04em; }
+.x-swiss .x-sec { border-top: 2px solid #111; }
+.x-swiss .x-card { background: transparent; border-top: 2px solid #111; padding-inline: 0; }
+.x-swiss .x-dna li { border: 0; border-left: 4px solid var(--x-accent); padding-left: 10px; }
+.x-swiss .x-aa { font-weight: 800; letter-spacing: -0.06em; }
+.d-hero { padding-inline: 0; }
+.go-controls { position: absolute; right: var(--gutter); top: 0; z-index: 6; display: flex; gap: 6px; }
+.go-controls button { min-height: 40px; padding: 0 12px; background: var(--x-ground); color: #111; border: 2px solid #111; font-family: var(--x-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; }
+.go-controls button[aria-pressed="true"] { background: #111; color: var(--x-ground); }
+.d-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 var(--gutter); padding: 56px var(--gutter) 40px; }
+.d-meta { grid-column: 1 / -1; }
+.d-title { grid-column: 1 / span 9; font-family: var(--x-display); font-weight: 800; font-size: clamp(3rem, 1rem + 8vw, 10.5rem); line-height: 0.86; letter-spacing: -0.055em; margin: 32px 0 56px; }
+.d-mask { display: block; overflow: clip; }
+.d-mask > span { display: block; animation: d-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.d-title .d-mask:nth-child(2) > span { animation-delay: 90ms; }
+@keyframes d-rise { from { transform: translateY(102%); } }
+.d-rows { grid-column: 1 / -1; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 var(--gutter); }
+.d-row { grid-column: span 3; border-top: 2px solid #111; padding-top: 16px; }
+.d-n { font-family: var(--x-display); font-weight: 800; font-size: clamp(5rem, 11vw, 12rem); line-height: 0.82; letter-spacing: -0.07em; font-variant-numeric: tabular-nums; }
+.d-row[data-signal] .d-n { color: var(--x-accent); }
+.d-k { font-weight: 700; font-size: 18px; margin: 18px 0 2px; display: flex; align-items: center; gap: 8px; }
+.d-sig { width: 14px; height: 14px; background: var(--x-accent); display: inline-block; }
+.d-v { margin: 0; font-size: 15px; color: var(--x-muted); max-width: 22ch; }
+.d-foot { grid-column: 7 / span 6; margin: 64px 0 0; font-size: 18px; line-height: 1.4; }
+.mr-line { height: 0; border-top: 1px solid #111; margin-top: 10px; position: relative; transform: scaleX(0); transform-origin: left; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+.mr-line::before, .mr-line::after { content: ""; position: absolute; top: -6px; width: 1px; height: 11px; background: #111; }
+.mr-line::before { left: 0; } .mr-line::after { right: 0; }
+.mr[data-on] .mr-line { transform: none; }
+.mr-read { font-family: var(--x-mono); font-size: 11px; margin: 6px 0 0; color: var(--x-muted); font-variant-numeric: tabular-nums; }
+@media (max-width: 899px) {
+  .d-title { grid-column: 1 / -1; }
+  .d-row { grid-column: span 6; margin-bottom: 28px; }
+  .d-foot { grid-column: 1 / -1; }
+  .go-controls { position: relative; right: auto; padding: 0 var(--gutter); }
+}
+@media (prefers-reduced-motion: reduce) { .d-mask > span { animation: none; } .mr-line { transition: none; transform: none; } }
+/* lab */
+.d-lab { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--gutter); position: relative; }
+.d-lab > nav, .d-lab > aside { position: fixed; right: var(--gutter); top: 40vh; z-index: 4; }
+.d-board { position: relative; aspect-ratio: 12 / 8; background: repeating-linear-gradient(90deg, rgba(17,17,17,0.08) 0 1px, transparent 1px calc(100% / 12)), repeating-linear-gradient(180deg, rgba(17,17,17,0.08) 0 1px, transparent 1px calc(100% / 8)); border: 2px solid #111; touch-action: none; }
+.d-block { position: absolute; background: #111; color: var(--x-ground); border: 0; font-family: var(--x-display); font-weight: 800; font-size: clamp(24px, 3vw, 44px); display: grid; place-items: start; padding: 8px 12px; cursor: grab; transition: left 0.12s linear, top 0.12s linear; touch-action: none; }
+.d-block:first-child { background: var(--x-accent); color: #fff; }
+.d-block:focus-visible { outline: 3px solid var(--x-accent); outline-offset: 3px; }
+.d-cross { position: absolute; width: 0; height: 0; pointer-events: none; }
+.d-cross::before, .d-cross::after { content: ""; position: absolute; background: var(--x-accent); }
+.d-cross::before { left: -2000px; right: -2000px; height: 1px; } .d-cross::after { top: -2000px; bottom: -2000px; width: 1px; }
+.d-board { overflow: clip; }
+.d-cross span { position: absolute; left: 8px; top: 6px; font-family: var(--x-mono); font-size: 11px; background: #111; color: #fff; padding: 2px 6px; white-space: nowrap; }
+.d-flap { font-family: var(--x-mono); font-size: 28px; }
+.d-count { font-family: var(--x-display); font-weight: 800; font-size: 64px; margin: 0; line-height: 1; }
+.d-btn { min-height: 44px; padding: 0 16px; margin-top: 10px; background: #111; color: var(--x-ground); border: 0; font-family: var(--x-mono); font-size: 12px; text-transform: uppercase; cursor: pointer; }
+@media (max-width: 899px) { .d-lab { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .d-block { transition: none; } }

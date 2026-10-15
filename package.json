@@ -5,12 +5,13 @@
   "description": "Case File: Motomation. The official site of the Motomation Design agent skill, built with the skill.",
   "license": "MIT",
   "scripts": {
-    "inventory": "node scripts/inventory.mjs",
+    "inventory": "node scripts/inventory.mjs && node scripts/client-counts.mjs",
     "dev": "next dev",
     "build": "node scripts/inventory.mjs && next build",
     "start": "npx serve out -l 3000",
     "typecheck": "tsc --noEmit",
-    "gate": "node scripts/run-gate.mjs"
+    "gate": "node scripts/run-gate.mjs",
+    "prebuild": "node scripts/client-counts.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -28,6 +29,8 @@
     "@types/react-dom": "^19",
     "@types/three": "^0.186.0",
     "opentype.js": "^2.0.0",
+    "playwright": "1.59",
+    "serve": "^14.2.6",
     "tailwindcss": "^4.3.3",
     "typescript": "~5.9.0"
   }

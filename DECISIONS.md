@@ -17,3 +17,19 @@ One line of why per call. Newest at the bottom.
 - Palette accents flagged `large-only` in the CSV (A, B, F, H, M, P) are restricted to ≥ 24px or non-text. Measured: `docs/contrast.txt`.
 - The Home lineup morphs real glyph outlines extracted from the 20 OFL font files (`scripts/wordmarks.mjs`) with MorphSVG, instead of cross-fading text: it is the only honest way to make one word "become" twenty typefaces.
 - Palette changes in the lineup are hard cuts at the beat midpoint. A cross-fade between a dark and a light palette passes through grey-on-grey (1:1), the exact pinned-scene contrast failure the skill's own v3 benchmark caught.
+
+## M2 · Bureau and Home
+- The Bureau intercepts every internal link click (capture phase) and runs the evidence swap before `router.push`, so plain `<a>` tags work everywhere and the frame never reloads. Modified clicks, new tabs and downloads pass straight through.
+- Smooth scroll is Lenis driving ScrollTrigger; it is not created at all under reduced motion.
+- Lineup glyph groups use GSAP `svgOrigin: "0 0"`; `transformOrigin` resolves per element bbox on SVG and slid each glyph out of the word.
+- Lineup mobile choreography is MOTO / MATION on two rows with a 700vh chapter (1000vh desktop); the suspect card hides the verdict line on phones.
+- The lineup position counter is `role="timer"` with `aria-live="off"`: it is a timecode, and the gate's numbers check treats it as live rather than "corrected".
+- `content/wordmarks.json` (124 KB) loads as its own chunk after first paint; the cover mark is inlined from the single Bureau entry only.
+
+## M3 · Exhibits A–E
+- Exhibit typefaces are loaded through one `src/exhibits/fonts.ts` with `preload: false`: an exhibit page carries @font-face rules for all 39 faces but downloads only the ones it renders.
+- "Big Shoulders Display" is now published on Google Fonts as "Big Shoulders" (opsz axis); Exhibit J uses that family.
+- A shared `useGL` harness (`src/lib/gl.ts`) is the only way Tier 4 scenes start: lazy `import("three")` near the viewport, DPR cap, paused off screen and in hidden tabs, poster on low-end (deviceMemory < 4, < 4 cores, Save-Data, 2G), no WebGL, or reduced motion.
+- Exhibit originals are generic components in `src/components/originals/` (header format from the skill); exhibit folders only pass content in.
+- Count-ups only run on a visitor's press (Exhibit D "Recount"), never on scroll: the gate's numbers check fails any value that is shown and later corrected.
+- Before/After "typical output" mock carries no button label and no marketing line the copy rules would flag; its copy is deliberately bland, not banned.

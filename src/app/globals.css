@@ -64,6 +64,8 @@ button { font: inherit; color: inherit; }
 .bureau-mark { font-family: var(--font-display); font-weight: 800; font-size: 20px; letter-spacing: -0.01em; line-height: 1; display: inline-block; font-variation-settings: "wdth" var(--wdth, 110); transition: font-variation-settings 0.12s linear; }
 .case-no { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .bar-spacer { flex: 1; }
+.bar-ex { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+@media (max-width: 1360px) { .bar-ex { display: none; } }
 .bar-btn {
   min-height: 36px; min-width: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   padding: 0 10px; background: transparent; border: 1px solid var(--line); color: var(--ink); cursor: pointer;

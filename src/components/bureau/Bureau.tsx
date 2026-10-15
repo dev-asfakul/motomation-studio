@@ -151,7 +151,7 @@ export function Bureau({ letters, pages, search, caseNo }: BureauProps) {
       <header className="bureau-bar" role="banner">
         <a href="/" aria-label="Motomation, case opening" className="bureau-mark-link"><span ref={markRef} className="bureau-mark">MOTOMATION</span></a>
         <span className="case-no" aria-label={`Case number ${caseNo}`}>{caseNo} · <CaseTicker /></span>
-        {exhibitNow && <span className="label bar-hide-sm" style={{ color: "var(--ink)" }}>Exhibit {exhibitNow.letter} · {exhibitNow.title}</span>}
+        {exhibitNow && <span className="label bar-ex" style={{ color: "var(--ink)" }}>Exhibit {exhibitNow.letter} · {exhibitNow.title}</span>}
         <span className="bar-spacer" />
         <nav className="tray" aria-label="Evidence tray, exhibits A to T">
           {letters.map((l) => (

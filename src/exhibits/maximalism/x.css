@@ -1,0 +1,53 @@
+/* Exhibit B · Maximalism · The Overstuffed Evidence Room. Heavy drag, seven depths, one red number. */
+.x-maximalism { --b-line: #111111; cursor: grab; background-image: radial-gradient(circle at 1px 1px, rgba(17,17,17,0.18) 1px, transparent 1.5px); background-size: 14px 14px; }
+.x-maximalism .x-head h2 { font-weight: 800; text-transform: uppercase; letter-spacing: -0.03em; }
+.x-maximalism .x-sec { border-top: 3px solid #111; }
+.x-maximalism .x-card { border: 2px solid #111; box-shadow: 6px 6px 0 #111; }
+.x-maximalism .x-dna li { border-width: 2px; background: var(--x-surface); transform: rotate(-1.5deg); }
+.x-maximalism .x-dna li:nth-child(even) { transform: rotate(2deg); }
+.b-hero { min-height: 120svh; }
+.b-title { font-family: var(--x-display); font-weight: 800; font-size: min(8.4vw, 7.4rem); line-height: 0.86; letter-spacing: -0.04em; text-transform: uppercase; margin: 2vh 0 0; position: relative; z-index: 8; max-width: 12ch; pointer-events: none; }
+.b-title span { display: block; color: var(--x-ground); -webkit-text-stroke: 2px #111; paint-order: stroke; text-shadow: 5px 5px 0 #111; }
+.b-wall { position: relative; height: 92svh; margin-top: -10vh; container-type: size; }
+.tdw-o { position: absolute; margin: 0; touch-action: none; cursor: grab; rotate: calc(var(--r) + var(--lag, 0deg)); transform: translateY(calc(var(--p, 0) * var(--d) * -60px)); transition: rotate 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.tdw-o[data-drag] { cursor: grabbing; transition: none; z-index: 20 !important; }
+.tdw-o:focus-visible { outline: 3px solid #111; outline-offset: 4px; }
+.tdw-body { display: block; }
+.tdw-tag { position: absolute; left: 10px; top: 100%; margin-top: 10px; background: #fff; color: #111; border: 1.5px solid #111; padding: 5px 8px 6px; font-family: var(--x-text); font-size: 11px; line-height: 1.35; display: grid; width: max-content; max-width: 220px; transform-origin: 14px -10px; rotate: var(--swing, 0deg); transition: rotate 0.9s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.tdw-tag::before { content: ""; position: absolute; left: 13px; top: -11px; width: 1.5px; height: 11px; background: #111; }
+.tdw-tag .tdw-c { color: #4A4536; }
+.b-more { font-family: var(--x-display); font-weight: 800; font-size: clamp(4rem, 13vw, 13rem); line-height: 0.8; color: #111; display: block; letter-spacing: -0.05em; }
+.b-stripe { display: block; aspect-ratio: 3 / 1; background: repeating-linear-gradient(45deg, #111 0 18px, #FFE9A3 18px 36px); border: 2px solid #111; }
+.b-count { display: block; max-width: 15ch; background: #111; color: #FFF6D6; padding: 14px 16px; font-family: var(--x-text); font-size: 14px; }
+.b-count b { display: block; font-family: var(--x-display); font-size: 64px; line-height: 0.9; }
+.b-dot { display: block; width: clamp(70px, 9vw, 130px); aspect-ratio: 1; border-radius: 50%; background: var(--x-accent); border: 2px solid #111; }
+.b-check { display: block; aspect-ratio: 1; background: repeating-conic-gradient(#111 0 25%, #FFF6D6 0 50%) 0 0 / 40px 40px; border: 2px solid #111; }
+.b-zig { display: block; font-family: var(--x-text); font-weight: 700; font-size: clamp(14px, 1.6vw, 22px); background: #FFE9A3; border: 2px solid #111; padding: 8px 12px; letter-spacing: 0.08em; }
+.b-num-wrap { position: absolute; right: 4%; top: 18%; z-index: 9; text-align: right; }
+.b-num { background: none; border: 0; cursor: pointer; font-family: var(--x-display); font-weight: 800; font-size: clamp(7rem, 20vw, 20rem); line-height: 0.78; color: var(--x-accent); -webkit-text-stroke: 3px #111; letter-spacing: -0.06em; text-shadow: 8px 8px 0 #111; transition: transform 0.15s cubic-bezier(0.22, 1, 0.36, 1); }
+.b-num span { font-size: 0.4em; vertical-align: top; }
+.b-num:active { transform: scale(0.96) rotate(-2deg); }
+.b-num-cap { font-size: 13px; margin: 6px 0 0; font-family: var(--x-text); max-width: 22ch; margin-left: auto; }
+.b-marquee { font-family: var(--x-display); font-weight: 800; font-size: clamp(2rem, 5vw, 4.6rem); text-transform: uppercase; background: #111; color: #FFF6D6; padding: 10px 0; margin: 0 calc(-1 * var(--gutter)); border-block: 3px solid #111; }
+@media (max-width: 767px) {
+  .b-wall { height: 120svh; margin-top: 2vh; }
+  .b-num-wrap { right: 2%; top: auto; bottom: 2%; }
+  .tdw-tag { font-size: 10px; max-width: 150px; }
+}
+@media (prefers-reduced-motion: reduce) { .tdw-o { transform: none; transition: none; } .tdw-tag { transition: none; } }
+/* custody tag lab */
+.ct-root { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--gutter); align-items: start; }
+.ct-rig { position: relative; height: 420px; display: grid; justify-items: center; }
+.ct-pin { width: 18px; height: 18px; border-radius: 50%; background: var(--x-accent); border: 2px solid #111; z-index: 2; }
+.ct-tag { position: absolute; top: 9px; width: 220px; padding: 150px 18px 22px; transform-origin: 50% 0; display: grid; gap: 4px; cursor: grab; touch-action: none; }
+.ct-tag > b, .ct-tag > span:last-child { position: relative; background: #fff; }
+.ct-tag::after { content: ""; position: absolute; left: 10px; right: 10px; top: 140px; bottom: 0; background: #fff; border: 2px solid #111; box-shadow: 6px 6px 0 #111; clip-path: polygon(18% 0, 82% 0, 100% 14%, 100% 100%, 0 100%, 0 14%); z-index: -1; }
+.ct-tag { isolation: isolate; }
+.ct-string { position: absolute; left: 50%; top: 0; width: 2px; height: 150px; background: #111; }
+.ct-hole { position: absolute; left: calc(50% - 7px); top: 146px; width: 14px; height: 14px; border-radius: 50%; border: 2px solid #111; background: var(--x-ground); }
+.ct-tag b { font-family: var(--x-display); font-size: 22px; padding: 18px 12px 0; text-transform: uppercase; }
+.ct-tag > span:last-child { padding: 0 12px; font-size: 13px; }
+.ct-log ol { margin: 0 0 18px; padding-left: 1.4em; display: grid; gap: 8px; font-size: 16px; }
+.ct-sign { min-height: 48px; padding: 0 20px; background: #111; color: #FFF6D6; border: 0; font-family: var(--x-text); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer; box-shadow: 4px 4px 0 var(--x-accent); }
+.ct-sign:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--x-accent); }
+@media (max-width: 767px) { .ct-root { grid-template-columns: 1fr; } }
