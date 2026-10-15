@@ -97,9 +97,9 @@ Reviews (/critique, /audit, /overdrive) for each gated page: [docs/reviews/READM
 
 ## Deploy
 
-Preview, the exact verified build: [MOTOMATION · the case file](https://www.perplexity.ai/computer/a/motomation-the-case-file-732kZIiESxiCt_kyxfZVcg).
+Live: [motomation-studio.vercel.app](https://motomation-studio.vercel.app), deployed by Vercel from `main` on every push. Preview of the verified build: [MOTOMATION · the case file](https://www.perplexity.ai/computer/a/motomation-the-case-file-732kZIiESxiCt_kyxfZVcg).
 
-Vercel was connected, but the deploy did not run. The CLI token authenticates as `dev-asfakul`, but its default scope is the team `dev-choice`, and the CLI answers "Not authorized: Trying to access resource under scope \"dev-choice\"". The personal scope is refused ("You cannot set your Personal Account as the scope"). The site is a plain static export (`out/`) with `vercel.json` headers, so `vercel deploy --prod` from the repo root works once the token can reach that team.
+`vercel.json` sets `"framework": null` and `outputDirectory: "out"`. The site is a Next.js static export, so Vercel serves `out/` as plain files with the headers in `vercel.json`. With the Next.js preset, Vercel looks for `routes-manifest.json`, and a static export never writes that file.
 
 ## Licence
 
