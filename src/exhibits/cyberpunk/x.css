@@ -1,0 +1,38 @@
+/* Exhibit J · Cyberpunk · The Neon Stakeout. Jitter on a 60 ms clock, then still. Rain, HUD, a working terminal. */
+.x-cyberpunk { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='22'%3E%3Crect width='12' height='22' fill='%23E84E0E'/%3E%3C/svg%3E") 0 0, text; }
+.x-cyberpunk .x-head h2 { text-transform: uppercase; font-weight: 800; letter-spacing: 0.01em; }
+.x-cyberpunk .x-sec { border-top: 1px solid rgba(232,78,14,0.4); }
+.x-cyberpunk .x-card { border: 1px solid rgba(238,238,236,0.12); clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px)); }
+.x-cyberpunk .x-dna li { border-color: #E84E0E; text-transform: uppercase; font-size: 12px; letter-spacing: 0.08em; }
+.j-hero { min-height: 100svh; }
+.j-rain { position: absolute; inset: 0; z-index: 0; background: radial-gradient(ellipse at 80% 20%, rgba(232,78,14,0.18), transparent 50%), radial-gradient(ellipse at 10% 90%, rgba(43,212,224,0.12), transparent 50%); }
+.j-scan { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: repeating-linear-gradient(180deg, rgba(0,0,0,0.22) 0 1px, transparent 1px 3px); }
+.j-hud { position: absolute; z-index: 2; right: var(--gutter); top: calc(var(--bar-h) + 18px); display: grid; gap: 4px; text-align: right; font-family: var(--x-text); font-size: 11px; letter-spacing: 0.12em; color: #EEEEEC; background: rgba(18,18,16,0.82); padding: 8px 10px; }
+.j-hud span:first-child { color: #E84E0E; }
+.j-hero > *:not(.j-rain):not(.j-scan):not(.j-hud) { position: relative; z-index: 2; }
+.j-title { font-family: var(--x-display); font-weight: 800; text-transform: uppercase; font-size: clamp(3.4rem, 1rem + 10vw, 12rem); line-height: 0.84; letter-spacing: -0.01em; margin: 3vh 0 4vh; }
+.j-title > span:last-child { display: block; color: #121210; -webkit-text-stroke: 2px #EEEEEC; text-shadow: 0 0 24px rgba(232,78,14,0.6); }
+.j-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--gutter); align-items: start; }
+.st { background: rgba(10,10,9,0.94); border: 1px solid rgba(232,78,14,0.55); box-shadow: 0 0 0 1px #000, 0 0 40px rgba(232,78,14,0.15); font-family: var(--x-text); font-size: 14px; cursor: text; }
+.st-bar { display: flex; align-items: center; gap: 6px; padding: 8px 12px; border-bottom: 1px solid rgba(238,238,236,0.1); font-size: 11px; color: var(--x-muted); letter-spacing: 0.08em; }
+.st-bar i { width: 10px; height: 10px; border: 1px solid #E84E0E; } .st-bar span { margin-left: 8px; }
+.st-body { height: 300px; overflow: auto; padding: 12px 14px; }
+.st-line { margin-bottom: 10px; } .st-line pre { margin: 0; white-space: pre-wrap; font: inherit; color: #EEEEEC; }
+.st-cmd { margin: 0; color: #E84E0E; } .st-cmd span { color: #2bd4e0; }
+.st-in { display: flex; gap: 10px; align-items: center; padding: 10px 14px; border-top: 1px solid rgba(238,238,236,0.1); color: #2bd4e0; }
+.st-in input { flex: 1; background: transparent; border: 0; outline: none; color: #EEEEEC; font: inherit; caret-color: #E84E0E; min-height: 32px; caret-shape: block; }
+.st-in:focus-within { box-shadow: inset 0 0 0 1px #E84E0E; }
+.st-sug { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 14px 14px; }
+.st-sug button { min-height: 36px; padding: 0 10px; background: transparent; border: 1px solid rgba(238,238,236,0.25); color: #EEEEEC; font: 12px var(--x-text); cursor: pointer; }
+.st-sug button:hover { border-color: #E84E0E; color: #E84E0E; }
+.j-links { display: grid; gap: 12px; background: rgba(18,18,16,0.9); padding: 18px; border-left: 2px solid #E84E0E; }
+.j-links a { font-family: var(--x-display); font-size: 26px; text-transform: uppercase; text-decoration: none; letter-spacing: 0.02em; }
+@media (max-width: 899px) { .j-grid { grid-template-columns: 1fr; } .j-hud { display: none; } .st-body { height: 260px; } }
+/* lab */
+.j-lab { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--gutter); }
+.j-dec { display: grid; gap: 14px; align-content: start; }
+.j-dec-word { font-family: var(--x-display); font-weight: 800; font-size: clamp(2rem, 1rem + 4vw, 4.6rem); line-height: 1; margin: 0; color: #E84E0E; min-height: 2.1em; }
+.j-range { display: grid; gap: 6px; font-size: 14px; } .j-range input { accent-color: #E84E0E; }
+.j-btn { justify-self: start; min-height: 44px; padding: 0 16px; background: #E84E0E; color: #121210; border: 0; font: 700 13px var(--x-text); text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer; }
+.j-btn:active { transform: translate(1px, 1px); }
+@media (max-width: 899px) { .j-lab { grid-template-columns: 1fr; } }

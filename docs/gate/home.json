@@ -1,0 +1,17 @@
+{
+  "verified": false,
+  "reason": "sandbox too constrained: 2 CPUs (attempt 1, standard footprint: timed out after 600s scanning http://localhost:4180/; attempt 2, light footprint (one renderer, no GPU, no /dev/shm, timeouts ×3): timed out after 600s scanning http://localhost:4180/; machine: 2 CPU, load 0.39, 7574 MB free, /dev/shm 3979 MB)",
+  "machine": {
+    "cpus": 2,
+    "load": 0.39,
+    "freeMB": 7574,
+    "cgroupMB": null,
+    "shmMB": 3979,
+    "asMB": null,
+    "agent": null,
+    "constrained": true,
+    "why": [
+      "2 CPUs"
+    ]
+  }
+}

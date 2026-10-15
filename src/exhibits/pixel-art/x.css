@@ -1,0 +1,39 @@
+/* Exhibit G · Pixel art · The 8-Bit Crime Scene. Stepped motion: whole pixels, whole frames. */
+.x-pixel-art { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h2v2H0zM0 2h4v2H0zM0 4h6v2H0zM0 6h8v2H0zM0 8h10v2H0zM0 10h6v2H0zM0 12h2v2H0zM6 10h2v4H6zM8 12h2v4H8z' fill='%23F3F0E8'/%3E%3C/svg%3E") 0 0, auto; image-rendering: pixelated; }
+.x-pixel-art * { border-radius: 0 !important; }
+.x-pixel-art .x-head h2 { font-size: clamp(1.8rem, 1rem + 3.4vw, 4.2rem); line-height: 1.1; }
+.x-pixel-art .x-sec { border-top: 4px solid var(--x-surface); }
+.x-pixel-art .x-card { box-shadow: 4px 4px 0 #000, inset 0 0 0 2px #3a3628; }
+.x-pixel-art .x-dna li { border-width: 2px; }
+.x-pixel-art .x-aa { font-size: clamp(6rem, 18vw, 18rem); }
+.x-pixel-art .x-alpha { font-size: clamp(1.1rem, 0.8rem + 1.6vw, 2.2rem); line-height: 1.4; }
+.g-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 20px var(--gutter); align-content: start; }
+.g-wake { position: absolute; inset: 0; z-index: 0; }
+.g-hero > *:not(.g-wake) { position: relative; z-index: 1; }
+.g-hero .x-hero-meta { grid-column: 1 / -1; }
+.g-title { font-family: var(--x-display); font-weight: 700; font-size: clamp(1.7rem, 0.6rem + 3.2vw, 4.4rem); line-height: 1.1; margin: 2vh 0 0; text-shadow: 4px 4px 0 #577DE7; grid-column: 1; }
+.g-sub { grid-column: 1; font-size: 16px; max-width: 34ch; line-height: 1.5; }
+.ss { grid-column: 2; grid-row: 2 / span 3; display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: start; }
+.ss canvas { grid-column: 1 / -1; width: 100%; height: auto; image-rendering: pixelated; border: 4px solid #3a3628; box-shadow: 8px 8px 0 #000; }
+.ss canvas:focus-visible { outline: 4px solid #577DE7; outline-offset: 4px; }
+.ss-pad { grid-column: 2; grid-row: 2 / span 2; display: grid; grid-template-columns: repeat(3, 48px); grid-template-rows: repeat(2, 48px); gap: 4px; }
+.ss-pad button { background: #3a3628; color: #F3F0E8; border: 0; box-shadow: inset -3px -3px 0 #000; font-size: 16px; cursor: pointer; touch-action: none; }
+.ss-pad button:active { box-shadow: inset 3px 3px 0 #000; }
+.ss-pad button:nth-child(1) { grid-column: 2; } .ss-pad button:nth-child(2) { grid-column: 1; grid-row: 2; } .ss-pad button:nth-child(3) { grid-column: 2; grid-row: 2; } .ss-pad button:nth-child(4) { grid-column: 3; grid-row: 2; }
+.ss-list { grid-column: 1; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 16px; font-size: 13px; }
+.ss-list li::before { content: "■ "; color: #577DE7; } .ss-list li[data-got]::before { content: "✓ "; color: #F3F0E8; }
+.ss-list li[data-got] { color: var(--x-muted); }
+.ss-said { grid-column: 1; margin: 0; font-family: var(--x-display); font-size: 13px; }
+@media (max-width: 899px) { .g-hero { grid-template-columns: 1fr; } .ss, .g-title, .g-sub { grid-column: 1; grid-row: auto; } .ss-list { grid-template-columns: 1fr; } }
+/* lab */
+.g-lab { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: var(--gutter); }
+.di canvas { border: 4px solid #3a3628; }
+.di-ctrl { display: grid; gap: 10px; margin-top: 14px; }
+.di-ctrl label { display: grid; gap: 4px; font-size: 14px; } .di-ctrl input { accent-color: #577DE7; min-height: 30px; }
+.di-ctrl [role="group"] { display: flex; gap: 6px; }
+.di-ctrl button { min-height: 44px; padding: 0 12px; background: #3a3628; color: #F3F0E8; border: 0; font-family: var(--x-display); font-size: 12px; cursor: pointer; }
+.di-ctrl button[aria-pressed="true"] { background: #577DE7; color: #15130C; }
+.g-ascii { overflow: clip; } .g-ascii pre { font-size: 7px; line-height: 1; color: var(--x-ink); }
+@media (max-width: 899px) { .g-lab { grid-template-columns: 1fr; } }
+
+.g-title span { display: block; white-space: nowrap; }

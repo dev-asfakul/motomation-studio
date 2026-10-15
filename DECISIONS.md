@@ -33,3 +33,12 @@ One line of why per call. Newest at the bottom.
 - Exhibit originals are generic components in `src/components/originals/` (header format from the skill); exhibit folders only pass content in.
 - Count-ups only run on a visitor's press (Exhibit D "Recount"), never on scroll: the gate's numbers check fails any value that is shown and later corrected.
 - Before/After "typical output" mock carries no button label and no marketing line the copy rules would flag; its copy is deliberately bland, not banned.
+
+## M4 · Exhibits F–J
+- F: redaction bars are buttons with `aria-pressed`, so the hidden words are always in the accessibility tree; only the bar is decoration. Only one word of the headline is redacted, so the display line still reads at a glance.
+- F: the reflow photo is a real float re-inserted between paragraphs (no absolute positioning), with Move up / Move down / Swap side buttons as the non-drag path.
+- G: the sprite map runs on a 10 fps `setInterval` (stepped, not rAF) and maps eight real repo folders with their real file counts; every item also exists as a text list.
+- G: the title uses non-breaking hyphens and per-line `nowrap` after the first screenshot showed "8-" / "BIT" splitting.
+- H: squash and stretch keep area constant (`scale(1/s, s)`); one shared SVG lighting filter textures every clay surface, softened after the slab read as carpet.
+- I: three glass slides maximum, each about 340×210, to cap backdrop-filter area; the heat field simulates at 72×44 and the browser upscales and blurs it.
+- J: the terminal answers from the inventory (folders, signatures, tiers, install paths, commands), never canned text; rain is 2D canvas with DPR capped at 1.5.

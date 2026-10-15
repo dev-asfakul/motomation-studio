@@ -9,5 +9,167 @@ export const repo = {
   "steps": 8,
   "scan": 29,
   "files": 2472,
-  "version": "2.6.0"
+  "version": "2.6.0",
+  "sigNames": [
+    "Proximity Weight",
+    "Letter Relay",
+    "Line Curtain",
+    "Width Sprint",
+    "Decode",
+    "Neighbour Moves",
+    "Ink Fill",
+    "Timecode Rail",
+    "Aperture",
+    "Velocity Skew Marquee",
+    "Darkroom Develop",
+    "Stacked Deck",
+    "Horizontal Reel",
+    "Thread",
+    "Seismograph Line",
+    "Lens",
+    "Pixel Wake",
+    "Sticker Scatter",
+    "Considerate Magnet",
+    "Remembered List",
+    "Brand Selection",
+    "Hold to Commit"
+  ],
+  "install": [
+    {
+      "agent": "Coding agents (this project)",
+      "cmd": "npx skills add asfakulsiam/asfakulsiam-motomation-design"
+    },
+    {
+      "agent": "Coding agents (all your projects)",
+      "cmd": "npx skills add asfakulsiam/asfakulsiam-motomation-design -g"
+    },
+    {
+      "agent": "Specific agents",
+      "cmd": "npx skills add asfakulsiam/asfakulsiam-motomation-design -a claude-code -a cursor"
+    },
+    {
+      "agent": "Claude Code plugin, step 1",
+      "cmd": "/plugin marketplace add asfakulsiam/asfakulsiam-motomation-design"
+    }
+  ],
+  "cmdNames": [
+    "/shape",
+    "/build",
+    "/invent",
+    "/signature",
+    "/motomate",
+    "/animate",
+    "/type",
+    "/bolder",
+    "/quieter",
+    "/distill",
+    "/mutate",
+    "/overdrive",
+    "/critique",
+    "/audit",
+    "/study",
+    "/polish",
+    "/dials",
+    "/help",
+    "/version",
+    "/check-update",
+    "/update-skill"
+  ],
+  "tierNames": [
+    {
+      "tier": 1,
+      "name": "Basic",
+      "when": "Every site. Hover, focus, press, reveal"
+    },
+    {
+      "tier": 2,
+      "name": "Intermediate",
+      "when": "Line reveals, pinned sections, kinetic type"
+    },
+    {
+      "tier": 3,
+      "name": "Pro",
+      "when": "Page-to-page continuity, illustrated product stories"
+    },
+    {
+      "tier": 4,
+      "name": "Max",
+      "when": "When the concept is spatial, material, or lit"
+    },
+    {
+      "tier": 5,
+      "name": "Motomation",
+      "when": "When the story should play like After Effects as the user scrolls"
+    }
+  ],
+  "folders": [
+    {
+      "id": "thinking",
+      "count": 2
+    },
+    {
+      "id": "invention",
+      "count": 1
+    },
+    {
+      "id": "structures",
+      "count": 1
+    },
+    {
+      "id": "principles",
+      "count": 7
+    },
+    {
+      "id": "motion",
+      "count": 7
+    },
+    {
+      "id": "signatures",
+      "count": 4
+    },
+    {
+      "id": "styles",
+      "count": 11
+    },
+    {
+      "id": "categories",
+      "count": 13
+    },
+    {
+      "id": "craft",
+      "count": 9
+    },
+    {
+      "id": "gates",
+      "count": 1
+    },
+    {
+      "id": "commands",
+      "count": 4
+    },
+    {
+      "id": "adapters",
+      "count": 5
+    },
+    {
+      "id": "data",
+      "count": 13
+    },
+    {
+      "id": "examples",
+      "count": 265
+    },
+    {
+      "id": "references",
+      "count": 15
+    },
+    {
+      "id": "scripts",
+      "count": 10
+    },
+    {
+      "id": "templates",
+      "count": 2
+    }
+  ]
 } as const;
