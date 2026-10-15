@@ -1,0 +1,85 @@
+Contrast, measured with skill scripts/contrast.mjs
+A Bone & Graphite ink/ground: #1C1C1A on #ECE8E1: 13.97:1  body PASS · large PASS · AAA PASS
+A Bone & Graphite muted/ground: #5A5852 on #ECE8E1: 5.82:1  body PASS · large PASS · AAA —
+A Bone & Graphite muted/surface: #5A5852 on #E2DDD4: 5.25:1  body PASS · large PASS · AAA —
+A Bone & Graphite accent/ground: #8A6A3B on #ECE8E1: 4.08:1  body FAIL · large PASS · AAA —
+B Citrus Brutal ink/ground: #111111 on #FFF6D6: 17.44:1  body PASS · large PASS · AAA PASS
+B Citrus Brutal muted/ground: #4A4536 on #FFF6D6: 8.83:1  body PASS · large PASS · AAA PASS
+B Citrus Brutal muted/surface: #4A4536 on #FFE9A3: 7.94:1  body PASS · large PASS · AAA PASS
+B Citrus Brutal accent/ground: #FF4D00 on #FFF6D6: 3.07:1  body FAIL · large PASS · AAA —
+C Lagoon ink/ground: #10201E on #EEF3F2: 15.02:1  body PASS · large PASS · AAA PASS
+C Lagoon muted/ground: #4C5F5C on #EEF3F2: 6.04:1  body PASS · large PASS · AAA —
+C Lagoon muted/surface: #4C5F5C on #E1EAE8: 5.52:1  body PASS · large PASS · AAA —
+C Lagoon accent/ground: #0F7C72 on #EEF3F2: 4.51:1  body PASS · large PASS · AAA —
+D Swiss Red ink/ground: #111111 on #FAFAF7: 18.05:1  body PASS · large PASS · AAA PASS
+D Swiss Red muted/ground: #555555 on #FAFAF7: 7.12:1  body PASS · large PASS · AAA PASS
+D Swiss Red muted/surface: #555555 on #EFEFEA: 6.46:1  body PASS · large PASS · AAA —
+D Swiss Red accent/ground: #E30613 on #FAFAF7: 4.66:1  body PASS · large PASS · AAA —
+E Arctic Lab ink/ground: #0F1820 on #F4F7F9: 16.65:1  body PASS · large PASS · AAA PASS
+E Arctic Lab muted/ground: #4F5D6A on #F4F7F9: 6.28:1  body PASS · large PASS · AAA —
+E Arctic Lab muted/surface: #4F5D6A on #E8EEF2: 5.77:1  body PASS · large PASS · AAA —
+E Arctic Lab accent/ground: #1E6FD9 on #F4F7F9: 4.50:1  body PASS · large PASS · AAA —
+F Paper & Vermilion ink/ground: #151412 on #F3F0EA: 16.18:1  body PASS · large PASS · AAA PASS
+F Paper & Vermilion muted/ground: #5E5A53 on #F3F0EA: 6.02:1  body PASS · large PASS · AAA —
+F Paper & Vermilion muted/surface: #5E5A53 on #EAE6DE: 5.50:1  body PASS · large PASS · AAA —
+F Paper & Vermilion accent/ground: #C8401C on #F3F0EA: 4.38:1  body FAIL · large PASS · AAA —
+G Bauhaus Blackboard ink/ground: #F3F0E8 on #15130C: 16.31:1  body PASS · large PASS · AAA PASS
+G Bauhaus Blackboard muted/ground: #B3AE9E on #15130C: 8.37:1  body PASS · large PASS · AAA PASS
+G Bauhaus Blackboard muted/surface: #B3AE9E on #211E15: 7.50:1  body PASS · large PASS · AAA PASS
+G Bauhaus Blackboard accent/ground: #577DE7 on #15130C: 4.85:1  body PASS · large PASS · AAA —
+H Clay & Moss ink/ground: #2A241E on #EFE9E1: 12.71:1  body PASS · large PASS · AAA PASS
+H Clay & Moss muted/ground: #6B6157 on #EFE9E1: 5.01:1  body PASS · large PASS · AAA —
+H Clay & Moss muted/surface: #6B6157 on #E4DCD1: 4.45:1  body FAIL · large PASS · AAA —
+H Clay & Moss accent/ground: #5C7A48 on #EFE9E1: 4.01:1  body FAIL · large PASS · AAA —
+I Night Lagoon ink/ground: #EAF0EF on #0E1312: 16.24:1  body PASS · large PASS · AAA PASS
+I Night Lagoon muted/ground: #9EB3AF on #0E1312: 8.49:1  body PASS · large PASS · AAA PASS
+I Night Lagoon muted/surface: #9EB3AF on #161F1E: 7.62:1  body PASS · large PASS · AAA PASS
+I Night Lagoon accent/ground: #118E83 on #0E1312: 4.65:1  body PASS · large PASS · AAA —
+J Wet Concrete ink/ground: #EEEEEC on #121210: 16.14:1  body PASS · large PASS · AAA PASS
+J Wet Concrete muted/ground: #AEAEA3 on #121210: 8.37:1  body PASS · large PASS · AAA PASS
+J Wet Concrete muted/surface: #AEAEA3 on #1C1C19: 7.63:1  body PASS · large PASS · AAA PASS
+J Wet Concrete accent/ground: #E84E0E on #121210: 4.93:1  body PASS · large PASS · AAA —
+K Bauhaus Primaries ink/ground: #141414 on #F2EFE6: 16.02:1  body PASS · large PASS · AAA PASS
+K Bauhaus Primaries muted/ground: #565452 on #F2EFE6: 6.55:1  body PASS · large PASS · AAA —
+K Bauhaus Primaries muted/surface: #565452 on #E7E2D5: 5.82:1  body PASS · large PASS · AAA —
+K Bauhaus Primaries accent/ground: #1F4FD8 on #F2EFE6: 5.76:1  body PASS · large PASS · AAA —
+L Safelight ink/ground: #F6E9E2 on #140B0A: 16.33:1  body PASS · large PASS · AAA PASS
+L Safelight muted/ground: #B89A90 on #140B0A: 7.45:1  body PASS · large PASS · AAA PASS
+L Safelight muted/surface: #B89A90 on #21110F: 7.00:1  body PASS · large PASS · AAA PASS
+L Safelight accent/ground: #FF5A3C on #140B0A: 6.26:1  body PASS · large PASS · AAA —
+M Concrete & Signal ink/ground: #161616 on #E9E9E6: 14.87:1  body PASS · large PASS · AAA PASS
+M Concrete & Signal muted/ground: #555553 on #E9E9E6: 6.14:1  body PASS · large PASS · AAA —
+M Concrete & Signal muted/surface: #555553 on #DCDCD8: 5.43:1  body PASS · large PASS · AAA —
+M Concrete & Signal accent/ground: #C2410C on #E9E9E6: 4.25:1  body FAIL · large PASS · AAA —
+N Ultramarine Press ink/ground: #14161F on #F5F3EE: 16.26:1  body PASS · large PASS · AAA PASS
+N Ultramarine Press muted/ground: #555B6B on #F5F3EE: 6.11:1  body PASS · large PASS · AAA —
+N Ultramarine Press muted/surface: #555B6B on #EBE8E1: 5.54:1  body PASS · large PASS · AAA —
+N Ultramarine Press accent/ground: #2337C6 on #F5F3EE: 7.78:1  body PASS · large PASS · AAA PASS
+O Arctic Lab Dark ink/ground: #E8EEF2 on #0C1115: 16.21:1  body PASS · large PASS · AAA PASS
+O Arctic Lab Dark muted/ground: #9EAAB3 on #0C1115: 8.00:1  body PASS · large PASS · AAA PASS
+O Arctic Lab Dark muted/surface: #9EAAB3 on #151C21: 7.25:1  body PASS · large PASS · AAA PASS
+O Arctic Lab Dark accent/ground: #337FE3 on #0C1115: 4.77:1  body PASS · large PASS · AAA —
+P Sun-Bleached ink/ground: #2B2118 on #F6EFE6: 13.80:1  body PASS · large PASS · AAA PASS
+P Sun-Bleached muted/ground: #6E5E4E on #F6EFE6: 5.45:1  body PASS · large PASS · AAA —
+P Sun-Bleached muted/surface: #6E5E4E on #EEE3D4: 4.91:1  body PASS · large PASS · AAA —
+P Sun-Bleached accent/ground: #C2562F on #F6EFE6: 3.94:1  body FAIL · large PASS · AAA —
+Q Saffron Market ink/ground: #1F1610 on #FBF4E8: 16.27:1  body PASS · large PASS · AAA PASS
+Q Saffron Market muted/ground: #64574A on #FBF4E8: 6.39:1  body PASS · large PASS · AAA —
+Q Saffron Market muted/surface: #64574A on #F3E6CF: 5.66:1  body PASS · large PASS · AAA —
+Q Saffron Market accent/ground: #A8550F on #FBF4E8: 4.83:1  body PASS · large PASS · AAA —
+R Vermilion After Hours ink/ground: #F2EFE8 on #15120C: 16.27:1  body PASS · large PASS · AAA PASS
+R Vermilion After Hours muted/ground: #B3AC9E on #15120C: 8.28:1  body PASS · large PASS · AAA PASS
+R Vermilion After Hours muted/surface: #B3AC9E on #211D15: 7.44:1  body PASS · large PASS · AAA PASS
+R Vermilion After Hours accent/ground: #E04A22 on #15120C: 4.60:1  body PASS · large PASS · AAA —
+S Monsoon Night ink/ground: #EDF0EB on #10130E: 16.28:1  body PASS · large PASS · AAA PASS
+S Monsoon Night muted/ground: #A6B39E on #10130E: 8.52:1  body PASS · large PASS · AAA PASS
+S Monsoon Night muted/surface: #A6B39E on #1A1E17: 7.69:1  body PASS · large PASS · AAA PASS
+S Monsoon Night accent/ground: #299371 on #10130E: 4.90:1  body PASS · large PASS · AAA —
+T Night Brass ink/ground: #EDEBE6 on #0D0D0F: 16.29:1  body PASS · large PASS · AAA PASS
+T Night Brass muted/ground: #A3A09A on #0D0D0F: 7.44:1  body PASS · large PASS · AAA PASS
+T Night Brass muted/surface: #A3A09A on #18181B: 6.79:1  body PASS · large PASS · AAA —
+T Night Brass accent/ground: #C9A15B on #0D0D0F: 8.07:1  body PASS · large PASS · AAA PASS
+Bureau Darkroom ink/ground: #F2EEE6 on #0E0D0B: 16.78:1  body PASS · large PASS · AAA PASS
+Bureau Darkroom muted/ground: #A8A196 on #0E0D0B: 7.58:1  body PASS · large PASS · AAA PASS
+Bureau Darkroom muted/surface: #A8A196 on #1A1814: 6.92:1  body PASS · large PASS · AAA —
+Bureau Darkroom accent/ground: #E0442B on #0E0D0B: 4.65:1  body PASS · large PASS · AAA —

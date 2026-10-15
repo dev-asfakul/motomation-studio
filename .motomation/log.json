@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "runs": [
+    {
+      "date": "2026-10-15T07:32:38.019Z",
+      "page": "home",
+      "archetype": "gallery-wall",
+      "signature": "width-sprint",
+      "fonts": "Anybody/Inter Tight",
+      "palette": "Darkroom",
+      "tier": "5",
+      "fingerprint": {
+        "layout": "canvas",
+        "tier": 5,
+        "signature_type": "type"
+      }
+    }
+  ]
+}

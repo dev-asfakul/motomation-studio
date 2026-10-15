@@ -1,0 +1,11 @@
+IDs
+✓ page "home" is fresh
+✓ archetype "board" is fresh
+✓ signature "width-sprint" is fresh
+✓ fonts "Anybody/Inter Tight" is fresh
+✓ palette "Darkroom" is fresh
+✓ tier "5" is fresh
+Structure  (fingerprint: tier=5 · signature_type=type)
+  · no logged run to compare with
+Logged run #1 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=canvas · tier=5 · signature_type=type
