@@ -20,4 +20,9 @@ export const REGISTRY: Record<string, Mod> = {
   collage: { Hero: dynamic(() => import("./collage/Hero")), Lab: dynamic(() => import("./collage/Lab")) },
   "vector-art": { Hero: dynamic(() => import("./vector-art/Hero")), Lab: dynamic(() => import("./vector-art/Lab")) },
   futuristic: { Hero: dynamic(() => import("./futuristic/Hero")), Lab: dynamic(() => import("./futuristic/Lab")) },
+  handwritten: { Hero: dynamic(() => import("./handwritten/Hero")), Lab: dynamic(() => import("./handwritten/Lab")) },
+  bohemian: { Hero: dynamic(() => import("./bohemian/Hero")), Lab: dynamic(() => import("./bohemian/Lab")) },
+  graffiti: { Hero: dynamic(() => import("./graffiti/Hero")), Lab: dynamic(() => import("./graffiti/Lab")) },
+  aurora: { Hero: dynamic(() => import("./aurora/Hero")), Lab: dynamic(() => import("./aurora/Lab")) },
+  victorian: { Hero: dynamic(() => import("./victorian/Hero")), Lab: dynamic(() => import("./victorian/Lab")) },
 };

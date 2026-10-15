@@ -205,3 +205,70 @@ Structure  (fingerprint: layout=rows · tier=4 · signature_type=scroll)
 ✓ closest logged run is #13 at 52% (< 70%); shared: signature_type, tier
 Logged run #16 to /home/user/workspace/motomation-studio/.motomation/log.json
   fingerprint: layout=rows · tier=4 · signature_type=scroll
+
+=== exhibit handwritten ===
+IDs
+✓ page "exhibit-handwritten" is fresh
+✓ archetype "timeline" is fresh
+✓ signature "thread" is fresh
+✓ fonts "Caveat/Literata" is fresh
+✓ palette "Sun-Bleached" is fresh
+✗ tier "2" was used in 2 of the last 5 runs → choose another
+Structure  (fingerprint: layout=sequence · tier=2 · signature_type=scroll)
+✗ 81% structural overlap with run #13 (film-reel, exhibit-retro) ≥ 70%. Same: layout, signature_type
+  → offer a mutation on layout: Invert the axis (invert-axis): vertical becomes horizontal or time runs backwards
+Logged run #17 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=sequence · tier=2 · signature_type=scroll
+
+=== exhibit bohemian ===
+IDs
+✓ page "exhibit-bohemian" is fresh
+✓ archetype "index" is fresh
+✓ signature "considerate-magnet" is fresh
+✓ fonts "Fraunces/Spectral" is fresh
+✓ palette "Saffron Market" is fresh
+✗ tier "2" was used in 2 of the last 5 runs → choose another
+Structure  (fingerprint: layout=rows · tier=2 · signature_type=micro)
+✓ closest logged run is #14 at 58% (< 70%); shared: signature_type, tier
+Logged run #18 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=rows · tier=2 · signature_type=micro
+
+=== exhibit graffiti ===
+IDs
+✓ page "exhibit-graffiti" is fresh
+✓ archetype "manifesto" is fresh
+✓ signature "velocity-skew" is fresh
+✓ fonts "Climate Crisis/Familjen Grotesk" is fresh
+✓ palette "Vermilion After Hours" is fresh
+✗ tier "2" was used in 3 of the last 5 runs → choose another
+Structure  (fingerprint: layout=statement · tier=2 · signature_type=scroll)
+✓ closest logged run is #14 at 67% (< 70%); shared: layout, tier
+Logged run #19 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=statement · tier=2 · signature_type=scroll
+
+=== exhibit aurora ===
+IDs
+✓ page "exhibit-aurora" is fresh
+✓ archetype "ledger" is fresh
+✓ signature "seismograph-line" is fresh
+✓ fonts "Cormorant Garamond/Hanken Grotesk" is fresh
+✓ palette "Monsoon Night" is fresh
+✗ tier "4" was used in 1 of the last 5 runs → choose another
+Structure  (fingerprint: layout=rows · tier=4 · signature_type=cursor)
+✓ closest logged run is #16 at 67% (< 70%); shared: layout, tier
+Logged run #20 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=rows · tier=4 · signature_type=cursor
+
+=== exhibit victorian ===
+IDs
+✓ page "exhibit-victorian" is fresh
+✓ archetype "poster" is fresh
+✓ signature "darkroom-develop" is fresh
+✓ fonts "Bodoni Moda/EB Garamond" is fresh
+✓ palette "Night Brass" is fresh
+✗ tier "2" was used in 3 of the last 5 runs → choose another
+Structure  (fingerprint: layout=statement · tier=2 · signature_type=scroll)
+✗ 100% structural overlap with run #19 (manifesto, exhibit-graffiti) ≥ 70%. Same: layout, signature_type, tier
+  → offer a mutation on layout: Invert the axis (invert-axis): vertical becomes horizontal or time runs backwards
+Logged run #21 to /home/user/workspace/motomation-studio/.motomation/log.json
+  fingerprint: layout=statement · tier=2 · signature_type=scroll

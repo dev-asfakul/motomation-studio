@@ -224,6 +224,76 @@
         "tier": 4,
         "signature_type": "scroll"
       }
+    },
+    {
+      "date": "2026-10-15T08:34:26.517Z",
+      "page": "exhibit-handwritten",
+      "archetype": "timeline",
+      "signature": "thread",
+      "fonts": "Caveat/Literata",
+      "palette": "Sun-Bleached",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "sequence",
+        "tier": 2,
+        "signature_type": "scroll"
+      }
+    },
+    {
+      "date": "2026-10-15T08:34:26.671Z",
+      "page": "exhibit-bohemian",
+      "archetype": "index",
+      "signature": "considerate-magnet",
+      "fonts": "Fraunces/Spectral",
+      "palette": "Saffron Market",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "rows",
+        "tier": 2,
+        "signature_type": "micro"
+      }
+    },
+    {
+      "date": "2026-10-15T08:34:26.818Z",
+      "page": "exhibit-graffiti",
+      "archetype": "manifesto",
+      "signature": "velocity-skew",
+      "fonts": "Climate Crisis/Familjen Grotesk",
+      "palette": "Vermilion After Hours",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "statement",
+        "tier": 2,
+        "signature_type": "scroll"
+      }
+    },
+    {
+      "date": "2026-10-15T08:34:26.971Z",
+      "page": "exhibit-aurora",
+      "archetype": "ledger",
+      "signature": "seismograph-line",
+      "fonts": "Cormorant Garamond/Hanken Grotesk",
+      "palette": "Monsoon Night",
+      "tier": "4",
+      "fingerprint": {
+        "layout": "rows",
+        "tier": 4,
+        "signature_type": "cursor"
+      }
+    },
+    {
+      "date": "2026-10-15T08:34:27.135Z",
+      "page": "exhibit-victorian",
+      "archetype": "poster",
+      "signature": "darkroom-develop",
+      "fonts": "Bodoni Moda/EB Garamond",
+      "palette": "Night Brass",
+      "tier": "2",
+      "fingerprint": {
+        "layout": "statement",
+        "tier": 2,
+        "signature_type": "scroll"
+      }
     }
   ]
 }

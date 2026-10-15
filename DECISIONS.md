@@ -55,3 +55,13 @@ One line of why per call. Newest at the bottom.
 - N: Archivo is loaded with its `wdth` axis so witness labels can run at 62% and the title at 125% from one family.
 - O: the hologram is the only WebGL scene on its page, starts only near the viewport, and falls back to a designed SVG poster of the same layers (the sandbox's 2-core machine always gets the poster, which is what the screenshots show).
 - Memory check K–O appended to docs/memory-checks.txt.
+
+## M6 · Exhibits P–T
+- P: the notebook's freehand layer sits under the copy (the copy has pointer-events none), so the whole page is drawable without stealing links; strokes are saved on this device only and the controls say so.
+- P: the red pen accent (#C2562F) fails 4.5:1 on paper, so text uses a darker red (#A8461F, 5.16:1) and the brighter red stays on lines and borders.
+- Q: tarot faces are inventory facts; the deck lists every face in a details element, so nothing is hidden behind chance. Plants were cut back to the bottom quarter after the first screenshot showed leaves under the controls.
+- R: stencils mask spray with a Path2D hit test instead of a second compositing canvas: one canvas, no per-frame mask pass.
+- S: one fragment shader on a full-screen quad, DPR capped at 1.5; the hour drives a CSS gradient poster when WebGL is off. The title keeps "3 AM" together with a no-break space.
+- T: the curtains part when the hero enters and close when it leaves; engravings are SVG hatching patterns, not raster textures.
+- Memory check P–T: tier repeats again accepted. Two structural flags: P matches L (both "scroll" signatures on a sequence layout) and T matches R on layout, signature type and tier. Accepted: P is a still notebook page with a drawing layer while L is a scrubbed Tier 5 film; T is a centred gallery of framed plates while R is a paintable wall. The fingerprint does not see palette, type, texture or interaction, which differ completely.
+- Style extensions: 16 style files in `skill-extensions/styles/` in the skill's own format, plus default dials, archetypes, section order, signature menu and must-haves; Silkscreen and Caveat (missing from the skill's fonts.csv) are in `skill-extensions/data/fonts-addendum.csv`.

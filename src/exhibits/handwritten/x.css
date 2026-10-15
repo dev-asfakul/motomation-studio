@@ -1,0 +1,32 @@
+/* Exhibit P · Handwritten · The Detective's Notebook. Ink writes at a hand's pace; pencil, not pixels. */
+.x-handwritten { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Cpath d='M2 24L5 15L19 1L25 7L11 21Z' fill='%23F6EFE6' stroke='%232B2118' stroke-width='1.4'/%3E%3Cpath d='M2 24L5 15L11 21Z' fill='%232B2118'/%3E%3C/svg%3E") 2 24, crosshair; }
+.x-handwritten .x-head h2 { font-weight: 600; font-size: clamp(2.4rem, 1rem + 4vw, 5rem); }
+.x-handwritten .x-sec { border-top: 1px solid rgba(43,33,24,0.2); }
+.x-handwritten .x-card { background: #fffaf2; border: 1px solid rgba(43,33,24,0.14); border-radius: 2px; box-shadow: 0 1px 0 rgba(43,33,24,0.06); }
+.x-handwritten .x-dna li { border: 0; border-bottom: 2px solid #C2562F; border-radius: 0; font-family: var(--x-display); font-size: 22px; }
+.p-hero { padding-top: calc(var(--bar-h) + 18px); }
+.p-page { position: relative; min-height: 88svh; background: #fffaf2 repeating-linear-gradient(180deg, transparent 0 35px, rgba(43,90,140,0.16) 35px 36px); padding: 28px clamp(20px, 4vw, 60px) 28px clamp(56px, 8vw, 120px); box-shadow: 0 1px 2px rgba(43,33,24,0.1), 0 30px 60px rgba(43,33,24,0.08); overflow: clip; }
+.p-margin { position: absolute; left: clamp(40px, 6vw, 96px); top: 0; bottom: 0; width: 2px; background: rgba(194,86,47,0.5); }
+.p-ring { position: absolute; right: 8%; top: 12%; width: clamp(140px, 18vw, 240px); }
+.p-leaf { position: absolute; right: 3%; bottom: 6%; width: clamp(60px, 7vw, 110px); rotate: 18deg; }
+.p-title { font-family: var(--x-display); font-weight: 700; font-size: clamp(3rem, 1.4rem + 6vw, 8rem); line-height: 0.9; margin: 2vh 0 3vh; color: var(--x-ink); rotate: -1.5deg; position: relative; z-index: 2; pointer-events: none; }
+.iw { display: grid; margin: 0; font-family: var(--x-display); font-size: clamp(1.6rem, 1rem + 1.6vw, 2.6rem); line-height: 36px; color: #1d3f6e; position: relative; z-index: 2; pointer-events: none; }
+.iw-l { position: relative; width: max-content; max-width: 100%; mask: linear-gradient(90deg, #000 var(--p), transparent calc(var(--p) + 6%)); -webkit-mask: linear-gradient(90deg, #000 var(--p), transparent calc(var(--p) + 6%)); }
+.iw-nib { position: absolute; left: var(--p); top: 50%; width: 6px; height: 6px; border-radius: 50%; background: #1d3f6e; }
+.p-ink { margin-top: 1vh; }
+.p-circled { position: relative; z-index: 2; pointer-events: none; display: inline-block; margin: 26px 0 0; font-family: var(--x-display); font-size: clamp(1.4rem, 1rem + 1vw, 2rem); color: #A8461F; padding: 4px 18px; border: 2px solid #C2562F; border-radius: 50% 46% 52% 48% / 60% 50% 56% 44%; rotate: -2deg; }
+.p-circled span { text-transform: uppercase; font-size: 0.7em; letter-spacing: 0.06em; }
+.p-pad { position: absolute; inset: 0; z-index: 1; }
+.fp-ctrl { position: absolute; right: 16px; bottom: 14px; display: flex; gap: 8px; align-items: center; z-index: 3; font-size: 13px; color: var(--x-muted); flex-wrap: wrap; justify-content: flex-end; }
+.fp-ctrl button { min-height: 40px; padding: 0 12px; background: #2B2118; color: #F6EFE6; border: 0; font: 600 13px var(--x-text); border-radius: 3px; cursor: pointer; }
+.fp-ctrl button:disabled { background: #d9cdbd; color: #5a4c3e; cursor: default; }
+@media (max-width: 767px) { .p-ring { right: -10%; top: 30%; } .fp-ctrl span { display: none; } .p-page { padding-bottom: 80px; } }
+/* lab */
+.p-thread { position: relative; }
+.p-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 8%; position: relative; z-index: 1; }
+.p-card { display: grid; gap: 6px; background: #fffaf2; padding: 16px 18px; border: 1px solid rgba(43,33,24,0.16); border-top: 6px solid #EEE3D4; }
+.p-card:nth-child(even) { margin-top: 48px; }
+.p-date { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--x-muted); }
+.p-card b { font-family: var(--x-display); font-size: 30px; line-height: 1; }
+@media (max-width: 767px) { .p-cards { grid-template-columns: 1fr; } .p-card:nth-child(even) { margin-top: 0; } }
+@media (prefers-reduced-motion: reduce) { .iw-l { mask: none; -webkit-mask: none; } }

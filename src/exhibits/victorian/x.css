@@ -1,0 +1,39 @@
+/* Exhibit T · Victorian · The Gaslight Archive. Weighted, ceremonial, and then still. */
+.x-victorian { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Ccircle cx='13' cy='17' r='8' fill='%23C9A15B' stroke='%230D0D0F' stroke-width='1.5'/%3E%3Crect x='10' y='2' width='6' height='9' rx='2' fill='%23C9A15B' stroke='%230D0D0F'/%3E%3C/svg%3E") 13 17, auto; }
+.x-victorian .x-head h2 { font-weight: 400; font-style: italic; }
+.x-victorian .x-sec { border-top: 0; background-image: linear-gradient(90deg, transparent, rgba(201,161,91,0.5), transparent); background-size: 100% 1px; background-repeat: no-repeat; }
+.x-victorian .x-card { border: 1px solid rgba(201,161,91,0.4); outline: 1px solid rgba(201,161,91,0.2); outline-offset: -6px; border-radius: 0; }
+.x-victorian .x-dna li { border-color: rgba(201,161,91,0.6); border-radius: 0; font-style: italic; }
+.t-hero { min-height: 100svh; background-color: #0D0D0F; background-image: radial-gradient(circle at 20px 20px, rgba(201,161,91,0.07) 6px, transparent 7px), radial-gradient(circle at 0 0, rgba(201,161,91,0.05) 10px, transparent 11px); background-size: 40px 40px, 40px 40px; overflow: clip; }
+.t-gas { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 50% 40% at 50% 8%, rgba(255,196,110,0.18), transparent 70%); animation: t-gas 3.2s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate; }
+@keyframes t-gas { to { opacity: 0.78; } }
+.t-curtain { position: absolute; inset: 0; z-index: 5; pointer-events: none; }
+.vc-p { position: absolute; top: 0; bottom: 0; width: 51%; background: repeating-linear-gradient(90deg, rgba(0,0,0,0.42) 0, rgba(255,255,255,0.06) 3%, rgba(0,0,0,0.28) 6%, rgba(0,0,0,0.5) 8%), var(--vc); box-shadow: inset 0 -30px 40px rgba(0,0,0,0.5); }
+.vc-p::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 18px; background: repeating-linear-gradient(90deg, #C9A15B 0 3px, transparent 3px 7px); }
+.vc-l { left: 0; } .vc-r { right: 0; }
+.vc-pelmet { position: absolute; left: 0; right: 0; top: 0; height: calc(var(--bar-h) + 30px); background: repeating-radial-gradient(ellipse at 50% 0, var(--vc, #5b0f1a) 0 40px, #3d0a12 40px 46px) 0 0 / 120px 100%, #5b0f1a; border-bottom: 3px solid #C9A15B; opacity: 0.96; }
+.t-head { position: relative; text-align: center; display: grid; justify-items: center; padding-top: 6vh; }
+.t-head .x-hero-meta { justify-content: center; }
+.t-orn { font-size: 28px; color: #C9A15B; margin: 2vh 0 0; }
+.t-title { font-family: var(--x-display); font-weight: 400; font-size: clamp(3rem, 1rem + 7.4vw, 9.6rem); line-height: 0.9; letter-spacing: -0.01em; margin: 1vh 0 2vh; }
+.t-title em { font-weight: 400; color: #C9A15B; }
+.t-sub { max-width: 46ch; font-size: 18px; font-style: italic; color: var(--x-muted); }
+.t-plates { list-style: none; margin: 6vh 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); position: relative; }
+.t-plate { position: relative; display: grid; gap: 12px; }
+.t-frame { padding: 14px; background: linear-gradient(135deg, #8a6a33, #e2c483 30%, #7a5a26 55%, #d8b874 80%, #6e5020); box-shadow: inset 0 0 0 3px #3a2a10, 0 20px 40px rgba(0,0,0,0.5); }
+.t-frame img, .t-frame canvas { display: block; width: 100%; height: auto; box-shadow: inset 0 0 20px rgba(0,0,0,0.6); }
+.t-cap { margin: 0; text-align: center; font-size: 15px; color: var(--x-muted); font-style: italic; } .t-cap b { display: block; font-style: normal; color: var(--x-ink); font-family: var(--x-display); font-size: 18px; letter-spacing: 0.04em; }
+.t-seal { position: absolute; right: -8px; top: 60%; }
+.ws { all: unset; display: grid; place-items: center; cursor: pointer; border-radius: 50%; }
+.ws-empty { width: 70%; height: 70%; border-radius: 50%; border: 1.5px dashed rgba(201,161,91,0.8); display: grid; place-items: center; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #EDEBE6; background: rgba(13,13,15,0.82); transition: transform 0.15s; }
+.ws:hover .ws-empty { transform: scale(1.06); }
+.ws:focus-visible { outline: 2px solid #C9A15B; outline-offset: 3px; }
+.ws-s { width: 100%; height: 100%; animation: ws-press 0.42s cubic-bezier(0.32, 0.72, 0, 1) both; filter: drop-shadow(0 4px 4px rgba(0,0,0,0.5)); }
+@keyframes ws-press { 0% { transform: scale(1.25); opacity: 0; } 60% { transform: scale(0.94, 1.04); opacity: 1; } 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .ws-s, .t-gas { animation: none; } }
+@media (max-width: 899px) { .t-plates { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; } }
+/* lab */
+.t-lab { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: var(--gutter); align-items: center; }
+.t-medal { display: grid; place-items: center; color: #C9A15B; font-family: var(--x-display); }
+.t-brass h3 { font-family: var(--x-display); font-weight: 400; font-size: clamp(1.8rem, 1rem + 2.6vw, 3.6rem); line-height: 1; margin: 0 0 12px; }
+@media (max-width: 767px) { .t-lab { grid-template-columns: 1fr; } }

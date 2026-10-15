@@ -1,0 +1,33 @@
+/* Exhibit R · Graffiti · The Wall. Spray hiss, gravity drips, a skewing wheatpaste strip. */
+.x-graffiti { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Crect x='9' y='8' width='10' height='16' rx='2' fill='%23F2EFE8'/%3E%3Crect x='11' y='3' width='6' height='5' fill='%23E04A22'/%3E%3Ccircle cx='5' cy='4' r='1.2' fill='%23E04A22'/%3E%3Ccircle cx='3' cy='7' r='1' fill='%23E04A22'/%3E%3C/svg%3E") 4 4, crosshair; }
+.x-graffiti .x-head h2 { font-weight: 400; text-transform: uppercase; }
+.x-graffiti .x-sec { border-top: 3px solid #E04A22; }
+.x-graffiti .x-card { border: 2px solid #F2EFE8; border-radius: 0; transform: skewX(-2deg); }
+.x-graffiti .x-dna li { border: 2px solid #E04A22; border-radius: 0; text-transform: uppercase; }
+.r-hero { padding-bottom: 4vh; }
+.r-wall { position: relative; height: min(76svh, 760px); margin-top: 14px; overflow: clip; border: 2px solid #000;
+  background-color: #4a2a20; background-image: linear-gradient(rgba(0,0,0,0.35) 2px, transparent 2px), linear-gradient(90deg, rgba(0,0,0,0.35) 2px, transparent 2px), linear-gradient(90deg, rgba(0,0,0,0.35) 2px, transparent 2px), radial-gradient(ellipse at 30% 30%, rgba(255,255,255,0.06), transparent 60%);
+  background-size: 100% 34px, 76px 68px, 76px 68px, 100% 100%; background-position: 0 0, 0 0, 38px 34px, 0 0; }
+.r-canvas { position: absolute; inset: 0; z-index: 2; }
+.r-stencil { position: absolute; z-index: 3; pointer-events: none; filter: drop-shadow(4px 6px 8px rgba(0,0,0,0.5)); }
+.r-poster { position: absolute; right: 5%; top: 8%; z-index: 1; width: min(44%, 460px); padding: 22px 26px; background: #F2C230; color: #15120C; transform: rotate(2deg); box-shadow: 0 2px 0 rgba(0,0,0,0.2); border: 6px solid #15120C; outline: 3px dashed #E04A22; outline-offset: -14px; }
+.r-orn { display: block; height: 14px; background: repeating-linear-gradient(90deg, #E04A22 0 12px, #1FA39A 12px 24px, #15120C 24px 28px); }
+.r-orn-b { margin-top: 12px; }
+.r-title { font-family: var(--x-display); font-weight: 400; font-size: clamp(3rem, 1rem + 6vw, 7.6rem); line-height: 0.82; margin: 14px 0 10px; color: #15120C; text-transform: uppercase; }
+.r-claim { font-weight: 700; font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem); margin: 0 0 6px; }
+.r-small { margin: 0; font-size: 14px; }
+.r-tools { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; margin-top: 14px; }
+.r-paints { display: flex; gap: 8px; }
+.r-paints button { width: 44px; height: 44px; border-radius: 50%; border: 2px solid #15120C; box-shadow: 0 0 0 2px #2c271d; cursor: pointer; }
+.r-paints button[aria-checked="true"] { box-shadow: 0 0 0 3px #F2EFE8; }
+.r-stens { display: flex; flex-wrap: wrap; gap: 6px; }
+.r-stens button, .r-clear { min-height: 44px; padding: 0 14px; background: #211D15; color: #F2EFE8; border: 2px solid #F2EFE8; font: 700 13px var(--x-text); text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; }
+.r-stens button[aria-checked="true"] { background: #F2EFE8; color: #15120C; }
+.r-clear { border-color: #E04A22; }
+.r-paints button:focus-visible, .r-stens button:focus-visible, .r-clear:focus-visible { outline: 3px solid #F2C230; outline-offset: 2px; }
+@media (max-width: 767px) { .r-wall { height: 70svh; } .r-poster { left: 4%; right: 4%; width: auto; top: 4%; padding: 14px 16px; } .r-title { font-size: 3.2rem; } }
+/* lab */
+.r-lab { display: grid; gap: var(--gutter); }
+.r-strip { background: #F2C230; color: #15120C; font-family: var(--x-display); font-size: clamp(1.4rem, 1rem + 2vw, 3rem); padding: 14px 0; transform: rotate(-1.5deg); overflow: clip; }
+.r-contour { position: relative; min-height: 260px; background: #211D15; display: grid; place-items: end start; padding: 24px; overflow: clip; }
+.r-contour > :first-child { position: absolute; inset: 0; } .r-contour p { position: relative; margin: 0; max-width: 40ch; background: #15120C; padding: 8px 12px; }

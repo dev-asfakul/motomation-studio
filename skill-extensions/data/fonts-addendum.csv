@@ -1,0 +1,3 @@
+name,source,license,role,axes,personality,pairs_with,use_for,avoid,scripts
+Silkscreen,Google Fonts,OFL,display pixel,wght (400 700),"a square bitmap face that stays crisp at integer sizes",Martian Mono; Space Mono,"pixel art, game UI labels, short headings at 16px multiples",body text; sizes that are not multiples of its pixel grid,latin latin-ext
+Caveat,Google Fonts,OFL,display script,wght,"quick, legible handwriting with a ballpoint rhythm",Literata; Spectral,"notes, margin annotations, journal headings at 20px and up",body copy; anything that must read at a glance,latin latin-ext cyrillic
