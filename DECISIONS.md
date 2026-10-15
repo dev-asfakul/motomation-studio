@@ -104,3 +104,4 @@ One line of why per call. Newest at the bottom.
 - S (memory) is reported as measured, including S1 on S and T. All 20 exhibits were logged in one planning session, so the axis compares exhibits with their neighbours (and S with itself). Editing the log to raise it would be gaming the score.
 - Vercel: the connector token authenticates (whoami: dev-asfakul) but the CLI's default scope is the team "dev-choice", which the token cannot access, and the personal scope is refused. Persistent access error, so no Vercel deploy; the preview is hosted on Perplexity instead.
 - Preview hosting: the Perplexity preview serves out/ as-is. Root-absolute font preloads 404 on the internal proxy path; the isolated preview origin serves from root.
+- Vercel: `"framework": null` in vercel.json. The site is a static export, so Vercel must serve out/ as files; with the Next.js preset it looks for a Next build manifest (routes-manifest.json) that a static export never writes.
