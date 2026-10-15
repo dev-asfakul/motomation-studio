@@ -1,0 +1,69 @@
+/* Autopsy: a lab report per folder; the tree is the case index. */
+.tree ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.tree ul::-webkit-scrollbar { display: none; }
+.tree-root { margin: 0 0 10px; display: none; }
+.tree a { display: flex; align-items: baseline; gap: 6px; padding: 8px 10px; text-decoration: none; white-space: nowrap; font-family: var(--font-mono); font-size: 13px; border: 1px solid var(--line); color: var(--ink); transition: background-color 0.15s var(--ease-out), border-color 0.15s var(--ease-out); }
+.tree a:hover { border-color: var(--ink); }
+.tree a[aria-current] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+.tree-glyph { width: 0.8em; display: none; }
+.tree-c { color: inherit; opacity: 0.7; font-size: 11px; }
+@media (min-width: 1000px) {
+  .tree-root { display: block; }
+  .tree ul { flex-direction: column; overflow: visible; gap: 0; }
+  .tree a { border: 0; border-left: 1px solid var(--line); padding: 6px 10px; }
+  .tree a[aria-current] { background: transparent; color: var(--ink); border-left: 3px solid var(--accent); padding-left: 8px; }
+  .tree-glyph { display: inline; color: var(--accent); }
+  .tree-c { margin-left: auto; }
+}
+.folder .sec-h { max-width: 24ch; }
+.files { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 12px; }
+.files summary { cursor: pointer; min-height: 32px; display: flex; align-items: center; }
+.files summary:hover { color: var(--ink); }
+.files ul { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; font-size: 14px; columns: 1; }
+.steps, .laws, .tiers { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.steps li, .laws li, .tiers li { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.steps h3, .laws h3, .tiers h3 { font-size: var(--step-1); line-height: 1.15; margin-bottom: 4px; }
+.steps p, .laws p, .tiers p { margin: 0; }
+.tier-n { font-family: var(--font-display); font-variation-settings: "wdth" 150; font-weight: 800; font-size: 56px; line-height: 0.85; color: var(--accent); }
+.tiers li { grid-template-columns: 64px minmax(0, 1fr); }
+.ticks { padding-left: 1.1em; }
+.ticks li { margin-bottom: 8px; }
+.ticks li::marker { content: "✕  "; color: var(--accent); }
+.kit { background: var(--surface); border: 1px solid var(--line); padding: clamp(16px, 3vw, 28px); display: grid; gap: 16px; margin-bottom: 8px; }
+.kit-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.kit-cmd { margin: 0; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.draws { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.draw { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 12px; border-top: 1px solid var(--line); padding-top: 12px; animation: drawIn 0.32s var(--ease-out) both; }
+.draw:nth-child(2) { animation-delay: 60ms; } .draw:nth-child(3) { animation-delay: 120ms; } .draw:nth-child(4) { animation-delay: 180ms; } .draw:nth-child(5) { animation-delay: 240ms; }
+@keyframes drawIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.draw dl { margin: 0; display: grid; gap: 6px; }
+.draw dl div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+@media (min-width: 700px) { .draw dl div { grid-template-columns: 140px minmax(0, 1fr); gap: 12px; } }
+.draw dt { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.draw dd { margin: 0; }
+.dials { gap: 22px; }
+.dial { display: grid; gap: 6px; }
+.dial input[type="range"] { width: min(100%, 360px); accent-color: var(--accent); min-height: 32px; }
+.dial p { margin: 0; }
+.dial-out { margin: 0; font-size: 13px; color: var(--ink); overflow-wrap: anywhere; }
+.probe-in { display: flex; gap: 6px; align-items: center; }
+.probe-in input[type="color"] { width: 44px; height: 44px; border: 1px solid var(--line); background: none; padding: 2px; cursor: pointer; }
+.probe-swatch { padding: 22px; font-size: var(--step-1); border: 1px solid var(--line); }
+.scan { columns: 1; padding-left: 1.6em; margin: 0; }
+@media (min-width: 1200px) { .scan { columns: 2; column-gap: 40px; } }
+.scan li { break-inside: avoid; margin-bottom: 10px; }
+.scan .label { font-size: 11px; }
+.seqs { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; }
+.seqs li { display: grid; gap: 4px; border-left: 2px solid var(--accent); padding-left: 12px; }
+.pals { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); }
+.pal { padding: 14px; display: grid; gap: 4px; min-height: 104px; border: 1px solid var(--line); position: relative; }
+.pal b { font-size: 15px; padding-right: 64px; }
+.pal-k { font-family: var(--font-mono); font-size: 12px; }
+.pal-sw { position: absolute; right: 10px; top: 12px; display: flex; gap: 3px; }
+.pal-sw i { width: 14px; height: 14px; display: block; border: 1px solid rgba(128,128,128,0.4); }
+.reg-wrap.tall { max-height: 560px; overflow: auto; }
+.plan-keys { margin: 0; display: grid; gap: 10px; }
+.plan-keys div { display: grid; gap: 2px; border-top: 1px solid var(--line); padding-top: 8px; }
+@media (min-width: 800px) { .plan-keys div { grid-template-columns: 180px minmax(0, 1fr); gap: 16px; } }
+.plan-keys dd { margin: 0; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .draw { animation: none; } }

@@ -1,0 +1,653 @@
+{
+ "generated": "2026-10-15T08:58:53.934Z",
+ "pages": 33,
+ "kinds": {
+  "component": {
+   "total": 68,
+   "found": 68,
+   "items": {
+    "blur-focus": [
+     "/lab/"
+    ],
+    "curved-text": [
+     "/exhibits/victorian/",
+     "/lab/"
+    ],
+    "decode": [
+     "/exhibits/cyberpunk/",
+     "/lab/"
+    ],
+    "ink-fill": [
+     "/exhibits/minimalism/",
+     "/lab/"
+    ],
+    "letter-relay": [
+     "/exhibits/vector-art/",
+     "/lab/"
+    ],
+    "neighbour-moves": [
+     "/exhibits/y2k/",
+     "/lab/"
+    ],
+    "pressure-type": [
+     "/lab/"
+    ],
+    "scroll-float": [
+     "/exhibits/vector-art/",
+     "/lab/"
+    ],
+    "split-flap": [
+     "/exhibits/futuristic/",
+     "/exhibits/swiss/",
+     "/lab/"
+    ],
+    "width-sprint": [
+     "/lab/"
+    ],
+    "ascii-text": [
+     "/exhibits/pixel-art/",
+     "/lab/"
+    ],
+    "glitch": [
+     "/exhibits/cyberpunk/",
+     "/lab/"
+    ],
+    "rotating-words": [
+     "/exhibits/bohemian/",
+     "/lab/"
+    ],
+    "scramble-on-hover": [
+     "/exhibits/cyberpunk/",
+     "/lab/"
+    ],
+    "shiny-text": [
+     "/exhibits/victorian/",
+     "/lab/"
+    ],
+    "typewriter": [
+     "/exhibits/editorial/",
+     "/exhibits/handwritten/",
+     "/exhibits/pop-art/",
+     "/lab/"
+    ],
+    "aperture": [
+     "/exhibits/surreal/",
+     "/lab/"
+    ],
+    "darkroom-develop": [
+     "/exhibits/editorial/",
+     "/lab/"
+    ],
+    "horizontal-reel": [
+     "/exhibits/retro/",
+     "/lab/"
+    ],
+    "reading-rail": [
+     "/exhibits/minimalism/",
+     "/lab/"
+    ],
+    "stacked-deck": [
+     "/lab/"
+    ],
+    "thread": [
+     "/exhibits/handwritten/",
+     "/lab/"
+    ],
+    "velocity-marquee": [
+     "/exhibits/graffiti/",
+     "/exhibits/maximalism/",
+     "/lab/"
+    ],
+    "image-trail": [
+     "/lab/"
+    ],
+    "lens": [
+     "/exhibits/glassmorphism/",
+     "/lab/"
+    ],
+    "pixel-wake": [
+     "/exhibits/pixel-art/",
+     "/lab/"
+    ],
+    "seismograph-line": [
+     "/lab/"
+    ],
+    "target-cursor": [
+     "/lab/"
+    ],
+    "tilt-card": [
+     "/exhibits/y2k/",
+     "/lab/"
+    ],
+    "aurora": [
+     "/exhibits/aurora/",
+     "/lab/"
+    ],
+    "beams": [
+     "/lab/"
+    ],
+    "contour-lines": [
+     "/exhibits/graffiti/",
+     "/lab/"
+    ],
+    "dot-field": [
+     "/lab/"
+    ],
+    "globe": [
+     "/exhibits/futuristic/",
+     "/lab/"
+    ],
+    "grain": [
+     "/exhibits/retro/",
+     "/lab/"
+    ],
+    "halftone": [
+     "/exhibits/maximalism/",
+     "/exhibits/pop-art/",
+     "/lab/"
+    ],
+    "light-sweep": [
+     "/exhibits/retro/",
+     "/lab/"
+    ],
+    "liquid-field": [
+     "/exhibits/surreal/",
+     "/lab/"
+    ],
+    "mesh-gradient": [
+     "/lab/"
+    ],
+    "meteors": [
+     "/exhibits/aurora/",
+     "/lab/"
+    ],
+    "particle-field": [
+     "/exhibits/aurora/",
+     "/lab/"
+    ],
+    "bento-reveal": [
+     "/exhibits/pop-art/",
+     "/lab/"
+    ],
+    "curve-carousel": [
+     "/exhibits/bohemian/",
+     "/lab/"
+    ],
+    "dock": [
+     "/lab/"
+    ],
+    "flowing-menu": [
+     "/lab/"
+    ],
+    "infinite-canvas": [
+     "/lab/"
+    ],
+    "sticky-index": [
+     "/exhibits/swiss/",
+     "/lab/"
+    ],
+    "animated-list": [
+     "/exhibits/collage/",
+     "/lab/"
+    ],
+    "confetti": [
+     "/lab/"
+    ],
+    "device-mockup": [
+     "/lab/"
+    ],
+    "glare-card": [
+     "/exhibits/glassmorphism/",
+     "/lab/"
+    ],
+    "glow-border": [
+     "/lab/"
+    ],
+    "icon-cloud": [
+     "/lab/"
+    ],
+    "loader-skeleton": [
+     "/lab/"
+    ],
+    "loader-spinner": [
+     "/lab/"
+    ],
+    "orbiting-circles": [
+     "/exhibits/futuristic/",
+     "/lab/"
+    ],
+    "rainbow-border": [
+     "/lab/"
+    ],
+    "shimmer-button": [
+     "/lab/"
+    ],
+    "spotlight-card": [
+     "/exhibits/glassmorphism/",
+     "/lab/"
+    ],
+    "terminal": [
+     "/exhibits/cyberpunk/",
+     "/lab/"
+    ],
+    "brand-selection": [
+     "/exhibits/collage/",
+     "/lab/"
+    ],
+    "click-spark": [
+     "/exhibits/y2k/",
+     "/lab/"
+    ],
+    "copy-button": [
+     "/lab/"
+    ],
+    "count-up": [
+     "/exhibits/swiss/",
+     "/lab/"
+    ],
+    "hold-to-commit": [
+     "/exhibits/clay/",
+     "/lab/"
+    ],
+    "remembered-list": [
+     "/exhibits/editorial/",
+     "/lab/"
+    ],
+    "squish-switch": [
+     "/exhibits/clay/",
+     "/lab/"
+    ],
+    "sticker-scatter": [
+     "/exhibits/maximalism/",
+     "/lab/"
+    ]
+   }
+  },
+  "signature": {
+   "total": 22,
+   "found": 22,
+   "items": {
+    "proximity-weight": [
+     "/autopsy/",
+     "/exhibits/pop-art/"
+    ],
+    "letter-relay": [
+     "/autopsy/",
+     "/exhibits/vector-art/"
+    ],
+    "line-curtain": [
+     "/autopsy/",
+     "/exhibits/swiss/"
+    ],
+    "width-sprint": [
+     "/autopsy/"
+    ],
+    "decode": [
+     "/autopsy/",
+     "/exhibits/cyberpunk/"
+    ],
+    "neighbour-moves": [
+     "/autopsy/",
+     "/exhibits/y2k/"
+    ],
+    "ink-fill": [
+     "/autopsy/",
+     "/exhibits/minimalism/"
+    ],
+    "timecode-rail": [
+     "/autopsy/",
+     "/exhibits/retro/"
+    ],
+    "aperture": [
+     "/autopsy/",
+     "/exhibits/surreal/"
+    ],
+    "velocity-skew": [
+     "/autopsy/",
+     "/exhibits/graffiti/"
+    ],
+    "darkroom-develop": [
+     "/autopsy/",
+     "/exhibits/victorian/"
+    ],
+    "stacked-deck": [
+     "/autopsy/",
+     "/exhibits/futuristic/"
+    ],
+    "horizontal-reel": [
+     "/autopsy/"
+    ],
+    "thread": [
+     "/autopsy/",
+     "/exhibits/handwritten/"
+    ],
+    "seismograph-line": [
+     "/autopsy/",
+     "/exhibits/aurora/"
+    ],
+    "lens": [
+     "/autopsy/",
+     "/exhibits/glassmorphism/"
+    ],
+    "pixel-wake": [
+     "/autopsy/",
+     "/exhibits/pixel-art/"
+    ],
+    "sticker-scatter": [
+     "/autopsy/",
+     "/exhibits/maximalism/"
+    ],
+    "considerate-magnet": [
+     "/autopsy/",
+     "/exhibits/bohemian/"
+    ],
+    "remembered-list": [
+     "/autopsy/",
+     "/exhibits/editorial/"
+    ],
+    "brand-selection": [
+     "/autopsy/",
+     "/exhibits/collage/"
+    ],
+    "hold-to-commit": [
+     "/autopsy/",
+     "/exhibits/clay/"
+    ]
+   }
+  },
+  "tier": {
+   "total": 5,
+   "found": 5,
+   "items": {
+    "1": [
+     "/autopsy/"
+    ],
+    "2": [
+     "/autopsy/",
+     "/exhibits/bohemian/",
+     "/exhibits/clay/",
+     "/exhibits/collage/",
+     "/exhibits/cyberpunk/",
+     "/exhibits/editorial/",
+     "/exhibits/graffiti/",
+     "/exhibits/handwritten/",
+     "/exhibits/maximalism/",
+     "/exhibits/minimalism/",
+     "/exhibits/pixel-art/",
+     "/exhibits/pop-art/",
+     "/exhibits/swiss/",
+     "/exhibits/victorian/"
+    ],
+    "3": [
+     "/autopsy/",
+     "/exhibits/glassmorphism/",
+     "/exhibits/vector-art/"
+    ],
+    "4": [
+     "/autopsy/",
+     "/exhibits/aurora/",
+     "/exhibits/futuristic/",
+     "/exhibits/surreal/",
+     "/exhibits/y2k/"
+    ],
+    "5": [
+     "/autopsy/",
+     "/exhibits/retro/"
+    ]
+   }
+  },
+  "archetype": {
+   "total": 20,
+   "found": 20,
+   "items": {
+    "specimen": [
+     "/board/"
+    ],
+    "ledger": [
+     "/board/"
+    ],
+    "film-reel": [
+     "/board/"
+    ],
+    "index": [
+     "/board/"
+    ],
+    "manifesto": [
+     "/board/"
+    ],
+    "gallery-wall": [
+     "/board/"
+    ],
+    "workbench": [
+     "/board/"
+    ],
+    "letter": [
+     "/board/"
+    ],
+    "atlas": [
+     "/board/"
+    ],
+    "timeline": [
+     "/board/"
+    ],
+    "catalogue": [
+     "/board/"
+    ],
+    "stage": [
+     "/board/"
+    ],
+    "diptych": [
+     "/board/"
+    ],
+    "broadsheet": [
+     "/board/"
+    ],
+    "console": [
+     "/board/"
+    ],
+    "room": [
+     "/board/"
+    ],
+    "shelf": [
+     "/board/"
+    ],
+    "lookbook": [
+     "/board/"
+    ],
+    "poster": [
+     "/board/"
+    ],
+    "field-guide": [
+     "/board/"
+    ]
+   }
+  },
+  "step": {
+   "total": 8,
+   "found": 8,
+   "items": {
+    "0": [
+     "/autopsy/",
+     "/method/"
+    ],
+    "1": [
+     "/autopsy/",
+     "/method/"
+    ],
+    "2": [
+     "/autopsy/",
+     "/method/"
+    ],
+    "3": [
+     "/autopsy/",
+     "/method/"
+    ],
+    "4": [
+     "/autopsy/",
+     "/method/"
+    ],
+    "5": [
+     "/autopsy/",
+     "/method/"
+    ],
+    "6": [
+     "/autopsy/",
+     "/method/"
+    ],
+    "7": [
+     "/autopsy/",
+     "/method/"
+    ]
+   }
+  },
+  "command": {
+   "total": 21,
+   "found": 21,
+   "items": {
+    "shape": [
+     "/autopsy/"
+    ],
+    "build": [
+     "/autopsy/"
+    ],
+    "invent": [
+     "/autopsy/",
+     "/exhibits/bohemian/",
+     "/exhibits/pixel-art/",
+     "/exhibits/surreal/"
+    ],
+    "signature": [
+     "/autopsy/",
+     "/exhibits/collage/",
+     "/exhibits/graffiti/",
+     "/exhibits/maximalism/",
+     "/exhibits/pixel-art/",
+     "/exhibits/vector-art/"
+    ],
+    "motomate": [
+     "/autopsy/",
+     "/exhibits/aurora/",
+     "/exhibits/futuristic/",
+     "/exhibits/retro/",
+     "/exhibits/surreal/"
+    ],
+    "animate": [
+     "/autopsy/",
+     "/exhibits/clay/",
+     "/exhibits/y2k/"
+    ],
+    "type": [
+     "/autopsy/",
+     "/exhibits/editorial/",
+     "/exhibits/swiss/",
+     "/exhibits/vector-art/"
+    ],
+    "bolder": [
+     "/autopsy/",
+     "/exhibits/graffiti/",
+     "/exhibits/maximalism/",
+     "/exhibits/pop-art/",
+     "/exhibits/y2k/"
+    ],
+    "quieter": [
+     "/autopsy/",
+     "/exhibits/aurora/",
+     "/exhibits/bohemian/",
+     "/exhibits/glassmorphism/",
+     "/exhibits/minimalism/"
+    ],
+    "distill": [
+     "/autopsy/",
+     "/exhibits/minimalism/"
+    ],
+    "mutate": [
+     "/autopsy/",
+     "/exhibits/collage/",
+     "/exhibits/pop-art/"
+    ],
+    "overdrive": [
+     "/autopsy/",
+     "/exhibits/futuristic/",
+     "/exhibits/retro/",
+     "/exhibits/victorian/"
+    ],
+    "critique": [
+     "/autopsy/",
+     "/exhibits/glassmorphism/",
+     "/exhibits/handwritten/"
+    ],
+    "audit": [
+     "/autopsy/",
+     "/exhibits/swiss/"
+    ],
+    "study": [
+     "/autopsy/"
+    ],
+    "polish": [
+     "/autopsy/",
+     "/exhibits/editorial/",
+     "/exhibits/handwritten/",
+     "/exhibits/victorian/"
+    ],
+    "dials": [
+     "/autopsy/",
+     "/exhibits/clay/"
+    ],
+    "help": [
+     "/autopsy/",
+     "/exhibits/cyberpunk/"
+    ],
+    "version": [
+     "/autopsy/",
+     "/exhibits/cyberpunk/"
+    ],
+    "check-update": [
+     "/autopsy/"
+    ],
+    "update-skill": [
+     "/autopsy/"
+    ]
+   }
+  },
+  "install": {
+   "total": 11,
+   "found": 11,
+   "items": {
+    "1": [
+     "/locker/"
+    ],
+    "2": [
+     "/locker/"
+    ],
+    "3": [
+     "/locker/"
+    ],
+    "4": [
+     "/locker/"
+    ],
+    "5": [
+     "/locker/"
+    ],
+    "6": [
+     "/locker/"
+    ],
+    "7": [
+     "/locker/"
+    ],
+    "8": [
+     "/locker/"
+    ],
+    "9": [
+     "/locker/"
+    ],
+    "10": [
+     "/locker/"
+    ],
+    "11": [
+     "/locker/"
+    ]
+   }
+  }
+ },
+ "missing": []
+}

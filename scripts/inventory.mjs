@@ -170,7 +170,11 @@ for (const [brief, b] of Object.entries(v3.briefs)) {
 }
 const readmeTable = [...readme.split("### Benchmark v3")[1].split("| Brief (mean gated")[0].matchAll(/^\| (.+?) \| \*{0,2}(\d+–\d+–\d+)\*{0,2} \| (.+?) \| (.+?) \|$/gm)].map((m) => ({ against: m[1].replace(/`/g, ""), wlt: m[2], gated: m[3], raw: m[4] }));
 const briefTable = [...readme.matchAll(/^\| (0\d .+?) \| (.+? → .+?) \| (.+? → .+?) \| (.+? → .+?) \|$/gm)].map((m) => ({ brief: m[1], baseline: m[2], gated: m[3], matched: m[4] }));
-const findings = readme.split("What v3 found, including where the skill lost:")[1].split("\n").filter((l) => l.startsWith("- ")).map((l) => l.slice(2).replace(/\*\*/g, ""));
+// only the bullet list right after the heading line; it ends at the first line that is not a bullet
+const findings = (() => { const out = []; let started = false;
+  for (const l of readme.split("What v3 found, including where the skill lost:")[1].split("\n")) {
+    if (l.startsWith("- ")) { started = true; out.push(l.slice(2).replace(/\*\*/g, "")); } else if (started && l.trim() && !l.startsWith("  ")) break; else if (started && !l.trim()) break;
+  } return out; })();
 const v5state = read(path.join(ev, "benchmark-v5", "STATE.md"));
 const v5 = [...v5state.matchAll(/^\| (\d) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \|$/gm)].map((m) => ({ n: +m[1], tier: m[2], brief: m[3], status: m[4].replace(/[✅⬜]\s*/u, ""), agent: m[5], committed: m[6] }));
 const v5summ = fs.readdirSync(path.join(ev, "benchmark-v5")).filter((d) => d.startsWith("tier-")).map((d) => {
@@ -202,14 +206,18 @@ let commit = "";
 try { commit = execSync("git rev-parse HEAD", { cwd: SRC }).toString().trim(); } catch {}
 
 const fontsTbl = csv("fonts");
-const scripts = [...new Set(fontsTbl.flatMap((f) => f.scripts.split(/\s+/).filter((s) => /^[a-z]+$/.test(s))))];
-const coverage = scripts.map((s) => ({ script: s, fonts: fontsTbl.filter((f) => f.scripts.split(/\s+/).includes(s)).map((f) => f.name) }));
+// The scripts column is a space-separated list, sometimes followed by a parenthetical note
+// ("latin (check the foundry's language list)"). Only the words before the note are scripts.
+const scriptsOf = (f) => f.scripts.replace(/\(.*\)/g, "").split(/\s+/).filter((s) => /^[a-z-]+$/.test(s));
+const scripts = [...new Set(fontsTbl.flatMap(scriptsOf))];
+const coverage = scripts.map((s) => ({ script: s, fonts: fontsTbl.filter((f) => scriptsOf(f).includes(s)).map((f) => f.name),
+  unconfirmed: fontsTbl.filter((f) => scriptsOf(f).includes(s) && /\(/.test(f.scripts)).map((f) => f.name) }));
 
 const repo = {
   meta: {
     name: "asfakulsiam-motomation-design", title: "Motomation Design", version, license: "MIT",
     url: "https://github.com/asfakulsiam/asfakulsiam-motomation-design", pages: "https://asfakulsiam.github.io/asfakulsiam-motomation-design/",
-    commit, inventoried: new Date().toISOString().slice(0, 10), totalFiles: allFiles.length,
+    commit, inventoried: new Date().toISOString().slice(0, 10), totalFiles: allFiles.length, copyright: fs.readFileSync(path.join(SRC, "LICENSE"), "utf8").split("\n").find((l) => l.startsWith("Copyright")),
     description: (skillMd.match(/^description: (.+)$/m) || [])[1],
     job: (skillMd.match(/This skill has one job: \*\*(.+?)\*\*/) || [])[1],
   },

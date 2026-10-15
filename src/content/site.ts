@@ -22,7 +22,7 @@ export function searchIndex(): SearchItem[] {
   repo.signatures.forEach((g) => s.push({ kind: "Signature", title: g.name, note: `${g.family} · ${g.one_line}`, href: `/autopsy/#sig-${g.id}` }));
   repo.commands.forEach((c) => s.push({ kind: "Command", title: c.cmd, note: c.what, href: `/autopsy/#cmd-${c.cmd.slice(1)}` }));
   repo.install.forEach((x, i) => s.push({ kind: "Install", title: x.agent, note: x.cmd, href: `/locker/#p-${i + 1}` }));
-  repo.archetypes.forEach((a) => s.push({ kind: "Archetype", title: a.name, note: a.shape, href: `/autopsy/#arch-${a.id}` }));
+  repo.archetypes.forEach((a) => s.push({ kind: "Archetype", title: a.name, note: a.shape, href: `/board/#arch-${a.id}` }));
   repo.tiers.forEach((t) => s.push({ kind: "Tier", title: `Tier ${t.tier} · ${t.name}`, note: t.when, href: `/autopsy/#tier-${t.tier}` }));
   repo.steps.forEach((t) => s.push({ kind: "Step", title: `${t.n}. ${t.name}`, note: "Thinking Sequence", href: `/method/#step-${t.n}` }));
   return s;

@@ -1,0 +1,24 @@
+.dos-subject { display: grid; gap: clamp(24px, 4vw, 56px); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 1000px) { .dos-subject { grid-template-columns: minmax(300px, 4fr) minmax(0, 8fr); align-items: start; } .dos-card { position: sticky; top: calc(var(--bar-h) + 24px); } }
+.dos-card { background: #ece6da; color: #16140f; padding: 22px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); transform: rotate(-1deg); }
+.dos-card .label { color: #4a463e; }
+.dos-card a { color: #16140f; }
+.dos-name { font-family: var(--font-display); font-variation-settings: "wdth" 130; font-weight: 800; font-size: var(--step-3); line-height: 0.92; margin: 8px 0 18px; }
+.dos-dl { margin: 0; display: grid; gap: 10px; }
+.dos-dl div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 10px; border-top: 1px solid rgba(22,20,15,0.2); padding-top: 8px; font-size: 15px; }
+.dos-dl dt { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #4a463e; padding-top: 3px; }
+.dos-dl dd { margin: 0; overflow-wrap: anywhere; }
+.dos-sec { border-top: 1px solid var(--line); padding: 20px 0; }
+.dos-sec h3 { font-size: var(--step-1); margin-bottom: 10px; }
+.dos-sec ul, .dos-sec ol { padding-left: 1.2em; }
+.dos-sec li { margin-bottom: 6px; }
+.ruled { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.ruled li { position: relative; border: 1px solid var(--line); padding: 44px 18px 18px; background: var(--surface); overflow: hidden; }
+.ruled h3 { font-size: 18px; margin-bottom: 6px; }
+.ruled p { margin: 0; }
+.ruled-stamp { position: absolute; top: 12px; right: -2px; border: 2px solid var(--accent); color: #ff8a73; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 8px; transform: rotate(4deg); }
+.dos-two { display: grid; gap: clamp(20px, 4vw, 48px); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .dos-two { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.contrib { margin: 0; padding-left: 1.4em; display: grid; gap: 12px; }
+.lic { border: 1px solid var(--line); padding: 20px; background: var(--surface); }
+.lic p { margin: 0 0 8px; }

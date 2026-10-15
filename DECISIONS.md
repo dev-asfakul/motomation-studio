@@ -65,3 +65,18 @@ One line of why per call. Newest at the bottom.
 - T: the curtains part when the hero enters and close when it leaves; engravings are SVG hatching patterns, not raster textures.
 - Memory check P–T: tier repeats again accepted. Two structural flags: P matches L (both "scroll" signatures on a sequence layout) and T matches R on layout, signature type and tier. Accepted: P is a still notebook page with a drawing layer while L is a scrubbed Tier 5 film; T is a centred gallery of framed plates while R is a paintable wall. The fingerprint does not see palette, type, texture or interaction, which differ completely.
 - Style extensions: 16 style files in `skill-extensions/styles/` in the skill's own format, plus default dials, archetypes, section order, signature menu and must-haves; Silkscreen and Caveat (missing from the skill's fonts.csv) are in `skill-extensions/data/fonts-addendum.csv`.
+
+## M7 · The rooms
+- Board: plain wheel scrolls the page and ⌘/Ctrl + wheel zooms, so the board never traps the visitor; one finger on a phone pans sideways and leaves vertical scroll to the page. The same filters drive a table below the board, which is the accessible reading of it.
+- Board: dimmed cards stay legible (grayscale at 42% opacity is decoration; the table carries the facts). Tier 1 shows 0 exhibits and says why instead of hiding the chip.
+- Archetypes are laid out on the Board (where the structures live); the search index points there, not to the Autopsy.
+- Autopsy: one long report with a scrollspy tree, not a click-to-reveal panel, so every anchor (#sig-, #tier-, #cmd-) exists in the HTML and search links land.
+- Collision engine: ported from scripts/collide.mjs with the same PRNG and draw order. Checked: seed 42, one draw gives The Diptych · Shift the tempo · subway map · Ink Fill, the same as the CLI.
+- Inventory fixes found while building: fonts.csv notes like "(check the foundry's language list)" were being read as scripts named "the" and "language"; the v3 findings list ran on into the sequences block. Both parsers fixed; Fontshare faces are shown as unconfirmed for Latin rather than dropped.
+- Method: the plan is read from DESIGN.md at build time, so the page and the file cannot drift. Steps are not dimmed (dimmed text fails AA); the active step gets an accent rule instead.
+- Lab: Motion 1 overrides matchMedia for the vendor components so each renders its author's reduced-motion version: a real Tier 1, not a CSS pause. The override is installed during render (before the re-keyed specimens mount) and removed when the Lab unmounts.
+- Lab: demos mount only within 500px of the viewport and unmount when they leave, so the 68 specimens never run together.
+- Lab morph: colour interpolates, type does not (families can't be blended honestly). The raw blend is measured at every step and the text swaps to the best-reading candidate when the blend drops under 4.5:1, which is shown.
+- Locker: the two single-file editions copy their raw URL, so all 11 procedures can be sealed.
+- Repo text with em dashes is shown with commas (copy rule), and a lone dash in a table reads "none".
+- Verdict: unlock reads the evidence tray; the poster seed is kept per device so the poster is stable until you ask for a new one.

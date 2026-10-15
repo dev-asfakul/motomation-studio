@@ -198,6 +198,7 @@ export function Bureau({ letters, pages, search, caseNo }: BureauProps) {
         {phase === "cover" && <p className="swap-label">{swap.label}<b>{swap.sub}</b></p>}
       </div>
 
+      <div className="toasts">
       {hydrated && !asked && (
         <div className="toast" role="dialog" aria-label="Sound">
           <p style={{ margin: "0 0 10px" }}>Enter with sound? The case has small synthesised ticks, stamps and rain. It stays silent unless you say yes.</p>
@@ -207,13 +208,14 @@ export function Bureau({ letters, pages, search, caseNo }: BureauProps) {
           </div>
         </div>
       )}
-      {toast && (
+      {toast && !(typeof window !== "undefined" && window.location.pathname.startsWith("/verdict")) && (
         <div className="toast" role="status">
           <p style={{ margin: "0 0 8px" }}>{toast}</p>
           <a href="/verdict/" onClick={() => setToast(null)}>Enter the verdict room</a>{" "}
           <button className="bar-btn" style={{ marginLeft: 8, borderColor: "#0e0d0b", color: "#0e0d0b" }} onClick={() => setToast(null)}>Dismiss</button>
         </div>
       )}
+      </div>
     </>
   );
 }

@@ -9,6 +9,7 @@
   "commit": "8dea1dd7c11384832868bf362a71dcdd4916e3d1",
   "inventoried": "2026-10-15",
   "totalFiles": 2472,
+  "copyright": "Copyright (c) 2026 asfakulsiam",
   "description": "Use when designing, building, redesigning, animating, or critiquing any website, landing page, portfolio, storefront, or web UI where the result must look original and award-level instead of AI-templated. The design direction is derived from the brief; the skill is a generator, not a style library.",
   "job": "every site you make must look like it was designed for this brief by a person with taste, never like it came out of a template."
  },
@@ -6595,6 +6596,23 @@
     "Readex Pro",
     "Amiri",
     "Noto Kufi Arabic"
+   ],
+   "unconfirmed": [
+    "Satoshi",
+    "General Sans",
+    "Cabinet Grotesk",
+    "Clash Display",
+    "Switzer",
+    "Zodiak",
+    "Gambetta",
+    "Boska",
+    "Sentient",
+    "Panchang",
+    "Tanker",
+    "PP Editorial New",
+    "PP Neue Montreal",
+    "ABC Diatype",
+    "GT America"
    ]
   },
   {
@@ -6633,7 +6651,8 @@
     "IBM Plex Mono",
     "Baloo Da 2",
     "Readex Pro"
-   ]
+   ],
+   "unconfirmed": []
   },
   {
    "script": "cyrillic",
@@ -6656,7 +6675,8 @@
     "IBM Plex Sans",
     "Rubik Mono One",
     "IBM Plex Mono"
-   ]
+   ],
+   "unconfirmed": []
   },
   {
    "script": "greek",
@@ -6670,7 +6690,8 @@
     "Brygada 1918",
     "Manrope",
     "IBM Plex Sans"
-   ]
+   ],
+   "unconfirmed": []
   },
   {
    "script": "bengali",
@@ -6682,47 +6703,8 @@
     "Baloo Da 2",
     "Noto Sans Bengali",
     "Galada"
-   ]
-  },
-  {
-   "script": "the",
-   "fonts": [
-    "Satoshi",
-    "General Sans",
-    "Cabinet Grotesk",
-    "Clash Display",
-    "Switzer",
-    "Zodiak",
-    "Gambetta",
-    "Boska",
-    "Sentient",
-    "Panchang",
-    "Tanker",
-    "PP Editorial New",
-    "PP Neue Montreal",
-    "ABC Diatype",
-    "GT America"
-   ]
-  },
-  {
-   "script": "language",
-   "fonts": [
-    "Satoshi",
-    "General Sans",
-    "Cabinet Grotesk",
-    "Clash Display",
-    "Switzer",
-    "Zodiak",
-    "Gambetta",
-    "Boska",
-    "Sentient",
-    "Panchang",
-    "Tanker",
-    "PP Editorial New",
-    "PP Neue Montreal",
-    "ABC Diatype",
-    "GT America"
-   ]
+   ],
+   "unconfirmed": []
   },
   {
    "script": "devanagari",
@@ -6731,7 +6713,8 @@
     "Tiro Devanagari Hindi",
     "Rozha One",
     "Anek Devanagari"
-   ]
+   ],
+   "unconfirmed": []
   },
   {
    "script": "arabic",
@@ -6740,7 +6723,8 @@
     "Readex Pro",
     "Amiri",
     "Noto Kufi Arabic"
-   ]
+   ],
+   "unconfirmed": []
   }
  ],
  "styles": [
@@ -8170,17 +8154,7 @@
     "Effort explains part of v2's 15–0. A baseline told to work about as long as the skill beats the plain baseline 12–0–3 and takes 5 of 15 pairs from the skill, including all three ceramics-shop seeds. 10–5 is not significant with 15 pairs (sign test p≈0.30).",
     "On motion alone the skill lost. At Tier 4, judged only from the gate's scroll-frame strips, the baseline won 6 of 9 seeds. The weakest axis was the reduced-motion fallback (2.50 vs 4.39 of 5). Every skill page reached for WebGL.",
     "In Codex the gate often couldn't run (the headless browser crashed or timed out in a loaded sandbox). 3 of 5 skill runs shipped without a verified pass, and the SaaS page broke.",
-    "One skill page failed a hard gate (ceramics s3103: dimmed scroll-sequence steps at 2.1:1 that `gate.mjs` measured only in their active state).",
-    "New site: `/shape` → approve → `/build` → `/critique` → `/polish`",
-    "Stuck: `/invent` → pick one → `/build --review`",
-    "Existing site feels generic: `/critique` → `/mutate` → `/type` → `/signature`",
-    "Product launch: `/shape --energy=3 --rhythm=3` → `/motomate hero-product` → `/audit`",
-    "contrast against the pixels actually behind each text element (judged by the 10th-percentile sample, with a warning when more than 30% of text can't be measured);",
-    "overflow at 375, 390, 768 and 1440px;",
-    "display words that break at 375px;",
-    "text hidden only under reduced motion;",
-    "missing accessible names;",
-    "heading hierarchy, entrance repetition and JS weight."
+    "One skill page failed a hard gate (ceramics s3103: dimmed scroll-sequence steps at 2.1:1 that `gate.mjs` measured only in their active state)."
    ],
    "pairs": [
     {
