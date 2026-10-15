@@ -1,6 +1,6 @@
 {
   "name": "motomation-studio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Case File: Motomation. The official site of the Motomation Design agent skill, built with the skill.",
   "license": "MIT",
@@ -8,11 +8,12 @@
     "inventory": "node scripts/inventory.mjs && node scripts/client-counts.mjs",
     "dev": "next dev",
     "build": "node scripts/inventory.mjs && node scripts/originals.mjs && node scripts/credits.mjs && next build && node scripts/postbuild.mjs && node scripts/coverage.mjs",
-    "start": "npx serve out -l 3000",
+    "start": "node scripts/serve.mjs out 3000",
     "typecheck": "tsc --noEmit",
-    "gate": "node scripts/run-gate.mjs",
+    "gate": "node scripts/gate-run.mjs / && node scripts/gate-summary.mjs",
     "prebuild": "node scripts/client-counts.mjs",
-    "coverage": "node scripts/coverage.mjs"
+    "coverage": "node scripts/coverage.mjs",
+    "qa": "node scripts/qa.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

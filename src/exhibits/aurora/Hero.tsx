@@ -18,7 +18,9 @@ const ROWS = [
   { at: 5, text: "Built, then measured: the gate runs on real screenshots." },
 ];
 export default function Hero({ e }: { e: Exhibit }) {
-  const reduce = useReducedMotion(); const mobile = useMedia("(max-width: 767px)");
+  const reducePref = useReducedMotion(); const mobile = useMedia("(max-width: 767px)");
+  // a short view (200% zoom, a landscape phone) gets the open ledger instead of a cramped pin
+  const short = useMedia("(max-height: 560px)"); const reduce = reducePref || short;
   const sec = useRef<HTMLElement>(null); const [hour, setHour] = useState(reduce ? 3 : 0);
   useStickyProgress(sec, (p) => setHour((h) => (Math.abs(h - p * 6) > 0.004 ? p * 6 : h)), !reduce);
   const seek = (h: number) => {
@@ -31,7 +33,7 @@ export default function Hero({ e }: { e: Exhibit }) {
         <AuroraShader hour={hour} />
         <div className="s-horizon" aria-hidden="true"><SeismographLine height={90} reach={60} color="rgba(237,240,235,0.4)" /></div>
         <div className="s-top">
-          <p className="x-hero-meta"><b>Exhibit {e.letter}</b><span>{e.style}</span><span>Tier {e.tier}</span><span>{reduce ? "Choose an hour" : "Scroll moves the clock"}</span></p>
+          <p className="x-hero-meta"><b>Exhibit {e.letter}</b><span>{e.style}</span><span>Tier {e.tier}</span><span>Choose an hour</span></p>
           <h1 id="x-title" className="s-title">The 3&nbsp;AM <br />Alibi</h1>
           <p className="s-sub">Where was the skill between midnight and six? Every hour is on the ledger, and every entry is a step it really takes.</p>
         </div>

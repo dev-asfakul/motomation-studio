@@ -11,7 +11,8 @@
 .j-hud span:first-child { color: #E84E0E; }
 .j-hero > *:not(.j-rain):not(.j-scan):not(.j-hud) { position: relative; z-index: 2; }
 .j-title { font-family: var(--x-display); font-weight: 800; text-transform: uppercase; font-size: clamp(3.4rem, 1rem + 10vw, 12rem); line-height: 0.84; letter-spacing: -0.01em; margin: 3vh 0 4vh; }
-.j-title > span:last-child { display: block; color: #121210; -webkit-text-stroke: 2px #EEEEEC; text-shadow: 0 0 24px rgba(232,78,14,0.6); }
+/* the outline look stays, but the fill is real neon (10.3:1), so the word reads without the stroke */
+.j-title > span:last-child { display: block; color: #2bd4e0; -webkit-text-stroke: 2px #EEEEEC; paint-order: stroke fill; text-shadow: 0 0 24px rgba(43,212,224,0.45); }
 .j-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--gutter); align-items: start; }
 .st { background: rgba(10,10,9,0.94); border: 1px solid rgba(232,78,14,0.55); box-shadow: 0 0 0 1px #000, 0 0 40px rgba(232,78,14,0.15); font-family: var(--x-text); font-size: 14px; cursor: text; }
 .st-bar { display: flex; align-items: center; gap: 6px; padding: 8px 12px; border-bottom: 1px solid rgba(238,238,236,0.1); font-size: 11px; color: var(--x-muted); letter-spacing: 0.08em; }
@@ -21,6 +22,7 @@
 .st-cmd { margin: 0; color: #E84E0E; } .st-cmd span { color: #2bd4e0; }
 .st-in { display: flex; gap: 10px; align-items: center; padding: 10px 14px; border-top: 1px solid rgba(238,238,236,0.1); color: #2bd4e0; }
 .st-in input { flex: 1; background: transparent; border: 0; outline: none; color: #EEEEEC; font: inherit; caret-color: #E84E0E; min-height: 32px; caret-shape: block; }
+.st-in input:focus-visible { box-shadow: 0 3px 0 #2bd4e0; background: rgba(43,212,224,0.1); } /* the prompt line lights when the terminal has focus */
 .st-in:focus-within { box-shadow: inset 0 0 0 1px #E84E0E; }
 .st-sug { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 14px 14px; }
 .st-sug button { min-height: 36px; padding: 0 10px; background: transparent; border: 1px solid rgba(238,238,236,0.25); color: #EEEEEC; font: 12px var(--x-text); cursor: pointer; }
@@ -32,7 +34,8 @@
 .j-lab { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--gutter); }
 .j-dec { display: grid; gap: 14px; align-content: start; }
 .j-dec-word { font-family: var(--x-display); font-weight: 800; font-size: clamp(2rem, 1rem + 4vw, 4.6rem); line-height: 1; margin: 0; color: #E84E0E; min-height: 2.1em; }
-.j-range { display: grid; gap: 6px; font-size: 14px; } .j-range input { accent-color: #E84E0E; }
+.j-range { display: grid; gap: 6px; font-size: 14px; } .j-range input { accent-color: #E84E0E; height: 28px; margin: 0; }
+.j-range input:focus-visible { outline: 2px solid #2bd4e0; outline-offset: 3px; }
 .j-btn { justify-self: start; min-height: 44px; padding: 0 16px; background: #E84E0E; color: #121210; border: 0; font: 700 13px var(--x-text); text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer; }
 .j-btn:active { transform: translate(1px, 1px); }
 @media (max-width: 899px) { .j-lab { grid-template-columns: 1fr; } }

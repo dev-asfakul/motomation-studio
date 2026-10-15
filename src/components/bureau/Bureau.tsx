@@ -150,7 +150,7 @@ export function Bureau({ letters, pages, search, caseNo }: BureauProps) {
       <a className="skip" href="#main" data-noswap>Skip to the case</a>
       <header className="bureau-bar" role="banner">
         <a href="/" aria-label="Motomation, case opening" className="bureau-mark-link"><span ref={markRef} className="bureau-mark">MOTOMATION</span></a>
-        <span className="case-no" aria-label={`Case number ${caseNo}`}>{caseNo} · <CaseTicker /></span>
+        <span className="case-no"><span>{caseNo}</span><span aria-hidden="true"> · <CaseTicker /></span></span>
         {exhibitNow && <span className="label bar-ex" style={{ color: "var(--ink)" }}>Exhibit {exhibitNow.letter} · {exhibitNow.title}</span>}
         <span className="bar-spacer" />
         <nav className="tray" aria-label="Evidence tray, exhibits A to T">

@@ -27,7 +27,7 @@
 .r-paints button:focus-visible, .r-stens button:focus-visible, .r-clear:focus-visible { outline: 3px solid #F2C230; outline-offset: 2px; }
 @media (max-width: 767px) { .r-wall { height: 70svh; } .r-poster { left: 4%; right: 4%; width: auto; top: 4%; padding: 14px 16px; } .r-title { font-size: 3.2rem; } }
 /* lab */
-.r-lab { display: grid; gap: var(--gutter); }
+.r-lab { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gutter); }
 .r-strip { background: #F2C230; color: #15120C; font-family: var(--x-display); font-size: clamp(1.4rem, 1rem + 2vw, 3rem); padding: 14px 0; transform: rotate(-1.5deg); overflow: clip; }
 .r-contour { position: relative; min-height: 260px; background: #211D15; display: grid; place-items: end start; padding: 24px; overflow: clip; }
 .r-contour > :first-child { position: absolute; inset: 0; } .r-contour p { position: relative; margin: 0; max-width: 40ch; background: #15120C; padding: 8px 12px; }

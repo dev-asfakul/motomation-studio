@@ -10,7 +10,7 @@ import { ratio, fmt } from "@/lib/contrast";
 import { FAMILY } from "@/exhibits/fonts";
 import { Visit } from "./Visit";
 
-export type GateSummary = { pass: boolean; stamp: string; counts: Record<string, number>; date: string } | null;
+export type GateSummary = { pass: boolean; verified?: boolean; stamp: string; counts: Record<string, number>; date: string } | null;
 
 const LAYOUTS = ["left", "right", "center", "split"] as const;
 
@@ -101,7 +101,7 @@ export function ExhibitShell({ e, hero, lab, gate }: { e: Exhibit; hero: ReactNo
             <ul className="x-gate"><li><b>Kept</b> {e.restraint.kept}</li><li><b>Cut</b> {e.restraint.cut}</li><li><b>Rejected</b> {e.restraint.rejected}</li></ul>
           </div>
           <div className="x-card x-wide"><p className="x-k">Delivery gate</p>
-            {gate ? <p><b>{gate.pass ? "Pass" : "Fail"}</b>, scanned {gate.date}. <code>{gate.stamp}</code></p>
+            {gate ? <p><b>{gate.verified === false ? "Not verified" : gate.pass ? "Pass" : "Fail"}</b>, scanned {gate.date}. <code>{gate.stamp}</code></p>
               : <p>Not yet scanned in a browser for this build. The CI workflow runs scripts/gate.mjs on every push; results land in docs/gate/.</p>}
           </div>
         </div>
@@ -120,7 +120,7 @@ export function ExhibitShell({ e, hero, lab, gate }: { e: Exhibit; hero: ReactNo
             <figcaption><span className="x-k">Typical output</span><ul>{e.typical.map((t) => <li key={t}>{t}</li>)}</ul></figcaption>
           </figure>
           <figure className="x-after" aria-label="This exhibit">
-            <p className="x-after-word" aria-hidden="true">{e.title}</p>
+            <p className="x-after-word" aria-hidden="true" style={{ ["--fit" as string]: Math.max(...e.title.split(/\s+/).map((w) => w.length)) }}>{e.title}</p>
             <figcaption><span className="x-k">This exhibit</span><ul>{e.ours.map((t) => <li key={t}>{t}</li>)}</ul></figcaption>
           </figure>
         </div>

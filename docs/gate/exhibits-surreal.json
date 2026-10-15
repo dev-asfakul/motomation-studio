@@ -1,0 +1,501 @@
+{
+  "target": "http://localhost:4190/exhibits/surreal/",
+  "url": "http://localhost:4190/exhibits/surreal/",
+  "version": "gate/4",
+  "pass": true,
+  "verified": true,
+  "coverage": {
+    "ok": true,
+    "skipped": 10,
+    "total": 167,
+    "pct": 6,
+    "width": 375,
+    "low": []
+  },
+  "counts": {
+    "contrast": 0,
+    "overflow": 0,
+    "words": 0,
+    "motion": 0,
+    "names": 0,
+    "numbers": 0,
+    "quality": 0,
+    "access": 0,
+    "copy": 0,
+    "seo": 0,
+    "perf": 0,
+    "sec": 0
+  },
+  "id": "cab378136e",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P0 K0 · gate/4 · cab378136e · skipped 10/167@375",
+  "critique": "C5[restraint:kept] H5[375:0] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:Δ8.4%,smooth:sandbox,rm:flow] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]",
+  "sources": {
+    "design": "/home/user/workspace/motomation-studio/DESIGN.md",
+    "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
+    "meta": {}
+  },
+  "rules": {
+    "copy": {
+      "fails": [],
+      "warns": [],
+      "checked": 190
+    },
+    "seo": {
+      "fails": [],
+      "warns": [],
+      "checked": 14
+    },
+    "perf": {
+      "fails": [],
+      "warns": [],
+      "checked": 16
+    },
+    "sec": {
+      "fails": [],
+      "warns": [],
+      "checked": 9
+    },
+    "counts": {
+      "copy": 0,
+      "seo": 0,
+      "perf": 0,
+      "sec": 0
+    },
+    "segment": "rules: C0 S0 P0 K0"
+  },
+  "structure": {
+    "sections": 3,
+    "patterns": [
+      "static",
+      "static",
+      "static"
+    ],
+    "repeats": 0,
+    "pins": 1,
+    "webgl": 1,
+    "jsKB": 21,
+    "jsUnknown": 10,
+    "sectionIds": [
+      "header",
+      "article",
+      "footer"
+    ]
+  },
+  "contrast": {
+    "byWidth": [
+      {
+        "width": 375,
+        "measured": 157,
+        "skipped": 10,
+        "total": 167,
+        "skippedPct": 6,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 390,
+        "measured": 157,
+        "skipped": 10,
+        "total": 167,
+        "skippedPct": 6,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 768,
+        "measured": 160,
+        "skipped": 11,
+        "total": 171,
+        "skippedPct": 6,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 1440,
+        "measured": 188,
+        "skipped": 5,
+        "total": 193,
+        "skippedPct": 3,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      }
+    ],
+    "measured": 662,
+    "skipped": 36,
+    "total": 698,
+    "notVisibleAtScan": 0,
+    "skippedPct": 5,
+    "lowCoverage": false,
+    "fails": [],
+    "sequenceSteps": 0,
+    "inactiveFails": 0
+  },
+  "overflow": {
+    "widths": [
+      375,
+      390,
+      768,
+      1440
+    ],
+    "fails": []
+  },
+  "words": {
+    "checked": 9,
+    "fails": [],
+    "hier": {
+      "h1": 1,
+      "skips": 0,
+      "focalTies": 1,
+      "largest": 48.65
+    }
+  },
+  "motion": {
+    "compared": 193,
+    "hiddenUnderReducedMotion": [],
+    "pixelsChangingWhenStillPct": 0
+  },
+  "names": {
+    "checked": 46,
+    "fails": []
+  },
+  "numbers": {
+    "checked": 39,
+    "live": 1,
+    "fails": []
+  },
+  "quality": {
+    "zones": [
+      {
+        "kind": "sticky",
+        "label": "div.c-stage",
+        "top": 0,
+        "len": 1440,
+        "diffs": [
+          8.99,
+          9.21,
+          9.14,
+          8.39,
+          8.01,
+          8.02,
+          8.17
+        ],
+        "medianPct": 8.4,
+        "moving": 7,
+        "ok": true
+      }
+    ],
+    "smooth": {
+      "judged": false,
+      "why": "sandbox: 2 CPUs",
+      "desktop": {
+        "frames": 245,
+        "p50": 16.7,
+        "p95": 49.9,
+        "max": 66.8,
+        "ok": false
+      },
+      "mobile": {
+        "frames": 295,
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 50,
+        "ok": true
+      }
+    },
+    "rm": {
+      "pinned": [],
+      "missing": [],
+      "missingCount": 0,
+      "canvases": 0,
+      "ok": true
+    },
+    "fails": 0
+  },
+  "access": {
+    "focus": {
+      "checked": 40,
+      "fails": [],
+      "tabbables": 46
+    },
+    "target": {
+      "checked": 23,
+      "fails": [],
+      "warns": [
+        {
+          "el": "a.skip",
+          "text": "Skip to the case",
+          "w": 166,
+          "h": 42
+        },
+        {
+          "el": "a.bureau-mark-link",
+          "text": "MOTOMATION",
+          "w": 136,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "◐UVUV torch: reveal hidden ann",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "–SoundSound",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Search⌘KSearch the case",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Index",
+          "w": 55,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Yes, sound",
+          "w": 95,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Stay silent",
+          "w": 104,
+          "h": 36
+        },
+        {
+          "el": "a",
+          "text": "Aperture",
+          "w": 66,
+          "h": 24
+        },
+        {
+          "el": "a",
+          "text": "Liquid Field",
+          "w": 88,
+          "h": 24
+        },
+        {
+          "el": "a",
+          "text": "melt type shader",
+          "w": 120,
+          "h": 24
+        },
+        {
+          "el": "a",
+          "text": "gravity flip",
+          "w": 79,
+          "h": 24
+        },
+        {
+          "el": "a",
+          "text": "Evidence board",
+          "w": 107,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Autopsy",
+          "w": 58,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Method",
+          "w": 54,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Lab",
+          "w": 26,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Receipts",
+          "w": 60,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Locker",
+          "w": 47,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Dossier",
+          "w": 52,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Credits",
+          "w": 49,
+          "h": 28
+        }
+      ]
+    },
+    "zoom": {
+      "fails": []
+    },
+    "reflow": {
+      "px": 0
+    },
+    "forced": {
+      "checked": 79,
+      "fails": []
+    },
+    "trap": {
+      "tabbables": 46,
+      "presses": 98,
+      "visited": 46,
+      "unreached": 0,
+      "trapped": false,
+      "region": null
+    },
+    "fails": 0,
+    "cat": {
+      "focus": 0,
+      "target": 0,
+      "zoom": 0,
+      "reflow": 0,
+      "forced": 0,
+      "trap": 0
+    }
+  },
+  "composition": {
+    "pin": [
+      {
+        "kind": "sticky",
+        "label": "div.c-stage",
+        "fill": 100,
+        "ok": true
+      }
+    ],
+    "screens": [
+      {
+        "n": 1,
+        "top": "h1#x-title.c-title",
+        "lead": 2.57,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 2,
+        "top": "h1#x-title.c-title",
+        "lead": 2.57,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 3,
+        "top": "h1#x-title.c-title",
+        "lead": 2.57,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 4,
+        "top": "p.x-aa",
+        "lead": 1.95,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 5,
+        "top": "p.x-aa",
+        "lead": 2.73,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 6,
+        "top": "h2#x-anat-h",
+        "lead": 1.6,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 7,
+        "top": "h2#x-lab-h",
+        "lead": 1.39,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 8,
+        "top": "h2#x-link-h",
+        "lead": 2.86,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 9,
+        "top": "li",
+        "lead": 1.7,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 10,
+        "top": "h2#x-ba-h",
+        "lead": 1.07,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 11,
+        "top": "span.x-next-t",
+        "lead": 2.29,
+        "ok": true,
+        "text": true
+      }
+    ],
+    "scale": {
+      "display": 374.4,
+      "body": 17.92,
+      "ratio": 20.9,
+      "ok": true
+    }
+  },
+  "richness": {
+    "kind": "page",
+    "from": "path",
+    "fold": [
+      "nav header.bureau-bar",
+      "text p",
+      "action button.bar-btn"
+    ],
+    "opening": "h1 \"The Witness Was Dreaming\"",
+    "grid": null,
+    "title": null,
+    "count": null,
+    "blocks": [
+      "section.x-sec.x-specimen",
+      "section.x-sec.x-anatomy",
+      "section.x-sec.x-lab",
+      "section.x-sec.x-link",
+      "figure.x-before",
+      "figure.x-after",
+      "div.toasts"
+    ],
+    "warns": []
+  },
+  "footprint": "light"
+}

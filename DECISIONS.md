@@ -80,3 +80,20 @@ One line of why per call. Newest at the bottom.
 - Locker: the two single-file editions copy their raw URL, so all 11 procedures can be sealed.
 - Repo text with em dashes is shown with commas (copy rule), and a lone dash in a table reads "none".
 - Verdict: unlock reads the evidence tray; the poster seed is kept per device so the poster is stable until you ask for a new one.
+
+## M8 · QA, gate, deploy
+- The skill's gate runs here, slowly: 2 CPUs, light footprint, 3.5 to 13 minutes a page. It runs one page at a time against a frozen copy of out/ served with the production headers (`scripts/gate-run.mjs`), because rebuilding out/ mid-scan poisons the result.
+- Smoothness is not judged on this machine (the gate itself says "sandbox: 2 CPUs"); every other axis is measured. Reported as such, never as a pass.
+- Security headers live in vercel.json; `scripts/serve.mjs` sends the same set locally and postbuild writes out/_headers for hosts that read one. The CSP allows 'unsafe-inline' scripts because Next's static export bootstraps inline; nothing loads from another origin.
+- Next's legacy noModule polyfill script gets `defer` in postbuild: modern browsers skip it, but without defer it reads as render-blocking.
+- Inline links in running text get 4px vertical padding so every target is 24px tall without changing line layout.
+- Display titles are sized from their longest word (`fit` on RoomHead: 90 / (letters × 1.04) vw), measured against the gate's word check, so no display word breaks or overflows at 320.
+- The sound slip joins the page flow under the bar at narrow or short viewports (≤ 760 wide or ≤ 560 tall, i.e. 200% zoom), so it never covers a control.
+- Home lineup rail moved to the top right under the counter: at the bottom right the sound slip covered it, which the gate caught as 12 unfocusable links.
+- Evidence markers: the tag shape's point is drawn below the text box, not clipped out of it, so the number always sits on solid tape (the clipped corners read as dark-on-dark).
+- The case clock is aria-hidden: it is decoration that changes every second, and the case number itself is read separately.
+- Exhibit J: the outlined word keeps its stroke but now has a real neon fill (10.3:1), so it reads without relying on the stroke.
+- Exhibit L: short viewports get the reel sheet instead of the pin, the same rule the skill's own HorizontalReel uses; the Lab reel's container is minmax(0, 1fr) so the strip has somewhere to travel (it was stuck at 0px).
+- Split-layout exhibit heads are no longer sticky: a sticky block that never changes reads as a frozen scene to the gate's progression check, and it gained nothing.
+- Palette swatches align to the top of their cell; a stretched row was widening the ground chip through aspect-ratio.
+- Layout QA (`scripts/qa.mjs`) covers every route at 320 to 1920 for scroll width, escaping elements and display words broken mid-word, because the gate's own overflow check only runs on the pages it scans.

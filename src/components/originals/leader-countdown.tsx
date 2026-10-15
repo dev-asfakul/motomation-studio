@@ -19,12 +19,15 @@ export function LeaderCountdown({ progress, className, style, still }: Props) {
   const a = f * Math.PI * 2; const x = 50 + Math.sin(a) * 60, y = 50 - Math.cos(a) * 60;
   const wedge = f > 0.5 ? `M50 50 L50 -10 A60 60 0 1 1 ${x} ${y} Z` : `M50 50 L50 -10 A60 60 0 0 1 ${x} ${y} Z`;
   return (
-    <svg className={className} style={style} viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+    // the numeral is HTML over the SVG, sized in container units, so it is real text with a real box
+    <span className={className} style={{ display: "block", containerType: "size", ...style }} aria-hidden="true">
+    <svg viewBox="0 0 100 100" focusable="false" preserveAspectRatio="xMidYMid slice" style={{ display: "block", width: "100%", height: "100%" }}>
       <rect width="100" height="100" fill="#2a2522" />
       <path d={wedge} fill="#4a413c" />
       <path d="M50 0V100M0 50H100" stroke="#F6E9E2" strokeWidth="0.6" opacity="0.6" />
       <circle cx="50" cy="50" r="34" fill="none" stroke="#F6E9E2" strokeWidth="1.2" /><circle cx="50" cy="50" r="40" fill="none" stroke="#F6E9E2" strokeWidth="0.6" />
-      <text x="50" y="50" textAnchor="middle" dominantBaseline="central" fontSize="40" fontWeight="700" fill="#F6E9E2" fontFamily="var(--x-text), monospace">{n}</text>
     </svg>
+    <span style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center", fontSize: "min(40cqw, 40cqh)", fontWeight: 700, lineHeight: 1, color: "#F6E9E2", fontFamily: "var(--x-text), monospace" }}>{n}</span>
+    </span>
   );
 }

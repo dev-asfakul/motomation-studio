@@ -43,7 +43,7 @@ export default function Page() {
       <Witness ids={ids} />
       <RoomHead fit={6} n="03" room="Autopsy" title={<>The repo, <em>opened</em></>}
         lede={`${repo.folders.length} folders, read file by file. Each gets a lab report and, where the folder does something, a live demo that does it in front of you.`}
-        aside={<>Read from <a href={repo.meta.url}>{repo.meta.name}</a> v{repo.meta.version} at <code>{repo.meta.commit.slice(0, 7)}</code>. {repo.meta.totalFiles.toLocaleString("en-US")} files in the repo; the skill itself lives in <code>skills/asfakulsiam-motomation-design/</code>.</>}
+        aside={<>Read from <a className="nw" href={repo.meta.url}>{repo.meta.name}</a> v{repo.meta.version} at <code>{repo.meta.commit.slice(0, 7)}</code>. {repo.meta.totalFiles.toLocaleString("en-US")} files in the repo; the skill itself lives in <code>skills/asfakulsiam-motomation-design/</code>.</>}
         uv="the coroner's note says cause of death: a hero with three equal feature cards." />
       <div className="report">
         <aside className="report-nav"><TreeNav folders={folders} /></aside>

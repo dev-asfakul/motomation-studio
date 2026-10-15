@@ -1,0 +1,47 @@
+name: ci
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build-and-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      # the delivery gate and inventory read the skill at the exact commit this site documents
+      - name: Check out the skill (pinned)
+        uses: actions/checkout@v4
+        with:
+          repository: asfakulsiam/asfakulsiam-motomation-design
+          ref: 8dea1dd7c11384832868bf362a71dcdd4916e3d1
+          path: skill-src
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      # inventory, originals, credits, next build, postbuild, coverage (fails if any of the 68/22/5/20/8/21/11 is missing)
+      - run: SKILL_SRC=skill-src npm run build
+      - name: Layout QA (320 to 1920, every route)
+        run: node scripts/qa.mjs
+      - name: Delivery gate (Home, C, J, L, O, S, T and the rooms)
+        env:
+          GATE: skill-src/skills/asfakulsiam-motomation-design/scripts/gate.mjs
+          TIMEOUT: "1500"
+        run: |
+          node scripts/gate-run.mjs / /exhibits/surreal/ /exhibits/cyberpunk/ /exhibits/retro/ /exhibits/futuristic/ /exhibits/aurora/ /exhibits/victorian/ /board/ /autopsy/ /method/ /lab/ /receipts/ /locker/ /dossier/ /credits/
+          node scripts/gate-summary.mjs --strict
+      - name: Lighthouse CI
+        run: npx --yes @lhci/cli@0.15.x autorun
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reports
+          path: |
+            docs/gate/
+            docs/qa.json
+            coverage.json
+            .lighthouseci/

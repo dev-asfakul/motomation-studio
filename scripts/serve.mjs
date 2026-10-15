@@ -1,7 +1,7 @@
 // Tiny static server for out/ (trailingSlash export). Used by shots and gate runs.
 import http from "node:http"; import fs from "node:fs"; import path from "node:path";
 const main = import.meta.url === `file://${process.argv[1]}`;
-const root = path.resolve(main ? process.argv[2] || "out" : "out"); const port = main ? +(process.argv[3] || 4173) : 4173;
+const root = path.resolve(main ? process.argv[2] || "out" : process.env.SERVE_ROOT || "out"); const port = main ? +(process.argv[3] || 4173) : 4173;
 const types = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".woff2": "font/woff2", ".txt": "text/plain", ".webp": "image/webp", ".avif": "image/avif", ".mp4": "video/mp4", ".webm": "video/webm", ".ico": "image/x-icon", ".xml": "application/xml" };
 // send the same headers the deploy sends (vercel.json), so local gate runs see what production serves
 const HEADERS = (() => { try { return Object.fromEntries(JSON.parse(fs.readFileSync(path.resolve("vercel.json"), "utf8")).headers[0].headers.map((h) => [h.key, h.value])); } catch { return {}; } })();

@@ -16,7 +16,7 @@
 .ct-rail input { writing-mode: vertical-lr; direction: rtl; width: 40px; min-height: 280px; accent-color: #337FE3; cursor: ns-resize; }
 .ct-index { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; align-content: space-between; }
 .ct-index button { all: unset; display: block; cursor: pointer; font-family: var(--x-display); font-size: 13px; padding: 4px 8px; color: var(--x-muted); border-left: 2px solid transparent; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.15s; }
-.ct-index li[data-past] button { transform: translateX(-6px) scale(0.96); opacity: 0.7; }
+.ct-index li[data-past] button { color: var(--x-ink); border-left-color: rgba(51,127,227,0.45); } /* past steps are marked, not dimmed: a dimmed step fails AA */
 .ct-index li[data-on] button { color: var(--x-ink); border-left-color: #337FE3; background: rgba(51,127,227,0.14); }
 .ct-index button:focus-visible { outline: 1px solid #337FE3; }
 .ct-read { border-top: 1px solid rgba(232,238,242,0.15); padding-top: 12px; }
@@ -26,7 +26,7 @@
 @media (max-width: 899px) { .o-stage { grid-template-columns: 1fr; } .o-vol { max-width: 440px; justify-self: center; } .ct-rail input { min-height: 220px; } }
 /* lab */
 .o-lab { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--gutter); align-items: center; }
-.o-core { font-family: var(--x-display); font-size: 14px; color: #337FE3; }
+.o-core { font-family: var(--x-display); font-size: 14px; color: #7fb0f0; background: #0c1115; padding: 2px 6px; }
 .o-sat { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(232,238,242,0.3); background: #151C21; font-family: var(--x-display); font-size: 12px; }
 .o-globe { display: grid; gap: 12px; } .o-globe > :first-child { aspect-ratio: 1; max-width: 380px; }
 @media (max-width: 767px) { .o-lab { grid-template-columns: 1fr; } }

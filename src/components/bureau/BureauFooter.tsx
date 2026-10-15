@@ -20,7 +20,7 @@ export function BureauFooter() {
       <div className="foot-c">
         <p className="label" style={{ marginBottom: 10 }}>Chain of custody</p>
         <p className="footnote" style={{ margin: 0 }}>
-          Every word and number here was read from <a href={repo.meta.url}>{repo.meta.name}</a> v{repo.meta.version} at commit <code>{repo.meta.commit.slice(0, 7)}</code>, inventoried {repo.meta.inventoried}. {caseNo}. Site code MIT, on <a href="https://github.com/dev-asfakul/motomation-studio">GitHub</a>.
+          Every word and number here was read from <a className="nw" href={repo.meta.url}>{repo.meta.name}</a> v{repo.meta.version} at commit <code>{repo.meta.commit.slice(0, 7)}</code>, inventoried {repo.meta.inventoried}. {caseNo}. Site code MIT, on <a href="https://github.com/dev-asfakul/motomation-studio">GitHub</a>.
         </p>
         <p className="uv-note" style={{ marginTop: 10 }}>UV: the investigator's own fingerprints are on this footer. So are yours.</p>
       </div>

@@ -15,7 +15,7 @@
 .hl-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
 .hl-rows li { position: relative; overflow: clip; border-radius: 4px; }
 .hl-rows button { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 56px 1fr; gap: 12px; padding: 8px 10px; cursor: pointer; font-size: 14px; line-height: 1.4; color: var(--x-muted); position: relative; z-index: 1; }
-.hl-rows button:focus-visible { outline: 1px solid #299371; }
+.hl-rows button:focus-visible { outline: 2px solid #6fd3ad; outline-offset: -2px; background: rgba(41,147,113,0.16); }
 .hl-rows time { font-family: var(--x-text); font-variant-numeric: tabular-nums; color: var(--x-muted); }
 .hl-rows li[data-past] button { color: var(--x-ink); }
 .hl-rows li[aria-current] button { color: var(--x-ink); } .hl-rows li[aria-current] time { color: #6fd3ad; }
@@ -26,7 +26,7 @@
 .s-hero[data-rm] .s-stick { position: relative; height: auto; min-height: 100svh; }
 /* lab */
 .s-lab { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
-.s-plate { margin: 0; display: grid; gap: 10px; }
+.s-plate { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; min-width: 0; }
 .s-plate-art { position: relative; aspect-ratio: 4 / 3; border-radius: 6px; overflow: clip; border: 1px solid rgba(237,240,235,0.12); }
 .s-plate-art > * { position: absolute !important; inset: 0; }
 .s-plate figcaption { font-size: 14px; color: var(--x-muted); } .s-plate figcaption b { display: block; color: var(--x-ink); font-weight: 600; }

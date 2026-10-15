@@ -178,7 +178,9 @@ html[data-uv="on"] .uv-inline { display: inline; }
   background: var(--tape); color: #111; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
 }
 .tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #111; }
-.marker { display: inline-grid; place-items: center; width: 2em; height: 2em; background: var(--tape); color: #111; font-family: var(--font-mono); font-weight: 700; font-size: 12px; clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%); padding-bottom: 4px; }
+/* evidence marker: a solid tag with its point drawn below the text box, so the text always sits on solid tape */
+.marker { position: relative; display: inline-grid; place-items: center; min-width: 2em; height: 1.6em; padding: 0 0.3em; margin-bottom: 0.4em; background: var(--tape); color: #111; font-family: var(--font-mono); font-weight: 700; font-size: 12px; line-height: 1; }
+.marker::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 0.4em; background: var(--tape); clip-path: polygon(0 0, 100% 0, 50% 100%); }
 .btn {
   display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; cursor: pointer;
   background: var(--ink); color: var(--ground); border: 1px solid var(--ink); text-decoration: none;
@@ -215,11 +217,11 @@ html[data-uv="on"] .uv-inline { display: inline; }
 .exhibit-root :focus-visible { outline-color: var(--x-focus, var(--x-ink)); }
 
 /* targets: inline links in running text get 3px of vertical padding so every target is at least 24px tall (WCAG 2.5.8) */
-main p a, main li a, main td a, main dd a, footer a { padding-block: 3px; }
+main p a, main li a, main td a, main dd a, footer a { padding-block: 4px; }
 
 /* zoom/reflow: at 200% zoom (or a phone held narrow) a fixed slip would cover controls; it joins the page flow under the bar */
-@media (max-width: 520px) {
-  .toasts { position: static; margin: calc(var(--bar-h) + 10px) var(--gutter) calc(-1 * var(--bar-h)); align-items: stretch; }
+@media (max-width: 760px), (max-height: 560px) {
+  .toasts { position: relative; z-index: 81; margin: calc(var(--bar-h) + 10px) var(--gutter) 0; align-items: stretch; }
   .toast { max-width: none; }
 }
 
@@ -234,3 +236,7 @@ main p a, main li a, main td a, main dd a, footer a { padding-block: 3px; }
 }
 /* file paths in small mono text may break anywhere; display type never does */
 .mono a, p.mono, code { overflow-wrap: anywhere; }
+.nw { white-space: nowrap; }
+/* every range slider: a 24px+ target and a visible focus ring */
+input[type="range"] { min-height: 28px; }
+input[type="range"]:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }

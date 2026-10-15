@@ -43,7 +43,8 @@
 .l-hero[data-rm] .l-strip { grid-column: 2; }
 .l-hero[data-rm] .l-film, .l-hero[data-rm] .l-burn { display: none; }
 /* lab */
-.l-lab { display: grid; gap: var(--gutter); }
+.l-lab { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gutter); } /* minmax(0): the reel's frame must be the viewport, not its content, or the strip has nowhere to travel */
+@media (max-width: 767px) { .l-lab ul { flex-direction: column; overflow-x: visible !important; padding: 0 !important; } .l-lab li { flex: none !important; } }
 .l-sweep { position: relative; min-height: 160px; border-radius: 12px; overflow: clip; background: #21110F; display: grid; place-items: center; padding: 24px; }
 .l-sweep-t { position: relative; font-family: var(--x-display); font-style: italic; font-weight: 900; font-size: clamp(1.3rem, 1rem + 1.6vw, 2.4rem); margin: 0; text-align: center; max-width: 30ch; }
 .l-frame { display: grid; gap: 8px; padding: 22px; background: #21110F; border: 1px solid rgba(246,233,226,0.14); height: 100%; box-sizing: border-box; }

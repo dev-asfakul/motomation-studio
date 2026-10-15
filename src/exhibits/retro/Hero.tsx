@@ -17,7 +17,9 @@ const CH = [
   { reel: "Reel 4", title: "The Verdict", body: "Tape rewound. Story checks out.", items: [repo.install[0].cmd] },
 ];
 export default function Hero({ e }: { e: Exhibit }) {
-  const reduce = useReducedMotion(); const mobile = useMedia("(max-width: 767px)");
+  const reducePref = useReducedMotion(); const mobile = useMedia("(max-width: 767px)");
+  // a short view (200% zoom, a landscape phone) gets the reel sheet instead of a cramped pin, as the skill's own reel does
+  const short = useMedia("(max-height: 560px)"); const reduce = reducePref || short;
   const sec = useRef<HTMLElement>(null); const tl = useRef<gsap.core.Timeline | null>(null);
   const [lead, setLead] = useState([0, 0, 0, 0]); const [mode, setMode] = useState("stop");
   useGSAP(() => {

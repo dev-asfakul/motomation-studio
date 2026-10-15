@@ -107,7 +107,7 @@ export function Lineup({ suspects }: { suspects: Suspect[] }) {
             <>
               <p className="label" style={{ color: "var(--muted)" }}>{beat >= seg ? "Lineup complete" : "The lineup"}</p>
               <p className="suspect-name">{beat >= seg ? "Back to the Bureau" : "Twenty suspects, one word"}</p>
-              <p className="suspect-meta">{beat >= seg ? "Same letters, twenty languages. Pick one and take it apart." : "Scroll. Each stop sets MOTOMATION in one exhibit's own typeface and palette."}</p>
+              <p className="suspect-meta">{beat >= seg ? "Same letters, twenty languages. Pick one and take it apart." : "Each stop sets MOTOMATION in one exhibit's own typeface and palette."}</p>
             </>
           )}
         </div>
@@ -116,7 +116,7 @@ export function Lineup({ suspects }: { suspects: Suspect[] }) {
             <li key={s.letter} data-on={beat === i + 1 ? "true" : undefined} data-past={beat > i + 1 ? "true" : undefined}><a href={`/exhibits/${s.slug}/`} aria-label={`Exhibit ${s.letter}, ${s.style}`}>{s.letter}</a></li>
           ))}
         </ol>
-        <p className="lineup-time mono" role="timer" aria-live="off">{String(Math.max(0, Math.min(20, beat))).padStart(2, "0")}/20</p>
+        <p className="lineup-time mono" aria-hidden="true">{String(Math.max(0, Math.min(20, beat))).padStart(2, "0")}/20</p>
       </div>
     </section>
   );
@@ -127,8 +127,9 @@ function LineupSheet({ suspects, marks }: { suspects: Suspect[]; marks: Record<s
   return (
     <section className="lineup-sheet" aria-labelledby="sheet-h">
       <div className="wrap">
-        <p className="label">Reduced motion · the lineup photo sheet</p>
-        <h2 id="sheet-h" className="display" style={{ fontSize: "var(--step-3)", margin: "8px 0 28px" }}>Twenty suspects, one word</h2>
+        <p className="label">The lineup</p>
+        <h2 id="sheet-h" className="display" style={{ fontSize: "var(--step-3)", margin: "8px 0 12px" }}>Twenty suspects, one word</h2>
+        <p className="muted" style={{ margin: "0 0 28px", maxWidth: "60ch" }}>Each stop sets MOTOMATION in one exhibit&apos;s own typeface and palette. With reduced motion the lineup is a photo sheet: all twenty at once, nothing moves.</p>
       </div>
       <ol className="sheet-grid">
         {suspects.map((s) => {

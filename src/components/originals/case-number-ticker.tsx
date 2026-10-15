@@ -27,5 +27,5 @@ export function CaseTicker() {
     };
     tick(); const id = setInterval(tick, 1000); return () => clearInterval(id);
   }, []);
-  return <time role="timer" aria-live="off" aria-label="Time on file" style={{ fontVariantNumeric: "tabular-nums" }}>{t}</time>;
+  return <time aria-hidden="true" style={{ fontVariantNumeric: "tabular-nums" }}>{t}</time>;
 }

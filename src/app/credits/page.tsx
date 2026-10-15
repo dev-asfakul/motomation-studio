@@ -17,7 +17,7 @@ export default function Page() {
       <section className="sec" aria-labelledby="cr-skill">
         <p className="label">The subject</p>
         <h2 id="cr-skill" className="sec-h">Motomation Design</h2>
-        <p className="sec-lede">The {repo.components.length} components in the <a href="/lab/">Lab</a> are the skill&rsquo;s own code, vendored unchanged into <code>src/vendor/motomation/</code> from <a href={repo.meta.url}>{repo.meta.name}</a> v{repo.meta.version} at <code>{repo.meta.commit.slice(0, 7)}</code>, under its MIT licence ({repo.meta.copyright}). All text and numbers about the skill are read from the same commit by <code>scripts/inventory.mjs</code>.</p>
+        <p className="sec-lede">The {repo.components.length} components in the <a href="/lab/">Lab</a> are the skill&rsquo;s own code, vendored unchanged into <code>src/vendor/motomation/</code> from <a className="nw" href={repo.meta.url}>{repo.meta.name}</a> v{repo.meta.version} at <code>{repo.meta.commit.slice(0, 7)}</code>, under its MIT licence ({repo.meta.copyright}). All text and numbers about the skill are read from the same commit by <code>scripts/inventory.mjs</code>.</p>
       </section>
       <section className="sec" aria-labelledby="cr-fonts">
         <p className="label">Typefaces · self-hosted at build by next/font, all SIL Open Font License</p>

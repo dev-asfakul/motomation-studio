@@ -6,29 +6,29 @@
   "verified": true,
   "coverage": {
     "ok": true,
-    "skipped": 6,
-    "total": 221,
-    "pct": 3,
-    "width": 375,
+    "skipped": 5,
+    "total": 225,
+    "pct": 2,
+    "width": 768,
     "low": []
   },
   "counts": {
     "contrast": 0,
-    "overflow": 6,
-    "words": 1,
+    "overflow": 0,
+    "words": 0,
     "motion": 0,
     "names": 0,
     "numbers": 0,
     "quality": 0,
-    "access": 20,
+    "access": 2,
     "copy": 0,
-    "seo": 1,
-    "perf": 1,
-    "sec": 3
+    "seo": 0,
+    "perf": 0,
+    "sec": 0
   },
-  "id": "0e0974cd8c",
-  "stamp": "gate: c0 o6 w1 rm0 a0 n0 q0 k20 · rules: C0 S1 P1 K3 · gate/4 · 0e0974cd8c · skipped 6/221@375",
-  "critique": "C5[restraint:kept] H3[375:2] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A1[focus:39/40,tgt:16f8w,zoom:2,reflow:5,fc:0,trap:0]",
+  "id": "2a10919332",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k2 · rules: C0 S0 P0 K0 · gate/4 · 2a10919332 · skipped 5/225@768",
+  "critique": "C5[restraint:kept] H5[375:0] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A4[focus:40/40,tgt:0f23w,zoom:2,reflow:0,fc:0,trap:0]",
   "sources": {
     "design": "/home/user/workspace/motomation-studio/DESIGN.md",
     "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
@@ -41,55 +41,27 @@
       "checked": 263
     },
     "seo": {
-      "fails": [
-        {
-          "id": "seo-06",
-          "why": "meta description is 161 characters (≤ 160)",
-          "at": ""
-        }
-      ],
+      "fails": [],
       "warns": [],
       "checked": 14
     },
     "perf": {
-      "fails": [
-        {
-          "id": "perf-12",
-          "why": "render-blocking script in <head> (add defer or async)",
-          "at": "http://localhost:4190/_next/static/chunks/0cz1d0m…"
-        }
-      ],
+      "fails": [],
       "warns": [],
       "checked": 15
     },
     "sec": {
-      "fails": [
-        {
-          "id": "sec-h1",
-          "why": "no Content-Security-Policy (header or meta)",
-          "at": ""
-        },
-        {
-          "id": "sec-h2",
-          "why": "no X-Content-Type-Options: nosniff header",
-          "at": ""
-        },
-        {
-          "id": "sec-h3",
-          "why": "no Referrer-Policy (header or meta referrer)",
-          "at": ""
-        }
-      ],
+      "fails": [],
       "warns": [],
       "checked": 9
     },
     "counts": {
       "copy": 0,
-      "seo": 1,
-      "perf": 1,
-      "sec": 3
+      "seo": 0,
+      "perf": 0,
+      "sec": 0
     },
-    "segment": "rules: C0 S1 P1 K3"
+    "segment": "rules: C0 S0 P0 K0"
   },
   "structure": {
     "sections": 3,
@@ -113,10 +85,10 @@
     "byWidth": [
       {
         "width": 375,
-        "measured": 215,
-        "skipped": 6,
+        "measured": 220,
+        "skipped": 1,
         "total": 221,
-        "skippedPct": 3,
+        "skippedPct": 0,
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
@@ -124,10 +96,10 @@
       },
       {
         "width": 390,
-        "measured": 215,
-        "skipped": 6,
+        "measured": 220,
+        "skipped": 1,
         "total": 221,
-        "skippedPct": 3,
+        "skippedPct": 0,
         "lowCoverage": false,
         "notVisibleAtScan": 0,
         "sequence": [],
@@ -135,9 +107,9 @@
       },
       {
         "width": 768,
-        "measured": 222,
+        "measured": 220,
         "skipped": 5,
-        "total": 227,
+        "total": 225,
         "skippedPct": 2,
         "lowCoverage": false,
         "notVisibleAtScan": 0,
@@ -156,11 +128,11 @@
         "fails": []
       }
     ],
-    "measured": 898,
-    "skipped": 18,
-    "total": 916,
+    "measured": 906,
+    "skipped": 8,
+    "total": 914,
     "notVisibleAtScan": 0,
-    "skippedPct": 2,
+    "skippedPct": 1,
     "lowCoverage": false,
     "fails": [],
     "sequenceSteps": 0,
@@ -173,65 +145,16 @@
       768,
       1440
     ],
-    "fails": [
-      {
-        "width": 375,
-        "el": "em",
-        "kind": "text overflows parent",
-        "px": 14,
-        "text": "custody"
-      },
-      {
-        "width": 390,
-        "el": "em",
-        "kind": "text overflows parent",
-        "px": 13,
-        "text": "custody"
-      },
-      {
-        "width": 768,
-        "el": "span",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "–"
-      },
-      {
-        "width": 768,
-        "el": "span.bar-hide-sm",
-        "kind": "text overflows parent",
-        "px": 4,
-        "text": "Sound"
-      },
-      {
-        "width": 768,
-        "el": "span.bar-hide-sm",
-        "kind": "text overflows parent",
-        "px": 8,
-        "text": "Search"
-      },
-      {
-        "width": 768,
-        "el": "kbd",
-        "kind": "text overflows parent",
-        "px": 8,
-        "text": "⌘K"
-      }
-    ]
+    "fails": []
   },
   "words": {
     "checked": 9,
-    "fails": [
-      {
-        "el": "h1.room-title",
-        "text": "Chain of custody",
-        "problem": "text wider than its box by 14px"
-      }
-    ],
+    "fails": [],
     "hier": {
       "h1": 1,
       "skips": 0,
       "focalTies": 1,
-      "largest": 52.425
+      "largest": 46.35
     }
   },
   "motion": {
@@ -262,115 +185,12 @@
   "access": {
     "focus": {
       "checked": 40,
-      "fails": [
-        {
-          "el": "div.reg-wrap",
-          "text": "TypefaceUsed forLicenceAnybody",
-          "changedPct": 0.92
-        }
-      ],
+      "fails": [],
       "tabbables": 51
     },
     "target": {
       "checked": 26,
-      "fails": [
-        {
-          "el": "a.bureau-mark-link",
-          "text": "MOTOMATION",
-          "w": 170,
-          "h": 21
-        },
-        {
-          "el": "a",
-          "text": "Next.js",
-          "w": 44,
-          "h": 19
-        },
-        {
-          "el": "a",
-          "text": "React",
-          "w": 37,
-          "h": 19
-        },
-        {
-          "el": "a",
-          "text": "Lenis",
-          "w": 34,
-          "h": 19
-        },
-        {
-          "el": "a",
-          "text": "three.js",
-          "w": 47,
-          "h": 19
-        },
-        {
-          "el": "a",
-          "text": "Tailwind CSS",
-          "w": 84,
-          "h": 19
-        },
-        {
-          "el": "a",
-          "text": "opentype.js",
-          "w": 75,
-          "h": 19
-        },
-        {
-          "el": "a",
-          "text": "Playwright",
-          "w": 67,
-          "h": 19
-        },
-        {
-          "el": "a",
-          "text": "Evidence board",
-          "w": 107,
-          "h": 20
-        },
-        {
-          "el": "a",
-          "text": "Autopsy",
-          "w": 58,
-          "h": 20
-        },
-        {
-          "el": "a",
-          "text": "Method",
-          "w": 54,
-          "h": 20
-        },
-        {
-          "el": "a",
-          "text": "Lab",
-          "w": 26,
-          "h": 20
-        },
-        {
-          "el": "a",
-          "text": "Receipts",
-          "w": 60,
-          "h": 20
-        },
-        {
-          "el": "a",
-          "text": "Locker",
-          "w": 47,
-          "h": 20
-        },
-        {
-          "el": "a",
-          "text": "Dossier",
-          "w": 52,
-          "h": 20
-        },
-        {
-          "el": "a",
-          "text": "Credits",
-          "w": 49,
-          "h": 20
-        }
-      ],
+      "fails": [],
       "warns": [
         {
           "el": "a.skip",
@@ -379,46 +199,136 @@
           "h": 42
         },
         {
+          "el": "a.bureau-mark-link",
+          "text": "MOTOMATION",
+          "w": 136,
+          "h": 36
+        },
+        {
           "el": "button.bar-btn",
           "text": "◐UVUV torch: reveal hidden ann",
-          "w": 36,
+          "w": 34,
           "h": 36
         },
         {
           "el": "button.bar-btn",
           "text": "–SoundSound",
-          "w": 36,
+          "w": 34,
           "h": 36
         },
         {
           "el": "button.bar-btn",
           "text": "Search⌘KSearch the case",
-          "w": 36,
+          "w": 34,
           "h": 36
         },
         {
           "el": "button.bar-btn",
           "text": "Index",
-          "w": 36,
+          "w": 55,
           "h": 36
         },
         {
           "el": "button.bar-btn",
           "text": "Yes, sound",
-          "w": 103,
+          "w": 95,
           "h": 36
         },
         {
           "el": "button.bar-btn",
           "text": "Stay silent",
-          "w": 112,
+          "w": 104,
           "h": 36
         },
         {
           "el": "a",
-          "text": "GSAP + @gsap/react",
-          "w": 83,
-          "h": 42
+          "text": "Next.js",
+          "w": 44,
+          "h": 25
+        },
+        {
+          "el": "a",
+          "text": "React",
+          "w": 37,
+          "h": 25
+        },
+        {
+          "el": "a",
+          "text": "Lenis",
+          "w": 34,
+          "h": 25
+        },
+        {
+          "el": "a",
+          "text": "three.js",
+          "w": 47,
+          "h": 25
+        },
+        {
+          "el": "a",
+          "text": "Tailwind CSS",
+          "w": 84,
+          "h": 25
+        },
+        {
+          "el": "a",
+          "text": "opentype.js",
+          "w": 75,
+          "h": 25
+        },
+        {
+          "el": "a",
+          "text": "Playwright",
+          "w": 67,
+          "h": 25
+        },
+        {
+          "el": "a",
+          "text": "Evidence board",
+          "w": 107,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Autopsy",
+          "w": 58,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Method",
+          "w": 54,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Lab",
+          "w": 26,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Receipts",
+          "w": 60,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Locker",
+          "w": 47,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Dossier",
+          "w": 52,
+          "h": 26
+        },
+        {
+          "el": "a",
+          "text": "Credits",
+          "w": 49,
+          "h": 26
         }
       ]
     },
@@ -439,7 +349,7 @@
       ]
     },
     "reflow": {
-      "px": 5
+      "px": 0
     },
     "forced": {
       "checked": 79,
@@ -453,12 +363,12 @@
       "trapped": false,
       "region": null
     },
-    "fails": 20,
+    "fails": 2,
     "cat": {
-      "focus": 1,
-      "target": 16,
+      "focus": 0,
+      "target": 0,
       "zoom": 2,
-      "reflow": 1,
+      "reflow": 0,
       "forced": 0,
       "trap": 0
     }

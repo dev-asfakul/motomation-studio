@@ -31,17 +31,20 @@
 .suspect-meta { color: var(--muted); font-size: 14px; }
 .suspect-verdict { font-size: 15px; }
 .suspect-card .btn { justify-self: start; margin-top: 6px; min-height: 44px; }
-.lineup-rail { position: absolute; right: var(--gutter); bottom: calc(var(--gutter) + 28px); list-style: none; margin: 0; padding: 6px; display: grid; grid-template-columns: repeat(10, 26px); gap: 3px; background: var(--ground); border: 1px solid var(--line); z-index: 2; }
+.lineup-rail { position: absolute; right: var(--gutter); top: calc(var(--bar-h) + 62px); list-style: none; margin: 0; padding: 6px; display: grid; grid-template-columns: repeat(10, 26px); gap: 3px; background: var(--ground); border: 1px solid var(--line); z-index: 2; }
 .lineup-rail a { display: grid; place-items: center; width: 26px; height: 26px; font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-decoration: none; border: 1px solid var(--line); }
 .lineup-rail li[data-past] a { color: var(--ink); }
+.lineup-rail a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; color: var(--ink); }
+.lineup-rail a:hover { color: var(--ink); border-color: var(--ink); }
+@media (forced-colors: active) { .lineup-rail a { border-color: CanvasText; color: LinkText; forced-color-adjust: none; } }
 .lineup-rail li[data-on] a { background: var(--accent); color: #0e0d0b; border-color: var(--accent); font-weight: 700; }
 .lineup-time { position: absolute; right: var(--gutter); top: calc(var(--bar-h) + 16px); background: var(--ground); color: var(--ink); padding: 6px 10px; font-size: 14px; z-index: 2; }
 @media (max-width: 767px) {
   .lineup-svg { height: calc(100% - var(--bar-h) - 270px); }
-  .suspect-card { bottom: 72px; padding: 12px 14px; }
+  .suspect-card { bottom: 90px; padding: 12px 14px; }
   .suspect-verdict { display: none; }
-  .lineup-rail { left: var(--gutter); right: var(--gutter); bottom: 12px; grid-template-columns: repeat(20, 1fr); padding: 4px; }
-  .lineup-rail a { width: 100%; height: 22px; font-size: 10px; }
+  .lineup-rail { left: var(--gutter); right: var(--gutter); top: auto; bottom: 12px; grid-template-columns: repeat(10, 1fr); padding: 4px; }
+  .lineup-rail a { width: 100%; height: 26px; font-size: 10px; }
   .wall-line span { display: none; }
 }
 

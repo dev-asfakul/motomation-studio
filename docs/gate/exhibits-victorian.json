@@ -1,0 +1,442 @@
+{
+  "target": "http://localhost:4190/exhibits/victorian/",
+  "url": "http://localhost:4190/exhibits/victorian/",
+  "version": "gate/4",
+  "pass": false,
+  "verified": true,
+  "coverage": {
+    "ok": true,
+    "skipped": 7,
+    "total": 169,
+    "pct": 4,
+    "width": 768,
+    "low": []
+  },
+  "counts": {
+    "contrast": 0,
+    "overflow": 0,
+    "words": 0,
+    "motion": 0,
+    "names": 0,
+    "numbers": 0,
+    "quality": 0,
+    "access": 0,
+    "copy": 0,
+    "seo": 0,
+    "perf": 1,
+    "sec": 0
+  },
+  "id": "1f23319e97",
+  "stamp": "gate: c0 o0 w0 rm0 a0 n0 q0 k0 · rules: C0 S0 P1 K0 · gate/4 · 1f23319e97 · skipped 7/169@768",
+  "critique": "C5[restraint:kept] H5[375:0] S?[no-archetype-in-stamp] R5[cuts:3,anim:3] M?[no-tier] V5[entrance-repeats:0] Q5[prog:n/a,smooth:n/a,rm:n/a] A5[focus:40/40,tgt:0f20w,zoom:0,reflow:0,fc:0,trap:0]",
+  "sources": {
+    "design": "/home/user/workspace/motomation-studio/DESIGN.md",
+    "log": "/home/user/workspace/motomation-studio/.motomation/log.json",
+    "meta": {}
+  },
+  "rules": {
+    "copy": {
+      "fails": [],
+      "warns": [],
+      "checked": 193
+    },
+    "seo": {
+      "fails": [],
+      "warns": [],
+      "checked": 14
+    },
+    "perf": {
+      "fails": [
+        {
+          "id": "perf-03",
+          "why": "the largest first-screen image is lazy-loaded",
+          "at": "data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2…"
+        }
+      ],
+      "warns": [],
+      "checked": 19
+    },
+    "sec": {
+      "fails": [],
+      "warns": [],
+      "checked": 9
+    },
+    "counts": {
+      "copy": 0,
+      "seo": 0,
+      "perf": 1,
+      "sec": 0
+    },
+    "segment": "rules: C0 S0 P1 K0"
+  },
+  "structure": {
+    "sections": 3,
+    "patterns": [
+      "static",
+      "filter",
+      "static"
+    ],
+    "repeats": 0,
+    "pins": 0,
+    "webgl": 0,
+    "jsKB": 21,
+    "jsUnknown": 10,
+    "sectionIds": [
+      "header",
+      "article",
+      "footer"
+    ]
+  },
+  "contrast": {
+    "byWidth": [
+      {
+        "width": 375,
+        "measured": 164,
+        "skipped": 1,
+        "total": 165,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 390,
+        "measured": 164,
+        "skipped": 1,
+        "total": 165,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 768,
+        "measured": 162,
+        "skipped": 7,
+        "total": 169,
+        "skippedPct": 4,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      },
+      {
+        "width": 1440,
+        "measured": 190,
+        "skipped": 1,
+        "total": 191,
+        "skippedPct": 1,
+        "lowCoverage": false,
+        "notVisibleAtScan": 0,
+        "sequence": [],
+        "fails": []
+      }
+    ],
+    "measured": 680,
+    "skipped": 10,
+    "total": 690,
+    "notVisibleAtScan": 0,
+    "skippedPct": 1,
+    "lowCoverage": false,
+    "fails": [],
+    "sequenceSteps": 0,
+    "inactiveFails": 0
+  },
+  "overflow": {
+    "widths": [
+      375,
+      390,
+      768,
+      1440
+    ],
+    "fails": []
+  },
+  "words": {
+    "checked": 10,
+    "fails": [],
+    "hier": {
+      "h1": 1,
+      "skips": 0,
+      "focalTies": 1,
+      "largest": 48
+    }
+  },
+  "motion": {
+    "compared": 191,
+    "hiddenUnderReducedMotion": [],
+    "pixelsChangingWhenStillPct": 0
+  },
+  "names": {
+    "checked": 49,
+    "fails": []
+  },
+  "numbers": {
+    "checked": 36,
+    "live": 1,
+    "fails": []
+  },
+  "quality": {
+    "zones": [],
+    "smooth": {
+      "judged": false,
+      "why": "sandbox: 2 CPUs",
+      "desktop": null,
+      "mobile": null
+    },
+    "rm": null,
+    "fails": 0
+  },
+  "access": {
+    "focus": {
+      "checked": 40,
+      "fails": [],
+      "tabbables": 49
+    },
+    "target": {
+      "checked": 26,
+      "fails": [],
+      "warns": [
+        {
+          "el": "a.skip",
+          "text": "Skip to the case",
+          "w": 166,
+          "h": 42
+        },
+        {
+          "el": "a.bureau-mark-link",
+          "text": "MOTOMATION",
+          "w": 136,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "◐UVUV torch: reveal hidden ann",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "–SoundSound",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Search⌘KSearch the case",
+          "w": 34,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Index",
+          "w": 55,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Yes, sound",
+          "w": 95,
+          "h": 36
+        },
+        {
+          "el": "button.bar-btn",
+          "text": "Stay silent",
+          "w": 104,
+          "h": 36
+        },
+        {
+          "el": "a",
+          "text": "Curved Text",
+          "w": 82,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "Shiny Text",
+          "w": 70,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "wax seal",
+          "w": 53,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "velvet curtain",
+          "w": 89,
+          "h": 29
+        },
+        {
+          "el": "a",
+          "text": "Evidence board",
+          "w": 107,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Autopsy",
+          "w": 58,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Method",
+          "w": 54,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Lab",
+          "w": 26,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Receipts",
+          "w": 60,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Locker",
+          "w": 47,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Dossier",
+          "w": 52,
+          "h": 28
+        },
+        {
+          "el": "a",
+          "text": "Credits",
+          "w": 49,
+          "h": 28
+        }
+      ]
+    },
+    "zoom": {
+      "fails": []
+    },
+    "reflow": {
+      "px": 0
+    },
+    "forced": {
+      "checked": 79,
+      "fails": []
+    },
+    "trap": {
+      "tabbables": 49,
+      "presses": 104,
+      "visited": 49,
+      "unreached": 0,
+      "trapped": false,
+      "region": null
+    },
+    "fails": 0,
+    "cat": {
+      "focus": 0,
+      "target": 0,
+      "zoom": 0,
+      "reflow": 0,
+      "forced": 0,
+      "trap": 0
+    }
+  },
+  "composition": {
+    "pin": [],
+    "screens": [
+      {
+        "n": 1,
+        "top": "h1#x-title.t-title",
+        "lead": 8.01,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 2,
+        "top": "p.x-aa",
+        "lead": 2.73,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 3,
+        "top": "p.x-aa",
+        "lead": 9.39,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 4,
+        "top": "h3",
+        "lead": 2.43,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 5,
+        "top": "li",
+        "lead": 1.17,
+        "ok": false,
+        "text": true
+      },
+      {
+        "n": 6,
+        "top": "p.x-after-word",
+        "lead": 2.57,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 7,
+        "top": "span.x-next-t",
+        "lead": 1.97,
+        "ok": true,
+        "text": true
+      },
+      {
+        "n": 8,
+        "top": "span.x-next-t",
+        "lead": 1.97,
+        "ok": true,
+        "text": true
+      }
+    ],
+    "scale": {
+      "display": 374.4,
+      "body": 17.92,
+      "ratio": 20.9,
+      "ok": true
+    }
+  },
+  "richness": {
+    "kind": "page",
+    "from": "path",
+    "fold": [
+      "nav header.bureau-bar",
+      "text p",
+      "action button.bar-btn"
+    ],
+    "opening": "h1 \"The Gaslight Archive\"",
+    "grid": null,
+    "title": null,
+    "count": null,
+    "blocks": [
+      "section.x-sec.x-specimen",
+      "section.x-sec.x-anatomy",
+      "section.x-sec.x-lab",
+      "section.x-sec.x-link",
+      "figure.x-before",
+      "figure.x-after",
+      "div.toasts"
+    ],
+    "warns": []
+  },
+  "footprint": "light"
+}

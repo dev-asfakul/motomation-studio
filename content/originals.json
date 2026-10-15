@@ -285,7 +285,7 @@
   "a11y": "Decorative (aria-hidden); the chapter title that follows is the real heading.",
   "status": "candidate to contribute back to the skill (examples/components/scroll)",
   "file": "src/components/originals/leader-countdown.tsx",
-  "lines": 31
+  "lines": 34
  },
  {
   "id": "measure-rule",

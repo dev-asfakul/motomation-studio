@@ -7,3 +7,5 @@ next-env.d.ts
 gate-report*.json
 /tmp
 .cache
+skill-src/
+.lighthouseci/
